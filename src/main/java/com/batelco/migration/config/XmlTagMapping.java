@@ -14,7 +14,7 @@ public class XmlTagMapping {
         tagMap.put("BUSINESS_TYPE", "BType");
         tagMap.put("AAC_ACCESS", "SrvAACAccess");
         tagMap.put("GL_SEGMENT", "GLSgmt");
-        tagMap.put("IDENTIFICATION_CODE", "IDENTIFICATION_CODE");
+        tagMap.put("IDENTIFICATION_CODE", "IdentificationCode");
         tagMap.put("ADDRESS", "Add");
         tagMap.put("CITY", "City");
         tagMap.put("COUNTRY", "Cnt");

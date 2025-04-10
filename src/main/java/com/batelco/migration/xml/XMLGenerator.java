@@ -30,9 +30,9 @@ public class XMLGenerator {
             }
 
             // Add static SbscPrms section
-            writer.write("  <SbscPrms>\n");
-            writer.write("    <PlObj>0.0.0.1 /plan -1 0</PlObj>\n");
-            writer.write("  </SbscPrms>\n");
+            // writer.write("  <SbscPrms>\n");
+            // writer.write("    <PlObj>0.0.0.1 /plan -1 0</PlObj>\n");
+            // writer.write("  </SbscPrms>\n");
             
             writer.write("</Sbsc>");
             System.out.println("XML file generated successfully: " + outputFile);
@@ -66,7 +66,7 @@ public class XMLGenerator {
         writer.write("      <myExtension>\n");
         String identificationCode = getColumnValue(rs, "IDENTIFICATION_CODE");
         writer.write(String.format(
-            "        <IDENTIFICATION_CODE type=\"string\">%s</IDENTIFICATION_CODE>\n",
+            "        <IdentificationCode type=\"string\">%s</IdentificationCode>\n",
             escapeXml(identificationCode)
         ));
         writer.write("      </myExtension>\n");
