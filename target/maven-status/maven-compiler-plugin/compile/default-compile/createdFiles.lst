@@ -1,1 +1,6 @@
+com\batelco\migration\config\XmlTagMapping.class
+com\batelco\migration\xml\XMLGenerator.class
+com\batelco\migration\Main.class
+com\batelco\migration\sql\QueryExecutor.class
 com\batelco\migration\App.class
+com\batelco\migration\db\DatabaseConnector.class
