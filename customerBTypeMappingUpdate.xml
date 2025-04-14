@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema" xmlns:math="xalana://java.lang.Math" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
+  <ActSbsc id="CA_7100140628" isParent="Y">
+    <Act>
+      <ActNo>CA_7100140628</ActNo>
+      <ActNo>CA_7100140628</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>8</CustSegList>
+      <CustSegList>8</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>4</BType>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20004</GLSgmt>
+      <GLSgmt>.20004</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">988585/02</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 0947</Add>
+      <Add>0000 0947</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <FNm>Test</FNm>
+      <LNm>Contact2</LNm>
+      <LNm>Contact2</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120734159458" isParent="Y">
+    <Act>
+      <ActNo>CA_120734159458</ActNo>
+      <ActNo>CA_120734159458</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <CustSegList>27</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>7</BType>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <GLSgmt>.20001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">765978/77</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>ALI</FNm>
+      <FNm>ALI</FNm>
+      <LNm>AL OWAYED</LNm>
+      <LNm>AL OWAYED</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120734312687" isParent="Y">
+    <Act>
+      <ActNo>CA_120734312687</ActNo>
+      <ActNo>CA_120734312687</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <CustSegList>27</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>7</BType>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <GLSgmt>.20001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">012345/02</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>MOHAMMED</FNm>
+      <FNm>MOHAMMED</FNm>
+      <LNm>ABDELMONEIM</LNm>
+      <LNm>ABDELMONEIM</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107717" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107717</ActNo>
+      <ActNo>CA_7104107717</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <CustSegList>18</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <GLSgmt>.10003</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">AE123456789012134</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0143</Add>
+      <Add>International 0143</Add>
+      <City>Abu Al Ayash</City>
+      <City>Abu Al Ayash</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TEstAH40</FNm>
+      <FNm>TEstAH40</FNm>
+      <LNm>TEstAH40</LNm>
+      <LNm>TEstAH40</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107934" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107934</ActNo>
+      <ActNo>CA_7104107934</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>6</CustSegList>
+      <CustSegList>6</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>5</BType>
+      <BType>MSA</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20006</GLSgmt>
+      <GLSgmt>.20006</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">451431/42</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>National 0023</Add>
+      <Add>National 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107743" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107743</ActNo>
+      <ActNo>CA_7104107743</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <CustSegList>18</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <GLSgmt>.10003</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">AE123456789012134</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0143</Add>
+      <Add>International 0143</Add>
+      <City>Abu Al Ayash</City>
+      <City>Abu Al Ayash</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TEstAH40</FNm>
+      <FNm>TEstAH40</FNm>
+      <LNm>TEstAH40</LNm>
+      <LNm>TEstAH40</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7101108789" isParent="Y">
+    <Act>
+      <ActNo>CA_7101108789</ActNo>
+      <ActNo>CA_7101108789</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <CustSegList>27</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>7</BType>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <GLSgmt>.20001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">012367/02</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0143</Add>
+      <Add>International 0143</Add>
+      <City>Abu Al Ayash</City>
+      <City>Abu Al Ayash</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>MOHSIN</FNm>
+      <FNm>MOHSIN</FNm>
+      <LNm>AHMED ABDRABBAH ALHAMRI</LNm>
+      <LNm>AHMED ABDRABBAH ALHAMRI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7101108798" isParent="Y">
+    <Act>
+      <ActNo>CA_7101108798</ActNo>
+      <ActNo>CA_7101108798</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <CustSegList>27</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>7</BType>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <GLSgmt>.20001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">012367/02</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0143</Add>
+      <Add>International 0143</Add>
+      <City>Abu Al Ayash</City>
+      <City>Abu Al Ayash</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Khadija</FNm>
+      <FNm>Khadija</FNm>
+      <LNm>Shubbar</LNm>
+      <LNm>Shubbar</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107560" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107560</ActNo>
+      <ActNo>CA_7104107560</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <CustSegList>18</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <GLSgmt>.10003</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">AE123456789012134</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0143</Add>
+      <Add>International 0143</Add>
+      <City>Abu Al Ayash</City>
+      <City>Abu Al Ayash</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TEstAH40</FNm>
+      <FNm>TEstAH40</FNm>
+      <LNm>TEstAH40</LNm>
+      <LNm>TEstAH40</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107725" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107725</ActNo>
+      <ActNo>CA_7104107725</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>6</CustSegList>
+      <CustSegList>6</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>4</BType>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20006</GLSgmt>
+      <GLSgmt>.20006</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">019069/01</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>National 0023</Add>
+      <Add>National 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107875" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107875</ActNo>
+      <ActNo>CA_7104107875</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>11</CustSegList>
+      <CustSegList>11</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>5</BType>
+      <BType>MSA</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.40001</GLSgmt>
+      <GLSgmt>.40001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">428832/21</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0023</Add>
+      <Add>International 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120733752570" isParent="Y">
+    <Act>
+      <ActNo>CA_120733752570</ActNo>
+      <ActNo>CA_120733752570</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <CustSegList>22</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <GLSgmt>.10016</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">YTFGH7894F</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TestC17</FNm>
+      <FNm>TestC17</FNm>
+      <LNm>TestC17</LNm>
+      <LNm>TestC17</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120733864446" isParent="Y">
+    <Act>
+      <ActNo>CA_120733864446</ActNo>
+      <ActNo>CA_120733864446</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <CustSegList>22</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <GLSgmt>.10016</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">YTFGH7894F</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TestC17</FNm>
+      <FNm>TestC17</FNm>
+      <LNm>TestC17</LNm>
+      <LNm>TestC17</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120734072035" isParent="Y">
+    <Act>
+      <ActNo>CA_120734072035</ActNo>
+      <ActNo>CA_120734072035</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <CustSegList>22</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <GLSgmt>.10016</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">TGFDS6574G</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test C21</FNm>
+      <FNm>Test C21</FNm>
+      <LNm>Test C21</LNm>
+      <LNm>Test C21</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120734195721" isParent="Y">
+    <Act>
+      <ActNo>CA_120734195721</ActNo>
+      <ActNo>CA_120734195721</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <CustSegList>27</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>7</BType>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <GLSgmt>.20001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">012345/07</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0143</Add>
+      <Add>International 0143</Add>
+      <City>Abu Al Ayash</City>
+      <City>Abu Al Ayash</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test C14</FNm>
+      <FNm>Test C14</FNm>
+      <LNm>TestC14</LNm>
+      <LNm>TestC14</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>1</Perc>
+      <Perc>1</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120734707812" isParent="Y">
+    <Act>
+      <ActNo>CA_120734707812</ActNo>
+      <ActNo>CA_120734707812</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <CustSegList>22</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <GLSgmt>.10016</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">SA1234567898</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>6101208810HAMAD TOWN ERERER435543</Add>
+      <Add>6101208810HAMAD TOWN ERERER435543</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>United Kingdom</Cnt>
+      <Cnt>United Kingdom</Cnt>
+      <FNm>TestCGCC</FNm>
+      <FNm>TestCGCC</FNm>
+      <LNm>TestCGCC</LNm>
+      <LNm>TestCGCC</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_120734822348" isParent="Y">
+    <Act>
+      <ActNo>CA_120734822348</ActNo>
+      <ActNo>CA_120734822348</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <CustSegList>22</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <GLSgmt>.10016</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">SA1234567898</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>6101208810HAMAD TOWN ERERER435543</Add>
+      <Add>6101208810HAMAD TOWN ERERER435543</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>United Kingdom</Cnt>
+      <Cnt>United Kingdom</Cnt>
+      <FNm>TestCGCC</FNm>
+      <FNm>TestCGCC</FNm>
+      <LNm>TestCGCC</LNm>
+      <LNm>TestCGCC</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7101108870" isParent="Y">
+    <Act>
+      <ActNo>CA_7101108870</ActNo>
+      <ActNo>CA_7101108870</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>11</CustSegList>
+      <CustSegList>11</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>5</BType>
+      <BType>MSA</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.40001</GLSgmt>
+      <GLSgmt>.40001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">123343339</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 000-</Add>
+      <Add>International 000-</Add>
+      <City>-</City>
+      <City>-</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7101108885" isParent="Y">
+    <Act>
+      <ActNo>CA_7101108885</ActNo>
+      <ActNo>CA_7101108885</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>11</CustSegList>
+      <CustSegList>11</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>5</BType>
+      <BType>MSA</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.40001</GLSgmt>
+      <GLSgmt>.40001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">019445/01</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0023</Add>
+      <Add>International 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7101108898" isParent="Y">
+    <Act>
+      <ActNo>CA_7101108898</ActNo>
+      <ActNo>CA_7101108898</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>11</CustSegList>
+      <CustSegList>11</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>5</BType>
+      <BType>MSA</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.40001</GLSgmt>
+      <GLSgmt>.40001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">019445/01</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>International 0023</Add>
+      <Add>International 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107755" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107755</ActNo>
+      <ActNo>CA_7104107755</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>11</CustSegList>
+      <CustSegList>11</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>4</BType>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.40001</GLSgmt>
+      <GLSgmt>.40001</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">970812345</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TestAH42</FNm>
+      <FNm>TestAH42</FNm>
+      <LNm>TestAH42</LNm>
+      <LNm>TestAH42</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107927" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107927</ActNo>
+      <ActNo>CA_7104107927</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>6</CustSegList>
+      <CustSegList>6</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>4</BType>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20006</GLSgmt>
+      <GLSgmt>.20006</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">019069/01</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>National 0023</Add>
+      <Add>National 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107949" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107949</ActNo>
+      <ActNo>CA_7104107949</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>6</CustSegList>
+      <CustSegList>6</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>5</BType>
+      <BType>MSA</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20006</GLSgmt>
+      <GLSgmt>.20006</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">551431/42</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>National 0023</Add>
+      <Add>National 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107715" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107715</ActNo>
+      <ActNo>CA_7104107715</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <CustSegList>18</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <GLSgmt>.10003</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">133739181</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0023 0034</Add>
+      <Add>0023 0034</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <FNm>Test</FNm>
+      <LNm>Datacom</LNm>
+      <LNm>Datacom</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107741" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107741</ActNo>
+      <ActNo>CA_7104107741</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>6</CustSegList>
+      <CustSegList>6</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>4</BType>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20006</GLSgmt>
+      <GLSgmt>.20006</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">019069/01</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>National 0023</Add>
+      <Add>National 0023</Add>
+      <City>Krishna</City>
+      <City>Krishna</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>SUAD</FNm>
+      <FNm>SUAD</FNm>
+      <LNm>ALHALWACHI</LNm>
+      <LNm>ALHALWACHI</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7104107749" isParent="Y">
+    <Act>
+      <ActNo>CA_7104107749</ActNo>
+      <ActNo>CA_7104107749</ActNo>
+      <Curr>48</Curr>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <CustSegList>18</CustSegList>
+      <SubSta>Normal</SubSta>
+      <SubSta>Normal</SubSta>
+      <BType>6</BType>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <GLSgmt>.10003</GLSgmt>
+      <myExtension>
+        <IdentificationCode type="string">QA45674234567</IdentificationCode>
+      </myExtension>
+      <ANArr elem="1">
+      <Add>0000 1014</Add>
+      <Add>0000 1014</Add>
+      <City>NA</City>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <Cnt>Bahrain</Cnt>
+      <FNm>TestC42</FNm>
+      <FNm>TestC42</FNm>
+      <LNm>TestC42</LNm>
+      <LNm>TestC42</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Perc>0</Perc>
+      <Typ>0</Typ>
+      <Typ>0</Typ>
+      </AEArr>
+    </Act>
+    <ActProm type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+</Sbsc>

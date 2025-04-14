@@ -116,6 +116,11 @@ public class XMLGenerator {
         try {
             String value = getColumnValue(rs, columnName);
             if (value != null && !value.isEmpty()) {
+                if ("BType".equals(elementName)) {
+                    Map<String, String> typeMapping = XmlTagMapping.getBusinessTypeMapping();
+                    value = typeMapping.getOrDefault(value, value);
+                }
+        
                 writer.write(String.format("      <%s>%s</%s>\n", 
                     elementName, 
                     escapeXml(value), 

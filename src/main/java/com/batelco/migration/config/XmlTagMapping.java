@@ -24,6 +24,19 @@ public class XmlTagMapping {
         tagMap.put("TYPE", "Typ");
         return tagMap;
     }
+    public static Map<String, String> getBusinessTypeMapping() {
+        Map<String, String> mapping = new HashMap<>();
+        mapping.put("0", "U");
+        mapping.put("1", "C");
+        mapping.put("2", "B");
+        mapping.put("3", "BAT");
+        mapping.put("4", "MGD");
+        mapping.put("5", "MSA");
+        mapping.put("6", "RES");
+        mapping.put("7", "UMG");
+        mapping.put("8", "VIP");
+        return mapping;
+    }
     
     public static String getRootAttributes() {
         return "xmlns=\"http://www.portal.com/InfranetXMLSchema\" " +
