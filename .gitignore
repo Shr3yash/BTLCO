@@ -1,4 +1,5 @@
 src/main/java/com/batelco/migration/db/DatabaseConnector.java
+gitCertificate/ca.crt
 
 # Compiled class file
 *.class
