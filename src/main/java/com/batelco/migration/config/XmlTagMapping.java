@@ -37,7 +37,13 @@ public class XmlTagMapping {
         mapping.put("8", "VIP");
         return mapping;
     }
-    
+    public static Map<String, String> getSubStatementMapping() {
+        Map<String, String> subStaMapping = new HashMap<>();
+        subStaMapping.put("10100", "A");
+        subStaMapping.put("10102", "I");
+        subStaMapping.put("10103", "C");
+        return subStaMapping;       
+    }
     public static String getRootAttributes() {
         return "xmlns=\"http://www.portal.com/InfranetXMLSchema\" " +
                "xmlns:math=\"xalana://java.lang.Math\" " +
