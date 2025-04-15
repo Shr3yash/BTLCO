@@ -5,10 +5,11 @@
       <ActNo>CA_7100140628</ActNo>
       <Curr>48</Curr>
       <CustSegList>8</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20004</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">988585/02</IdentificationCode>
       </myExtension>
@@ -26,7 +27,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -35,10 +36,11 @@
       <ActNo>CA_7101108789</ActNo>
       <Curr>48</Curr>
       <CustSegList>27</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>UMG</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">012367/02</IdentificationCode>
       </myExtension>
@@ -56,7 +58,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -65,10 +67,11 @@
       <ActNo>CA_7101108798</ActNo>
       <Curr>48</Curr>
       <CustSegList>27</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>UMG</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">012367/02</IdentificationCode>
       </myExtension>
@@ -86,7 +89,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -95,10 +98,11 @@
       <ActNo>CA_7104107999</ActNo>
       <Curr>48</Curr>
       <CustSegList>7</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20009</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">017645/09</IdentificationCode>
       </myExtension>
@@ -116,7 +120,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -125,10 +129,11 @@
       <ActNo>CA_7104107560</ActNo>
       <Curr>48</Curr>
       <CustSegList>18</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">AE123456789012134</IdentificationCode>
       </myExtension>
@@ -146,7 +151,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -155,10 +160,11 @@
       <ActNo>CA_7104107725</ActNo>
       <Curr>48</Curr>
       <CustSegList>6</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20006</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">019069/01</IdentificationCode>
       </myExtension>
@@ -176,7 +182,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -185,10 +191,11 @@
       <ActNo>CA_7104107875</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">428832/21</IdentificationCode>
       </myExtension>
@@ -206,7 +213,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -215,10 +222,11 @@
       <ActNo>CA_7104107953</ActNo>
       <Curr>48</Curr>
       <CustSegList>7</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>UMG</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.90001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">589431/42</IdentificationCode>
       </myExtension>
@@ -236,7 +244,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -245,10 +253,11 @@
       <ActNo>CA_120734072035</ActNo>
       <Curr>48</Curr>
       <CustSegList>22</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">TGFDS6574G</IdentificationCode>
       </myExtension>
@@ -266,7 +275,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -275,10 +284,11 @@
       <ActNo>CA_120734707812</ActNo>
       <Curr>48</Curr>
       <CustSegList>22</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">SA1234567898</IdentificationCode>
       </myExtension>
@@ -296,7 +306,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -305,10 +315,11 @@
       <ActNo>CA_120734822348</ActNo>
       <Curr>48</Curr>
       <CustSegList>22</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">SA1234567898</IdentificationCode>
       </myExtension>
@@ -326,7 +337,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -335,10 +346,11 @@
       <ActNo>CA_120733752570</ActNo>
       <Curr>48</Curr>
       <CustSegList>22</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">YTFGH7894F</IdentificationCode>
       </myExtension>
@@ -356,7 +368,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -365,10 +377,11 @@
       <ActNo>CA_120733864446</ActNo>
       <Curr>48</Curr>
       <CustSegList>22</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">YTFGH7894F</IdentificationCode>
       </myExtension>
@@ -386,7 +399,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -395,10 +408,11 @@
       <ActNo>CA_120734195721</ActNo>
       <Curr>48</Curr>
       <CustSegList>27</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>UMG</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">012345/07</IdentificationCode>
       </myExtension>
@@ -416,7 +430,7 @@
       <AEArr>
         <CertNum/>
       <Perc>1</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -425,10 +439,11 @@
       <ActNo>CA_7101108870</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">123343339</IdentificationCode>
       </myExtension>
@@ -446,7 +461,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -455,10 +470,11 @@
       <ActNo>CA_7104107981</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">970812345</IdentificationCode>
       </myExtension>
@@ -476,7 +492,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -485,10 +501,11 @@
       <ActNo>CA_7104107755</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">970812345</IdentificationCode>
       </myExtension>
@@ -506,7 +523,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -515,10 +532,11 @@
       <ActNo>CA_7104107927</ActNo>
       <Curr>48</Curr>
       <CustSegList>6</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20006</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">019069/01</IdentificationCode>
       </myExtension>
@@ -536,7 +554,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -545,10 +563,11 @@
       <ActNo>CA_7104107949</ActNo>
       <Curr>48</Curr>
       <CustSegList>6</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20006</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">551431/42</IdentificationCode>
       </myExtension>
@@ -566,7 +585,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -575,10 +594,11 @@
       <ActNo>CA_7104107715</ActNo>
       <Curr>48</Curr>
       <CustSegList>18</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">133739181</IdentificationCode>
       </myExtension>
@@ -596,7 +616,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -605,10 +625,11 @@
       <ActNo>CA_7104107741</ActNo>
       <Curr>48</Curr>
       <CustSegList>6</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20006</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">019069/01</IdentificationCode>
       </myExtension>
@@ -626,7 +647,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -635,10 +656,11 @@
       <ActNo>CA_7104107749</ActNo>
       <Curr>48</Curr>
       <CustSegList>18</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">QA45674234567</IdentificationCode>
       </myExtension>
@@ -656,7 +678,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -665,10 +687,11 @@
       <ActNo>CA_7104107965</ActNo>
       <Curr>48</Curr>
       <CustSegList>7</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.90001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">589421/42</IdentificationCode>
       </myExtension>
@@ -686,7 +709,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -695,10 +718,11 @@
       <ActNo>CA_7101108885</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">019445/01</IdentificationCode>
       </myExtension>
@@ -716,7 +740,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -725,10 +749,11 @@
       <ActNo>CA_7101108898</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">019445/01</IdentificationCode>
       </myExtension>
@@ -746,7 +771,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -755,10 +780,11 @@
       <ActNo>CA_7104107717</ActNo>
       <Curr>48</Curr>
       <CustSegList>18</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">AE123456789012134</IdentificationCode>
       </myExtension>
@@ -776,7 +802,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -785,10 +811,11 @@
       <ActNo>CA_7104107934</ActNo>
       <Curr>48</Curr>
       <CustSegList>6</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20006</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">451431/42</IdentificationCode>
       </myExtension>
@@ -806,7 +833,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -815,10 +842,11 @@
       <ActNo>CA_7104107743</ActNo>
       <Curr>48</Curr>
       <CustSegList>18</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">AE123456789012134</IdentificationCode>
       </myExtension>
@@ -836,7 +864,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -845,10 +873,11 @@
       <ActNo>CA_7104107961</ActNo>
       <Curr>48</Curr>
       <CustSegList>18</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">QA45674234567</IdentificationCode>
       </myExtension>
@@ -866,7 +895,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -875,10 +904,11 @@
       <ActNo>CA_120734159458</ActNo>
       <Curr>48</Curr>
       <CustSegList>27</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>UMG</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">765978/77</IdentificationCode>
       </myExtension>
@@ -896,7 +926,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -905,10 +935,11 @@
       <ActNo>CA_120734312687</ActNo>
       <Curr>48</Curr>
       <CustSegList>27</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>UMG</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.20001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">012345/02</IdentificationCode>
       </myExtension>
@@ -926,7 +957,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -935,10 +966,11 @@
       <ActNo>CA_7104107992</ActNo>
       <Curr>48</Curr>
       <CustSegList>7</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MSA</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">589411/12</IdentificationCode>
       </myExtension>
@@ -956,7 +988,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
@@ -965,10 +997,11 @@
       <ActNo>CA_7104107734</ActNo>
       <Curr>48</Curr>
       <CustSegList>11</CustSegList>
-      <SubSta>Normal</SubSta>
       <BType>MGD</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.40001</GLSgmt>
+      <ActSta>Normal</ActSta>
+      <SubSta>A</SubSta>
       <myExtension>
         <IdentificationCode type="string">970812345</IdentificationCode>
       </myExtension>
@@ -986,7 +1019,7 @@
       <AEArr>
         <CertNum/>
       <Perc>0</Perc>
-      <Typ>0</Typ>
+      <Typ>FED</Typ>
       </AEArr>
     </Act>
   </ActSbsc>
