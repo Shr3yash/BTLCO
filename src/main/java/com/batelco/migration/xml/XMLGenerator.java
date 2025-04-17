@@ -55,12 +55,10 @@ public class XMLGenerator {
 
         // myExtension section
         writer.write("      <myExtension>\n");
-        // Identification Code
         String identificationCode = getColumnValue(rs, "IDENTIFICATION_CODE");
         writer.write(String.format(
                 "        <IdentificationCode type=\"string\">%s</IdentificationCode>\n",
                 escapeXml(identificationCode)));
-        // Account Status (ActSta)
         String actStaValue = getColumnValue(rs, "ACCOUNT_STATUS");
         writer.write(String.format(
                 "        <ActSta>%s</ActSta>\n",
@@ -89,29 +87,35 @@ public class XMLGenerator {
 
         writer.write("    </Act>\n");
 
-        // Dynamic Promotions
-        writePromotions(writer, rs);
+        // Dynamic Promotions with ID
+        writePromotions(writer, rs, accountNo);  // Pass accountNo to promotions
 
         writer.write("  </ActSbsc>\n");
     }
 
-    private static void writePromotions(OutputStreamWriter writer, ResultSet rs) throws SQLException, IOException {
-        String promotionName = getColumnValue(rs, "PROMOTION_NAME");
-        String promotionValue = getColumnValue(rs, "PROMOTION_VALUE");
+    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo) 
+            throws SQLException, IOException {
+        String prmNm = getColumnValue(rs, "PROF_NAME");
+        String nam = getColumnValue(rs, "PROF_ACCT_NAME");
+        String val = getColumnValue(rs, "VALUE");
 
-        if (!promotionName.isEmpty()) {
-            writer.write("    <ActProm type=\"/profile/acct_extrating\" global=\"true\">\n");
-            writer.write(String.format("      <PrmNm>%s</PrmNm>\n", escapeXml(promotionName)));
+        if (!prmNm.isEmpty()) {
+            writer.write(String.format(
+                "    <ActProm id=\"%s\" type=\"/profile/tab_customer_attributes\" global=\"true\">\n",
+                escapeXml(accountNo)  // Use raw account number without CA_ prefix
+            ));
+            writer.write(String.format("      <PrmNm>%s</PrmNm>\n", escapeXml(prmNm)));
             writer.write("      <PrmActLvlExtn>\n");
             writer.write("        <ALPArr elem=\"1\">\n");
-            writer.write(String.format("          <Nam>%s</Nam>\n", escapeXml(promotionName)));
-            writer.write(String.format("          <Val>%s</Val>\n", escapeXml(promotionValue)));
+            writer.write(String.format("          <Nam>%s</Nam>\n", escapeXml(nam)));
+            writer.write(String.format("          <Val>%s</Val>\n", escapeXml(val)));
             writer.write("        </ALPArr>\n");
             writer.write("      </PrmActLvlExtn>\n");
             writer.write("    </ActProm>\n");
         }
     }
 
+    // Rest of the helper methods remain unchanged
     private static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
                                          String columnName, String elementName,
                                          Map<String, String> tagMap)
