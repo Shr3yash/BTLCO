@@ -4,7 +4,6 @@ import com.batelco.migration.config.XmlTagMapping;
 import com.batelco.migration.sql.QueryExecutor;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -16,8 +15,8 @@ public class XMLGenerator {
         Map<String, String> tagMap = XmlTagMapping.getColumnToTagMap();
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
-                FileOutputStream fos = new FileOutputStream(outputFile);
-                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+             FileOutputStream fos = new FileOutputStream(outputFile);
+             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             // Write XML header
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
@@ -37,33 +36,35 @@ public class XMLGenerator {
     }
 
     private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs,
-            Map<String, String> tagMap)
+                                          Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = getColumnValue(rs, "ACCOUNT_NO");
         writer.write(String.format(
                 "  <ActSbsc id=\"CA_%s\" isParent=\"Y\">\n" +
-                        "    <Act>\n",
+                "    <Act>\n",
                 escapeXml(accountNo)));
 
         // Write mapped elements
         writeMappedElement(writer, rs, "ACCOUNT_NO", "ActNo", tagMap);
         writeMappedElement(writer, rs, "CURRENCY", "Curr", tagMap);
         writeMappedElement(writer, rs, "CUST_SEG_LIST", "CustSegList", tagMap);
-        //writeMappedElement(writer, rs, "ACCOUNT_STATUS", "SubSta", tagMap);
         writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
         writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
         writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
-        writeMappedElement(writer, rs, "ACCOUNT_STATUS", "ActSta", tagMap);
         writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
 
-        // what about actSta field?????
-        // writer.write("      <ActSta>Normal</ActSta>\n");
-        // Identification Code
+        // myExtension section
         writer.write("      <myExtension>\n");
+        // Identification Code
         String identificationCode = getColumnValue(rs, "IDENTIFICATION_CODE");
         writer.write(String.format(
                 "        <IdentificationCode type=\"string\">%s</IdentificationCode>\n",
                 escapeXml(identificationCode)));
+        // Account Status (ActSta)
+        String actStaValue = getColumnValue(rs, "ACCOUNT_STATUS");
+        writer.write(String.format(
+                "        <ActSta>%s</ActSta>\n",
+                escapeXml(actStaValue)));
         writer.write("      </myExtension>\n");
 
         // Address Information
@@ -112,22 +113,23 @@ public class XMLGenerator {
     }
 
     private static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-            String columnName, String elementName,
-            Map<String, String> tagMap)
+                                         String columnName, String elementName,
+                                         Map<String, String> tagMap)
             throws SQLException, IOException {
         try {
             String value = getColumnValue(rs, columnName);
             if (!value.isEmpty()) {
-                // Apply mappings
-                if ("BType".equals(elementName)) {
-                    Map<String, String> typeMapping = XmlTagMapping.getBusinessTypeMapping();
-                    value = typeMapping.getOrDefault(value, value);
-                } else if ("SubSta".equals(elementName)) {
-                    Map<String, String> subStaMapping = XmlTagMapping.getSubStaMapping();
-                    value = subStaMapping.getOrDefault(value, value);
-                } else if ("Typ".equals(elementName)) {
-                    Map<String, String> typMapping = XmlTagMapping.getTypMapping();
-                    value = typMapping.getOrDefault(value, value);
+                // Apply value mappings
+                switch (elementName) {
+                    case "BType":
+                        value = XmlTagMapping.getBusinessTypeMapping().getOrDefault(value, value);
+                        break;
+                    case "SubSta":
+                        value = XmlTagMapping.getSubStaMapping().getOrDefault(value, value);
+                        break;
+                    case "Typ":
+                        value = XmlTagMapping.getTypMapping().getOrDefault(value, value);
+                        break;
                 }
 
                 writer.write(String.format("      <%s>%s</%s>\n",
@@ -150,8 +152,7 @@ public class XMLGenerator {
     }
 
     private static String escapeXml(String value) {
-        if (value == null)
-            return "";
+        if (value == null) return "";
         return value.replace("&", "&amp;")
                 .replace("<", "&lt;")
                 .replace(">", "&gt;")

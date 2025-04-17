@@ -12,7 +12,7 @@ public class Main {
         String sqlQuery = "SELECT * FROM stg_cust_acct";
         
         // Output XML file path
-        String outputFile = "customerUpdatedAccountStatusMapping.xml";
+        String outputFile = "customerUpdatedAcStatusMapping.xml";
         
         // Generate XML
         // XMLGenerator.generateXML(sqlQuery, outputFile);
