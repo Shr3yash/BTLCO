@@ -12,12 +12,12 @@ public class Main {
         String sqlQuery = "SELECT * FROM stg_cust_acct";
         
         // Output XML file path
-        String outputFile = "customerUpdatedAcStatusMapping.xml";
+        String outputFile = "DoubleCAFix.xml";
         
         // Generate XML
         // XMLGenerator.generateXML(sqlQuery, outputFile);
           try (Connection connection = DatabaseConnector.connect()) {
-            // Call your method to generate the XML
+            // Call method to generate the XML
             XMLGenerator.generateXML(connection, sqlQuery, outputFile);
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());

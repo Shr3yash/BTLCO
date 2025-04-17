@@ -15,8 +15,8 @@ public class XMLGenerator {
         Map<String, String> tagMap = XmlTagMapping.getColumnToTagMap();
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
-             FileOutputStream fos = new FileOutputStream(outputFile);
-             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                FileOutputStream fos = new FileOutputStream(outputFile);
+                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             // Write XML header
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
@@ -36,13 +36,17 @@ public class XMLGenerator {
     }
 
     private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs,
-                                          Map<String, String> tagMap)
+            Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = getColumnValue(rs, "ACCOUNT_NO");
+        String formattedAccountNo = accountNo.startsWith("CA_")
+                ? accountNo
+                : "CA_" + accountNo;
+
         writer.write(String.format(
-                "  <ActSbsc id=\"CA_%s\" isParent=\"Y\">\n" +
-                "    <Act>\n",
-                escapeXml(accountNo)));
+                "  <ActSbsc id=\"%s\" isParent=\"Y\">\n" +
+                        "    <Act>\n",
+                escapeXml(formattedAccountNo)));
 
         // Write mapped elements
         writeMappedElement(writer, rs, "ACCOUNT_NO", "ActNo", tagMap);
@@ -88,12 +92,12 @@ public class XMLGenerator {
         writer.write("    </Act>\n");
 
         // Dynamic Promotions with ID
-        writePromotions(writer, rs, accountNo);  // Pass accountNo to promotions
+        writePromotions(writer, rs, accountNo); // Pass accountNo to promotions
 
         writer.write("  </ActSbsc>\n");
     }
 
-    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo) 
+    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo)
             throws SQLException, IOException {
         String prmNm = getColumnValue(rs, "PROF_NAME");
         String nam = getColumnValue(rs, "PROF_ACCT_NAME");
@@ -101,8 +105,8 @@ public class XMLGenerator {
 
         if (!prmNm.isEmpty()) {
             writer.write(String.format(
-                "    <ActProm id=\"%s\" type=\"/profile/tab_customer_attributes\" global=\"true\">\n",
-                escapeXml(accountNo)  // Use raw account number without CA_ prefix
+                    "    <ActProm id=\"%s\" type=\"/profile/tab_customer_attributes\" global=\"true\">\n",
+                    escapeXml(accountNo) // Tweakingg code block!!! raw account number without CA_ prefix
             ));
             writer.write(String.format("      <PrmNm>%s</PrmNm>\n", escapeXml(prmNm)));
             writer.write("      <PrmActLvlExtn>\n");
@@ -117,8 +121,8 @@ public class XMLGenerator {
 
     // Rest of the helper methods remain unchanged
     private static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-                                         String columnName, String elementName,
-                                         Map<String, String> tagMap)
+            String columnName, String elementName,
+            Map<String, String> tagMap)
             throws SQLException, IOException {
         try {
             String value = getColumnValue(rs, columnName);
@@ -156,7 +160,8 @@ public class XMLGenerator {
     }
 
     private static String escapeXml(String value) {
-        if (value == null) return "";
+        if (value == null)
+            return "";
         return value.replace("&", "&amp;")
                 .replace("<", "&lt;")
                 .replace(">", "&gt;")
