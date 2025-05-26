@@ -11,49 +11,52 @@ import java.util.Map;
 public class XMLGenerationUtils {
 
     public static String escapeXml(String value) {
-        if (value == null) return "";
+        if (value == null)
+            return "";
         return value.replace("&", "&amp;")
-                    .replace("<", "&lt;")
-                    .replace(">", "&gt;")
-                    .replace("\"", "&quot;")
-                    .replace("'", "&apos;");
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace("\"", "&quot;")
+                .replace("'", "&apos;");
     }
 
-    public static String getColumnValue(ResultSet rs, String columnName) throws SQLException {
+    public static String getColumnValue(ResultSet rs, String columnName) {
         try {
             String value = rs.getString(columnName);
-            return value != null ? value.trim() : "";
+            if (value == null) {
+                System.out.println("Null value for column: " + columnName);
+            }
+            return value == null ? "" : value;
         } catch (SQLException e) {
+            System.out.println("Column not found: " + columnName);
+            e.printStackTrace();
             return "";
         }
     }
 
     public static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-                                          String columnName, String elementName,
-                                          Map<String, String> tagMap) throws SQLException, IOException {
-        try {
-            String value = getColumnValue(rs, columnName);
-            if (!value.isEmpty()) {
-                // for appluing element-specific mappings
-                switch (elementName) {
-                    case "BType":
-                        value = XmlTagMapping.getBusinessTypeMapping().getOrDefault(value, value);
-                        break;
-                    case "SubSta":
-                        value = XmlTagMapping.getSubStaMapping().getOrDefault(value, value);
-                        break;
-                    case "Typ":
-                        value = XmlTagMapping.getTypMapping().getOrDefault(value, value);
-                        break;
-                }
-
-                writer.write(String.format("      <%s>%s</%s>\n",
-                        elementName,
-                        escapeXml(value),
-                        elementName));
+            String columnName, String elementName,
+            Map<String, String> tagMap) throws IOException {
+        String value = getColumnValue(rs, columnName);
+        if (!value.isEmpty()) {
+            // Apply element-specific mappings
+            switch (elementName) {
+                case "BType":
+                    value = XmlTagMapping.getBusinessTypeMapping().getOrDefault(value, value);
+                    break;
+                case "SubSta":
+                    value = XmlTagMapping.getSubStaMapping().getOrDefault(value, value);
+                    break;
+                case "Typ":
+                    value = XmlTagMapping.getTypMapping().getOrDefault(value, value);
+                    break;
             }
-        } catch (SQLException e) {
-            // Optionally log or handle the missing column
+
+            writer.write(String.format("      <%s>%s</%s>\n",
+                    elementName,
+                    escapeXml(value),
+                    elementName));
         }
     }
+
 }

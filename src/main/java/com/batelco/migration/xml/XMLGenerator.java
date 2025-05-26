@@ -10,30 +10,50 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 public class XMLGenerator {
-
     public static void generateXML(Connection connection, String sqlQuery, String outputFile) {
         Map<String, String> tagMap = XmlTagMapping.getColumnToTagMap();
-
+    
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
              FileOutputStream fos = new FileOutputStream(outputFile);
              OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
-
+    
+            // Debug: print the columns returned by the SQL query
+            try {
+                java.sql.ResultSetMetaData meta = rs.getMetaData();
+                int columnCount = meta.getColumnCount();
+                System.out.println("Columns returned by SQL query:");
+                for (int i = 1; i <= columnCount; i++) {
+                    System.out.println(" - " + meta.getColumnName(i));
+                }
+            } catch (SQLException metaEx) {
+                System.out.println("Failed to read ResultSet metadata.");
+                metaEx.printStackTrace();
+            }
+    
             // Write XML header
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc " + XmlTagMapping.getRootAttributes() + ">\n");
-
+    
+            boolean foundRows = false;
             while (rs.next()) {
+                foundRows = true;
                 writeAccountElement(writer, rs, tagMap);
             }
-
+    
             writer.write("</Sbsc>");
-            System.out.println("XML file generated successfully: " + outputFile);
-
+    
+            if (foundRows) {
+                System.out.println("XML file generated successfully: " + outputFile);
+            } else {
+                System.out.println("No data found for query: " + sqlQuery);
+            }
+    
         } catch (SQLException | IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error while generating XML: " + e.getMessage());
             e.printStackTrace();
         }
     }
+    
 
     private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs,
                                             Map<String, String> tagMap)
