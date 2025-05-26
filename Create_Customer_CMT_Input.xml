@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema" xmlns:math="xalana://java.lang.Math" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
+  <ActSbsc id="CA_7100140628" isParent="Y">
+    <Act>
+      <ActNo>CA_7100140628</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>8</CustSegList>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20004</GLSgmt>
+      <SubSta>A</SubSta>
+      <ANArr elem="1">
+      <Add>0000 0947</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <LNm>Contact2</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="CA_7100140628" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7100140624" isParent="Y">
+    <Act>
+      <ActNo>CA_7100140624</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>A</SubSta>
+      <ANArr elem="1">
+      <Add>1231 A</Add>
+      <City>NA</City>
+      <Cnt>Albania</Cnt>
+      <FNm>Deepya</FNm>
+      <LNm>Anumula</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="CA_7100140624" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7100140626" isParent="Y">
+    <Act>
+      <ActNo>CA_7100140626</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>8</CustSegList>
+      <BType>MGD</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20004</GLSgmt>
+      <SubSta>A</SubSta>
+      <ANArr elem="1">
+      <Add>0000 0817</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <LNm>Contact1</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="CA_7100140626" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+  <ActSbsc id="CA_7100140833" isParent="Y">
+    <Act>
+      <ActNo>CA_7100140833</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>UMG</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>A</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="CA_7100140833" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+  </ActSbsc>
+</Sbsc>

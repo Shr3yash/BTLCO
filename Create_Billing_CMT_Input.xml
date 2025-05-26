@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema" xmlns:math="xalana://java.lang.Math" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
+  <ActSbsc id="7100140624" isParent="Y">
+    <Act>
+      <ActNo>7100140624</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>1231 A</Add>
+      <City>NA</City>
+      <Cnt>Albania</Cnt>
+      <FNm>Deepya</FNm>
+      <LNm>Anumula</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140624" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140624">
+    </ABinfo>
+    <APinfo id="7100140624" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>1231 A</Add>
+      <Cty>NA</Cty>
+      <Cntr>Albania</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140624_2" isParent="Y">
+    <Act>
+      <ActNo>7100140624_2</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>1231 A</Add>
+      <City>NA</City>
+      <Cnt>Albania</Cnt>
+      <FNm>Deepya</FNm>
+      <LNm>Anumula</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140624_2" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140624_2">
+    </ABinfo>
+    <APinfo id="7100140624_2" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>1231 A</Add>
+      <Cty>NA</Cty>
+      <Cntr>Albania</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140626" isParent="Y">
+    <Act>
+      <ActNo>7100140626</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>8</CustSegList>
+      <BType>4</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20004</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 0817</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <LNm>Contact1</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140626" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140626">
+    </ABinfo>
+    <APinfo id="7100140626" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 0817</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140628" isParent="Y">
+    <Act>
+      <ActNo>7100140628</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>8</CustSegList>
+      <BType>4</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20004</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 0947</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <LNm>Contact2</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140628" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140628">
+    </ABinfo>
+    <APinfo id="7100140628" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 0947</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833" isParent="Y">
+    <Act>
+      <ActNo>7100140833</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833">
+    </ABinfo>
+    <APinfo id="7100140833" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_2" isParent="Y">
+    <Act>
+      <ActNo>7100140833_2</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_2" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_2">
+    </ABinfo>
+    <APinfo id="7100140833_2" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_3" isParent="Y">
+    <Act>
+      <ActNo>7100140833_3</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_3" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_3">
+    </ABinfo>
+    <APinfo id="7100140833_3" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_4" isParent="Y">
+    <Act>
+      <ActNo>7100140833_4</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_4" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_4">
+    </ABinfo>
+    <APinfo id="7100140833_4" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_5" isParent="Y">
+    <Act>
+      <ActNo>7100140833_5</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_5" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_5">
+    </ABinfo>
+    <APinfo id="7100140833_5" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_6" isParent="Y">
+    <Act>
+      <ActNo>7100140833_6</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_6" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_6">
+    </ABinfo>
+    <APinfo id="7100140833_6" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_7" isParent="Y">
+    <Act>
+      <ActNo>7100140833_7</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_7" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_7">
+    </ABinfo>
+    <APinfo id="7100140833_7" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_8" isParent="Y">
+    <Act>
+      <ActNo>7100140833_8</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_8" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_8">
+    </ABinfo>
+    <APinfo id="7100140833_8" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_9" isParent="Y">
+    <Act>
+      <ActNo>7100140833_9</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_9" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_9">
+    </ABinfo>
+    <APinfo id="7100140833_9" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_10" isParent="Y">
+    <Act>
+      <ActNo>7100140833_10</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_10" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_10">
+    </ABinfo>
+    <APinfo id="7100140833_10" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_11" isParent="Y">
+    <Act>
+      <ActNo>7100140833_11</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_11" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_11">
+    </ABinfo>
+    <APinfo id="7100140833_11" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7100140833_12" isParent="Y">
+    <Act>
+      <ActNo>7100140833_12</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>27</CustSegList>
+      <BType>7</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.20001</GLSgmt>
+      <SubSta>10100</SubSta>
+      <ANArr elem="1">
+      <Add>0000 2361</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>OSM</FNm>
+      <LNm>Upgrade</LNm>
+        <Sal>Ms</Sal>
+        <Stt>NA</Stt>
+        <Tit>Engineer</Tit>
+        <Zip>NA</Zip>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="7100140833_12" type="/profile/tab_customer_attributes" global="true">
+      <PrmNm>PIN Profile Object</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_12">
+    </ABinfo>
+    <APinfo id="7100140833_12" type="/payinfo/invoice">
+      <payInvExtn>
+      <Add>0000 2361</Add>
+      <Cty>NA</Cty>
+      <Cntr>Bahrain</Cntr>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <ADR_LINE1 type="string"/>
+          <ADR_LINE2 type="string"/>
+          <ARB_ADR_LINE1 type="string"/>
+          <ARB_ADR_LINE2 type="string"/>
+          <ARB_NAME type="string"/>
+          <LANG_PREFER type="string"/>
+          <PO_BOX type="string"/>
+          <MANAGER_EMAIL type="string"/>
+          <LANGUAGE type="string"/>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+</Sbsc>

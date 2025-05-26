@@ -4,7 +4,6 @@ import com.batelco.migration.config.XmlTagMapping;
 import com.batelco.migration.sql.QueryExecutor;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -13,134 +12,118 @@ import java.util.Map;
 public class XMLGenerator {
     public static void generateXML(Connection connection, String sqlQuery, String outputFile) {
         Map<String, String> tagMap = XmlTagMapping.getColumnToTagMap();
-        
+    
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
              FileOutputStream fos = new FileOutputStream(outputFile);
              OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
-
-            // Write XML header with namespaces
+    
+            // Debug: print the columns returned by the SQL query
+            try {
+                java.sql.ResultSetMetaData meta = rs.getMetaData();
+                int columnCount = meta.getColumnCount();
+                System.out.println("Columns returned by SQL query:");
+                for (int i = 1; i <= columnCount; i++) {
+                    System.out.println(" - " + meta.getColumnName(i));
+                }
+            } catch (SQLException metaEx) {
+                System.out.println("Failed to read ResultSet metadata.");
+                metaEx.printStackTrace();
+            }
+    
+            // Write XML header
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc " + XmlTagMapping.getRootAttributes() + ">\n");
-
-            ResultSetMetaData metaData = rs.getMetaData();
-            int columnCount = metaData.getColumnCount();
-
+    
+            boolean foundRows = false;
             while (rs.next()) {
-                writeAccountElement(writer, rs, metaData, tagMap);
+                foundRows = true;
+                writeAccountElement(writer, rs, tagMap);
             }
-
-            // Add static SbscPrms section
-            writer.write("  <SbscPrms>\n");
-            writer.write("    <PlObj>0.0.0.1 /plan -1 0</PlObj>\n");
-            writer.write("  </SbscPrms>\n");
-            
+    
             writer.write("</Sbsc>");
-            System.out.println("XML file generated successfully: " + outputFile);
-
+    
+            if (foundRows) {
+                System.out.println("XML file generated successfully: " + outputFile);
+            } else {
+                System.out.println("No data found for query: " + sqlQuery);
+            }
+    
         } catch (SQLException | IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error while generating XML: " + e.getMessage());
             e.printStackTrace();
         }
     }
+    
 
-    private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs, 
-                                          ResultSetMetaData metaData, Map<String, String> tagMap) 
-                                          throws SQLException, IOException {
-        String accountNo = getColumnValue(rs, "ACCOUNT_NO");
+    private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs,
+                                            Map<String, String> tagMap)
+            throws SQLException, IOException {
+        String accountNo = XMLGenerationUtils.getColumnValue(rs, "ACCOUNT_NO");
+        String formattedAccountNo = accountNo.startsWith("CA_")
+                ? accountNo
+                : "CA_" + accountNo;
+
         writer.write(String.format(
-            "  <ActSbsc id=\"%s\" isParent=\"Y\">\n" +
-            "    <Act>\n", 
-            escapeXml(accountNo)
-        ));
+                "  <ActSbsc id=\"%s\" isParent=\"Y\">\n" +
+                        "    <Act>\n",
+                XMLGenerationUtils.escapeXml(formattedAccountNo)));
 
-        // Write direct mapped elements
-        writeMappedElement(writer, rs, "ACCOUNT_NO", "ActNo", tagMap);
-        writeMappedElement(writer, rs, "CURRENCY", "Curr", tagMap);
-        writeMappedElement(writer, rs, "CUST_SEG_LIST", "CustSegList", tagMap);
-        writeMappedElement(writer, rs, "ACCOUNT_STATUS", "SubSta", tagMap);
-        writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
-        writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
-        writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
+        // Write mapped elements
+        XMLGenerationUtils.writeMappedElement(writer, rs, "ACCOUNT_NO", "ActNo", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "CURRENCY", "Curr", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "CUST_SEG_LIST", "CustSegList", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
 
-        // Write identification code with type attribute
-        writer.write("      <myExtension>\n");
-        String identificationCode = getColumnValue(rs, "IDENTIFICATION_CODE");
-        writer.write(String.format(
-            "        <IDENTIFICATION_CODE type=\"string\">%s</IDENTIFICATION_CODE>\n",
-            escapeXml(identificationCode)
-        ));
-        writer.write("      </myExtension>\n");
-
-        // Address information array
+        // Address Information
         writer.write("      <ANArr elem=\"1\">\n");
-        writeMappedElement(writer, rs, "ADDRESS", "Add", tagMap);
-        writeMappedElement(writer, rs, "CITY", "City", tagMap);
-        writeMappedElement(writer, rs, "COUNTRY", "Cnt", tagMap);
-        writeMappedElement(writer, rs, "FIRST_NAME", "FNm", tagMap);
-        writeMappedElement(writer, rs, "LAST_NAME", "LNm", tagMap);
-        // Static elements
+        XMLGenerationUtils.writeMappedElement(writer, rs, "ADDRESS", "Add", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "CITY", "City", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "COUNTRY", "Cnt", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "FIRST_NAME", "FNm", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "LAST_NAME", "LNm", tagMap);
         writer.write("        <Sal>Ms</Sal>\n");
         writer.write("        <Stt>NA</Stt>\n");
         writer.write("        <Tit>Engineer</Tit>\n");
         writer.write("        <Zip>NA</Zip>\n");
         writer.write("      </ANArr>\n");
 
-        // Tax exemption information
+        // Tax Exemption
         writer.write("      <AEArr>\n");
         writer.write("        <CertNum/>\n");
-        writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-        writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
         writer.write("      </AEArr>\n");
 
-        // Close Act element
         writer.write("    </Act>\n");
-        
-        // Static promotion information
-        writer.write("    <ActProm type=\"/profile/acct_extrating\" global=\"true\">\n");
-        writer.write("      <PrmNm>TAXEXEMPT</PrmNm>\n");
-        writer.write("      <PrmActLvlExtn>\n");
-        writer.write("        <ALPArr elem=\"1\">\n");
-        writer.write("          <Nam>TAXEXEMPT</Nam>\n");
-        writer.write("          <Val>0</Val>\n");
-        writer.write("        </ALPArr>\n");
-        writer.write("      </PrmActLvlExtn>\n");
-        writer.write("    </ActProm>\n");
-        
+
+        // Dynamic Promotions
+        writePromotions(writer, rs, accountNo);
+
         writer.write("  </ActSbsc>\n");
     }
 
-    private static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-                                          String columnName, String elementName, 
-                                          Map<String, String> tagMap) 
-                                          throws SQLException, IOException {
-        try {
-            String value = getColumnValue(rs, columnName);
-            if (value != null && !value.isEmpty()) {
-                writer.write(String.format("      <%s>%s</%s>\n", 
-                    elementName, 
-                    escapeXml(value), 
-                    elementName));
-            }
-        } catch (SQLException e) {
-            // Column doesn't exist in result set
-        }
-    }
+    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo)
+            throws SQLException, IOException {
+        String prmNm = XMLGenerationUtils.getColumnValue(rs, "PROF_NAME");
+        String nam = XMLGenerationUtils.getColumnValue(rs, "PROF_ACCT_NAME");
+        String val = XMLGenerationUtils.getColumnValue(rs, "VALUE");
 
-    private static String getColumnValue(ResultSet rs, String columnName) throws SQLException {
-        try {
-            String value = rs.getString(columnName);
-            return value != null ? value.trim() : "";
-        } catch (SQLException e) {
-            return ""; // Column not found
+        if (!prmNm.isEmpty()) {
+            writer.write(String.format(
+                    "    <ActProm id=\"%s\" type=\"/profile/tab_customer_attributes\" global=\"true\">\n",
+                    XMLGenerationUtils.escapeXml(accountNo)
+            ));
+            writer.write(String.format("      <PrmNm>%s</PrmNm>\n", XMLGenerationUtils.escapeXml(prmNm)));
+            writer.write("      <PrmActLvlExtn>\n");
+            writer.write("        <ALPArr elem=\"1\">\n");
+            writer.write(String.format("          <Nam>%s</Nam>\n", XMLGenerationUtils.escapeXml(nam)));
+            writer.write(String.format("          <Val>%s</Val>\n", XMLGenerationUtils.escapeXml(val)));
+            writer.write("        </ALPArr>\n");
+            writer.write("      </PrmActLvlExtn>\n");
+            writer.write("    </ActProm>\n");
         }
-    }
-
-    private static String escapeXml(String value) {
-        if (value == null) return "";
-        return value.replace("&", "&amp;")
-                     .replace("<", "&lt;")
-                     .replace(">", "&gt;")
-                     .replace("\"", "&quot;")
-                     .replace("'", "&apos;");
     }
 }
