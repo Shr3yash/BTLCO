@@ -1,6 +1,12 @@
+com\batelco\migration\xml\ServiceAccountXMLGenerator.class
+com\batelco\migration\Main$AccountInfo.class
+com\batelco\migration\Main.class
+com\batelco\migration\xml\DepartmentAccountXMLGenerator.class
+com\batelco\migration\App.class
+com\batelco\migration\Main$XMLGeneratorInterface.class
+com\batelco\migration\xml\BAXMLGenerator.class
 com\batelco\migration\config\XmlTagMapping.class
 com\batelco\migration\xml\XMLGenerator.class
-com\batelco\migration\Main.class
 com\batelco\migration\sql\QueryExecutor.class
-com\batelco\migration\App.class
 com\batelco\migration\db\DatabaseConnector.class
+com\batelco\migration\xml\XMLGenerationUtils.class

@@ -9,25 +9,24 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-public class XMLGenerator {
+public class DepartmentAccountXMLGenerator {
 
     public static void generateXML(Connection connection, String sqlQuery, String outputFile) {
-        Map<String, String> tagMap = XmlTagMapping.getColumnToTagMap();
+        Map<String, String> tagMap = XmlTagMapping.getDepartmentTagMap();
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
              FileOutputStream fos = new FileOutputStream(outputFile);
              OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
-            // Write XML header
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc " + XmlTagMapping.getRootAttributes() + ">\n");
 
             while (rs.next()) {
-                writeAccountElement(writer, rs, tagMap);
+                writeDepartmentElement(writer, rs, tagMap);
             }
 
             writer.write("</Sbsc>");
-            System.out.println("XML file generated successfully: " + outputFile);
+            System.out.println("Department XML generated successfully: " + outputFile);
 
         } catch (SQLException | IOException e) {
             System.out.println("Error: " + e.getMessage());
@@ -35,27 +34,26 @@ public class XMLGenerator {
         }
     }
 
-    private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs,
-                                            Map<String, String> tagMap)
+    private static void writeDepartmentElement(OutputStreamWriter writer, ResultSet rs,
+                                             Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = XMLGenerationUtils.getColumnValue(rs, "ACCOUNT_NO");
-        String formattedAccountNo = accountNo.startsWith("CA_")
-                ? accountNo
-                : "CA_" + accountNo;
+        String parentAccount = XMLGenerationUtils.getColumnValue(rs, "PARENT_ACCOUNT_NO");
 
         writer.write(String.format(
-                "  <ActSbsc id=\"%s\" isParent=\"Y\">\n" +
-                        "    <Act>\n",
-                XMLGenerationUtils.escapeXml(formattedAccountNo)));
+            "  <ActSbsc id=\"DA_%s\" isParent=\"Y\" parenRef=\"CA_%s\">\n" +
+            "    <Act>\n",
+            XMLGenerationUtils.escapeXml(accountNo), 
+            XMLGenerationUtils.escapeXml(parentAccount)));
 
-        // Write mapped elements
+        // Core Elements
         XMLGenerationUtils.writeMappedElement(writer, rs, "ACCOUNT_NO", "ActNo", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "CURRENCY", "Curr", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "CUST_SEG_LIST", "CustSegList", tagMap);
-        XMLGenerationUtils.writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
-        XMLGenerationUtils.writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
-        XMLGenerationUtils.writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        writer.write("      <SrvAACAccess>Department</SrvAACAccess>\n");
+        XMLGenerationUtils.writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
 
         // Address Information
         writer.write("      <ANArr elem=\"1\">\n");
@@ -63,11 +61,14 @@ public class XMLGenerator {
         XMLGenerationUtils.writeMappedElement(writer, rs, "CITY", "City", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "COUNTRY", "Cnt", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "FIRST_NAME", "FNm", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "MIDDLE_NAME", "MNm", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "LAST_NAME", "LNm", tagMap);
-        writer.write("        <Sal>Ms</Sal>\n");
-        writer.write("        <Stt>NA</Stt>\n");
-        writer.write("        <Tit>Engineer</Tit>\n");
-        writer.write("        <Zip>NA</Zip>\n");
+        writer.write("        <Stt/>\n");
+        writer.write("        <Tit/>\n");
+        writer.write("        <Zip/>\n");
+        
+        // Phone Information
+        writePhoneElements(writer, rs);
         writer.write("      </ANArr>\n");
 
         // Tax Exemption
@@ -79,31 +80,33 @@ public class XMLGenerator {
 
         writer.write("    </Act>\n");
 
-        // Dynamic Promotions
-        writePromotions(writer, rs, accountNo);
-
+        // Billing Information
+        writeABinfo(writer, rs, accountNo);
         writer.write("  </ActSbsc>\n");
     }
 
-    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo)
+    private static void writePhoneElements(OutputStreamWriter writer, ResultSet rs)
             throws SQLException, IOException {
-        String prmNm = XMLGenerationUtils.getColumnValue(rs, "PROF_NAME");
-        String nam = XMLGenerationUtils.getColumnValue(rs, "PROF_ACCT_NAME");
-        String val = XMLGenerationUtils.getColumnValue(rs, "VALUE");
-
-        if (!prmNm.isEmpty()) {
-            writer.write(String.format(
-                    "    <ActProm id=\"%s\" type=\"/profile/tab_customer_attributes\" global=\"true\">\n",
-                    XMLGenerationUtils.escapeXml(accountNo)
-            ));
-            writer.write(String.format("      <PrmNm>%s</PrmNm>\n", XMLGenerationUtils.escapeXml(prmNm)));
-            writer.write("      <PrmActLvlExtn>\n");
-            writer.write("        <ALPArr elem=\"1\">\n");
-            writer.write(String.format("          <Nam>%s</Nam>\n", XMLGenerationUtils.escapeXml(nam)));
-            writer.write(String.format("          <Val>%s</Val>\n", XMLGenerationUtils.escapeXml(val)));
-            writer.write("        </ALPArr>\n");
-            writer.write("      </PrmActLvlExtn>\n");
-            writer.write("    </ActProm>\n");
+        String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE_NUMBER");
+        String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE");
+        
+        if (!phone.isEmpty()) {
+            writer.write("      <APhArr elem=\"0\">\n");
+            writer.write(String.format("        <Ph>%s</Ph>\n", XMLGenerationUtils.escapeXml(phone)));
+            writer.write(String.format("        <PhTyp>%s</PhTyp>\n", XMLGenerationUtils.escapeXml(phoneType)));
+            writer.write("      </APhArr>\n");
         }
+    }
+
+    private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String accountNo)
+            throws SQLException, IOException {
+        writer.write(String.format(
+            "    <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\" " +
+            "bal_grp=\"true\" isAccBillinfo=\"Yes\" payInfoRefId=\"DA_%s\">\n",
+            XMLGenerationUtils.escapeXml(accountNo)));
+        
+        XMLGenerationUtils.writeMappedElement(writer, rs, "ACCOUNTING_DOM", "ACDom", null);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "BILLING_STATUS", "BillStat", null);
+        writer.write("    </ABinfo>\n");
     }
 }
