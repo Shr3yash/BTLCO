@@ -1,5 +1,4 @@
 com\batelco\migration\xml\ServiceAccountXMLGenerator.class
-com\batelco\migration\Main$AccountInfo.class
 com\batelco\migration\Main.class
 com\batelco\migration\xml\DepartmentAccountXMLGenerator.class
 com\batelco\migration\App.class
