@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema"
+      xmlns:math="xalana://java.lang.Math"
+      xmlns:xalan="http://xml.apache.org/xalan"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
+  <ActSbsc id="7105447737" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447737</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="118248" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="225575" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447738" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447738</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="146817" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="292882" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447739" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447739</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="101447" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="221065" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447740" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447740</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="110865" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="234106" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447741" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447741</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="117211" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="222495" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447742" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447742</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="194422" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="248140" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447743" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447743</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="106817" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="208765" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447744" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447744</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="177999" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="259534" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447745" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447745</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="101389" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="293546" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447746" parenRef="7105232865" payParenRef="7105232865">
+    <Act>
+      <ActNo>7105447746</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="100085" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232865">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="209563" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447747" parenRef="7105232866" payParenRef="7105232866">
+    <Act>
+      <ActNo>7105447747</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="120274" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232866">
+      <ACDom>28</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>28</ACDom>
+      <ANxt>2025-06-28T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="226679" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447748" parenRef="7105232870" payParenRef="7105232870">
+    <Act>
+      <ActNo>7105447748</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <MNm></MNm>
+      <LNm>Test12</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="141868" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232870">
+      <ACDom>13</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>13</ACDom>
+      <ANxt>2025-07-13T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="283397" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447749" parenRef="7105232871" payParenRef="7105232871">
+    <Act>
+      <ActNo>7105447749</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <MNm></MNm>
+      <LNm>Hasan Jaafar</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc></Perc>
+      <Typ></Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="141182" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232871">
+      <ACDom>2</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>2</ACDom>
+      <ANxt>2025-07-02T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="213280" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447750" parenRef="7105232872" payParenRef="7105232872">
+    <Act>
+      <ActNo>7105447750</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <MNm></MNm>
+      <LNm>Hasan Jaafar</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc></Perc>
+      <Typ></Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="149801" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232872">
+      <ACDom>16</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="278313" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447751" parenRef="7105232873" payParenRef="7105232873">
+    <Act>
+      <ActNo>7105447751</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="104944" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232873">
+      <ACDom>15</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="221797" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447752" parenRef="7105232873" payParenRef="7105232873">
+    <Act>
+      <ActNo>7105447752</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="106795" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232873">
+      <ACDom>15</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="267511" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447753" parenRef="7105232873" payParenRef="7105232873">
+    <Act>
+      <ActNo>7105447753</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="183375" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232873">
+      <ACDom>15</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="266434" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447754" parenRef="7105232874" payParenRef="7105232874">
+    <Act>
+      <ActNo>7105447754</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="174197" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232874">
+      <ACDom>10</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>10</ACDom>
+      <ANxt>2025-07-10T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="244073" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447756" parenRef="7105232901" payParenRef="7105232901">
+    <Act>
+      <ActNo>7105447756</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <MNm></MNm>
+      <LNm>Test12</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="178696" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232901">
+      <ACDom>18</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>18</ACDom>
+      <ANxt>2025-07-18T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="257403" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447757" parenRef="7105232901" payParenRef="7105232901">
+    <Act>
+      <ActNo>7105447757</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <MNm></MNm>
+      <LNm>Test12</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="173450" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232901">
+      <ACDom>18</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>18</ACDom>
+      <ANxt>2025-07-18T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="250237" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447758" parenRef="7105232901" payParenRef="7105232901">
+    <Act>
+      <ActNo>7105447758</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <MNm></MNm>
+      <LNm>Test12</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="168054" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232901">
+      <ACDom>18</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>18</ACDom>
+      <ANxt>2025-07-18T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="269636" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447759" parenRef="7105232904" payParenRef="7105232904">
+    <Act>
+      <ActNo>7105447759</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0014 0352</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Anil</FNm>
+      <MNm></MNm>
+      <LNm>Kumar</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="155675" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232904">
+      <ACDom>6</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>6</ACDom>
+      <ANxt>2025-07-06T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="260805" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447760" parenRef="7105232906" payParenRef="7105232906">
+    <Act>
+      <ActNo>7105447760</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 2270</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="177932" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232906">
+      <ACDom>25</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>25</ACDom>
+      <ANxt>2025-06-25T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="267175" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447761" parenRef="7105232907" payParenRef="7105232907">
+    <Act>
+      <ActNo>7105447761</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 2270</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="166722" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232907">
+      <ACDom>27</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>27</ACDom>
+      <ANxt>2025-06-27T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="234403" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447762" parenRef="7105232908" payParenRef="7105232908">
+    <Act>
+      <ActNo>7105447762</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 2270</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="167419" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232908">
+      <ACDom>24</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>24</ACDom>
+      <ANxt>2025-06-24T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="215853" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447763" parenRef="7105232910" payParenRef="7105232910">
+    <Act>
+      <ActNo>7105447763</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <MNm></MNm>
+      <LNm>Hasan Jaafar</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc></Perc>
+      <Typ></Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="110774" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232910">
+      <ACDom>22</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="284360" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447764" parenRef="7105232912" payParenRef="7105232912">
+    <Act>
+      <ActNo>7105447764</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <MNm></MNm>
+      <LNm>Hasan Jaafar</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc></Perc>
+      <Typ></Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="179466" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232912">
+      <ACDom>16</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="236792" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447765" parenRef="7105232913" payParenRef="7105232913">
+    <Act>
+      <ActNo>7105447765</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>5</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>BAT</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.50003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 0514</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Mohd</FNm>
+      <MNm></MNm>
+      <LNm>Abdulrahoof</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="164737" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232913">
+      <ACDom>6</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>6</ACDom>
+      <ANxt>2025-07-06T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="272820" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447768" parenRef="7105232914" payParenRef="7105232914">
+    <Act>
+      <ActNo>7105447768</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0012 0373 0407 0304</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm></FNm>
+      <MNm></MNm>
+      <LNm>Cv</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="197625" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232914">
+      <ACDom>15</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="246281" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447771" parenRef="7105232915" payParenRef="7105232915">
+    <Act>
+      <ActNo>7105447771</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>5</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>BAT</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.50003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0002 1582</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Moosa</FNm>
+      <MNm></MNm>
+      <LNm>Kandy</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="174247" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232915">
+      <ACDom>16</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="201027" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447774" parenRef="7105232916" payParenRef="7105232916">
+    <Act>
+      <ActNo>7105447774</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0022 0090 0405 0204</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm></FNm>
+      <MNm></MNm>
+      <LNm>.</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="132865" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232916">
+      <ACDom>7</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="269962" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105447778" parenRef="7105232917" payParenRef="7105232917">
+    <Act>
+      <ActNo>7105447778</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Service</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0038 1164 4128 0941</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm></FNm>
+      <MNm></MNm>
+      <LNm>Srivastava</LNm>
+        <EAdd/>
+        <Tit/>
+        <Stt/>
+        <Zip/>
+        <APhArr id="0">
+      <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="100935" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" payingParenRefId="7105232917">
+      <ACDom>21</ACDom>
+      <PTyp>NPC</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>21</ACDom>
+      <ANxt>2025-07-21T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="289632" type="/payinfo/subord">
+      <PaymentTerm>1001</PaymentTerm>
+    </APinfo>
+  </ActSbsc>
+</Sbsc>

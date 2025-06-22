@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema"
+      xmlns:math="xalana://java.lang.Math"
+      xmlns:xalan="http://xml.apache.org/xalan"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
+  <ActSbsc id="DA_1000556826" isParent="Y" parenRef="7105232921">
+    <Act>
+      <ActNo>DA_1000556826</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>5</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>BAT</BType>
+      <SrvAACAccess>Department</SrvAACAccess>
+      <GLSgmt>.50003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 0514</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Mohd</FNm>
+      <MNm></MNm>
+      <LNm>Abdulrahoof</LNm>
+        <Stt/>
+        <Tit/>
+        <Zip/>
+        <APhArr elem="0">
+          <Ph>88888888888</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+      <ACDom>22</ACDom>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat></BillStat>
+    </ABinfo>
+  </ActSbsc>
+  <ActSbsc id="DA_1000556828" isParent="Y" parenRef="7105232924">
+    <Act>
+      <ActNo>DA_1000556828</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Department</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0012 0373 0407 0304</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm></FNm>
+      <MNm></MNm>
+      <LNm>Cv</LNm>
+        <Stt/>
+        <Tit/>
+        <Zip/>
+        <APhArr elem="0">
+          <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+      <ACDom>22</ACDom>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat></BillStat>
+    </ABinfo>
+  </ActSbsc>
+  <ActSbsc id="DA_1000418764" isParent="Y" parenRef="7105232923">
+    <Act>
+      <ActNo>DA_1000418764</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>5</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>BAT</BType>
+      <SrvAACAccess>Department</SrvAACAccess>
+      <GLSgmt>.50003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0002 1582</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Moosa</FNm>
+      <MNm></MNm>
+      <LNm>Kandy</LNm>
+        <Stt/>
+        <Tit/>
+        <Zip/>
+        <APhArr elem="0">
+          <Ph>88888888888</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+      <ACDom>22</ACDom>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat></BillStat>
+    </ABinfo>
+  </ActSbsc>
+  <ActSbsc id="DA_1000418097" isParent="Y" parenRef="7105232925">
+    <Act>
+      <ActNo>DA_1000418097</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Department</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0022 0090 0405 0204</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm></FNm>
+      <MNm></MNm>
+      <LNm>.</LNm>
+        <Stt/>
+        <Tit/>
+        <Zip/>
+        <APhArr elem="0">
+          <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+      <ACDom>22</ACDom>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat></BillStat>
+    </ABinfo>
+  </ActSbsc>
+  <ActSbsc id="DA_1000396481" isParent="Y" parenRef="7105232922">
+    <Act>
+      <ActNo>DA_1000396481</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Department</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0038 1164 4128 0941</Add>
+      <City></City>
+      <Cnt>Bahrain</Cnt>
+      <FNm></FNm>
+      <MNm></MNm>
+      <LNm>Srivastava</LNm>
+        <Stt/>
+        <Tit/>
+        <Zip/>
+        <APhArr elem="0">
+          <Ph></Ph>
+          <PhTyp></PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+      <ACDom>22</ACDom>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat></BillStat>
+    </ABinfo>
+  </ActSbsc>
+</Sbsc>

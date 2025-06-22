@@ -8,8 +8,9 @@ import java.sql.SQLException;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Map;
+import java.util.Random;
 
 public class BAXMLGenerator {
 
@@ -19,11 +20,15 @@ public class BAXMLGenerator {
         Map<String, String> tagMap = XmlTagMapping.getBATagMap();
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
-             FileOutputStream fos = new FileOutputStream(outputFile);
-             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                FileOutputStream fos = new FileOutputStream(outputFile);
+                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
-            writer.write("<Sbsc " + XmlTagMapping.getRootAttributes() + ">\n");
+            writer.write("<Sbsc xmlns=\"http://www.portal.com/InfranetXMLSchema\"\n");
+            writer.write("      xmlns:math=\"xalana://java.lang.Math\"\n");
+            writer.write("      xmlns:xalan=\"http://xml.apache.org/xalan\"\n");
+            writer.write("      xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n");
+            writer.write("      xsi:schemaLocation=\"http://www.oracle.com/schema/brm CMT_Subscribers.xsd\">\n");
 
             while (rs.next()) {
                 writeAccountElement(writer, rs, tagMap);
@@ -39,203 +44,341 @@ public class BAXMLGenerator {
     }
 
     private static void writeAccountElement(OutputStreamWriter writer, ResultSet rs,
-                                          Map<String, String> tagMap)
+            Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = getColumnValue(rs, "ACCOUNT_NO");
-        
-        writer.write(String.format(
-            "  <ActSbsc id=\"%s\" isParent=\"Y\">\n" +
-            "    <Act>\n",
-            escapeXml(accountNo)));
 
-        // Core Account Information
-        writeMappedElement(writer, rs, "ACCOUNT_NO", "ActNo", tagMap);
+        // String isEnterprise = getColumnValue(rs, "IS_ENTER_ACCT");
+        String deptAccount = getColumnValue(rs, "DEPT_ACCOUNT_NO");
+        String custAccount = getColumnValue(rs, "CUST_ACCOUNT_NO");
+
+        String parentRef;
+        // if ("yes".equalsIgnoreCase(isEnterprise) && !deptAccount.isEmpty()) {
+        if (!deptAccount.isEmpty()) {
+            parentRef = "DA_" + deptAccount;
+        } else {
+            parentRef = "CA_" + custAccount;
+        }
+
+        writer.write(String.format("  <ActSbsc id=\"%s\" isParent=\"Y\" parenRef=\"%s\">\n",
+                escapeXml(accountNo), escapeXml(parentRef)));
+
+        writer.write("    <Act>\n");
+        writeElement(writer, "ActNo", accountNo);
         writeMappedElement(writer, rs, "CURRENCY", "Curr", tagMap);
-        writeMappedElement(writer, rs, "CUST_SEG_LIST", "CustSegList", tagMap);
+        writeMappedElement(writer, rs, "CUSTOMER_SEGMENT_LIST", "CustSegList", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
         writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
         writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
         writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
-        writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
 
-        // Address Information
         writer.write("      <ANArr elem=\"1\">\n");
         writeMappedElement(writer, rs, "ADDRESS", "Add", tagMap);
         writeMappedElement(writer, rs, "CITY", "City", tagMap);
         writeMappedElement(writer, rs, "COUNTRY", "Cnt", tagMap);
         writeMappedElement(writer, rs, "FIRST_NAME", "FNm", tagMap);
+        writeMappedElement(writer, rs, "MIDDLE_NAME", "MNm", tagMap);
         writeMappedElement(writer, rs, "LAST_NAME", "LNm", tagMap);
-        writer.write("        <Sal>Ms</Sal>\n");
-        writer.write("        <Stt>NA</Stt>\n");
-        writer.write("        <Tit>Engineer</Tit>\n");
-        writer.write("        <Zip>NA</Zip>\n");
+        writeMappedElement(writer, rs, "EMAIL_ADDR", "EAdd", tagMap);
+        writeMappedElement(writer, rs, "TITLE", "Tit", tagMap);
+        writeMappedElement(writer, rs, "STATE", "Stt", tagMap);
+        writeMappedElement(writer, rs, "ZIP", "Zip", tagMap);
+
+        writer.write("        <APhArr id=\"0\">\n");
+        writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
+        writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
+        writer.write("        </APhArr>\n");
         writer.write("      </ANArr>\n");
 
-        // Tax Exemption
         writer.write("      <AEArr>\n");
         writer.write("        <CertNum/>\n");
         writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
         writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
         writer.write("      </AEArr>\n");
-
         writer.write("    </Act>\n");
 
-        // Promotions
         writePromotions(writer, rs, accountNo);
-
-        // Billing Account Information
-        writeABinfo(writer, rs);
-
-        // Payment Information
+        writeABinfo(writer, rs, parentRef);
         writeAPinfo(writer, rs, accountNo);
 
         writer.write("  </ActSbsc>\n");
     }
 
-    private static void writeABinfo(OutputStreamWriter writer, ResultSet rs) throws SQLException, IOException {
+    private static void writeAccountElementFlag(OutputStreamWriter writer, ResultSet rs, Map<String, String> tagMap)
+            throws SQLException, IOException {
+        String accountNo = getColumnValue(rs, "ACCOUNT_NO").replaceAll("_1$", "");
+
+        String isEnterprise = getColumnValue(rs, "IS_ENTER_ACCT");
+        boolean isEnterpriseAccount = "yes".equalsIgnoreCase(isEnterprise);
+
+        String parentAccount = isEnterpriseAccount
+                ? getColumnValue(rs, "DEPT_ACCOUNT_NO")
+                : getColumnValue(rs, "CUST_ACCOUNT_NO");
+
+        String parentPrefix = isEnterpriseAccount ? "DA_" : "CA_";
+        String formattedParentRef = parentPrefix + parentAccount;
+
+        writer.write(String.format("  <ActSbsc id=\"%s\" isParent=\"Y\" parenRef=\"%s\">\n",
+                escapeXml(accountNo), escapeXml(formattedParentRef)));
+
+        writer.write("    <Act>\n");
+        writeElement(writer, "ActNo", accountNo);
+        writeMappedElement(writer, rs, "CURRENCY", "Curr", tagMap);
+        writeMappedElement(writer, rs, "CUSTOMER_SEGMENT_LIST", "CustSegList", tagMap);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
+        writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
+        writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
+
+        writer.write("      <ANArr elem=\"1\">\n");
+        writeMappedElement(writer, rs, "ADDRESS", "Add", tagMap);
+        writeMappedElement(writer, rs, "CITY", "City", tagMap);
+        writeMappedElement(writer, rs, "COUNTRY", "Cnt", tagMap);
+        writeMappedElement(writer, rs, "FIRST_NAME", "FNm", tagMap);
+        writeMappedElement(writer, rs, "MIDDLE_NAME", "MNm", tagMap);
+        writeMappedElement(writer, rs, "LAST_NAME", "LNm", tagMap);
+        writeMappedElement(writer, rs, "EMAIL_ADDR", "EAdd", tagMap);
+        writeMappedElement(writer, rs, "TITLE", "Tit", tagMap);
+        writeMappedElement(writer, rs, "STATE", "Stt", tagMap);
+        writeMappedElement(writer, rs, "ZIP", "Zip", tagMap);
+
+        writer.write("        <APhArr id=\"0\">\n");
+        writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
+        writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
+        writer.write("        </APhArr>\n");
+        writer.write("      </ANArr>\n");
+
+        writer.write("      <AEArr>\n");
+        writer.write("        <CertNum/>\n");
+        writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+        writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+        writer.write("      </AEArr>\n");
+        writer.write("    </Act>\n");
+
+        writePromotions(writer, rs, accountNo);
+        writeABinfo(writer, rs, formattedParentRef);
+        writeAPinfo(writer, rs, accountNo);
+
+        writer.write("  </ActSbsc>\n");
+    }
+
+    private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String formattedParentRef)
+            throws SQLException, IOException {
         writer.write(String.format(
-            "    <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"74728\" " +
-            "bal_grp=\"true\" isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-            escapeXml(getColumnValue(rs, "ACCOUNT_NO"))));
+                // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
+                // bal_grp=\"true\" isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+                "    <ABinfo global=\"true\" bal_grp=\"true\" isAccBillinfo=\"Yes\" >\n",
+                escapeXml(formattedParentRef)));
 
-        writeMappedElement(writer, rs, "ACDOM", "ACDom", null);
-        writeMappedElement(writer, rs, "ACTG_TYPE", "ActgType", null);
-        writeTimestampElement(writer, rs, "EFFECT_T", "EffecT");
-        writeMappedElement(writer, rs, "BILLING_STATUS", "BISta", null);
-        writeMappedElement(writer, rs, "PENDING_RECEIVABLE", "PendingRecv", null);
-        writeTimestampElement(writer, rs, "A_NEXT", "ANxt");
-        writeTimestampElement(writer, rs, "CREATION_T", "CrtT");
-        writeMappedElement(writer, rs, "BILL_WINDOW", "BlWn", null);
-        writeMappedElement(writer, rs, "BILL_SEGMENT", "BlSgmnt", null);
-        writeMappedElement(writer, rs, "PAYMENT_TYPE", "PTyp", null);
-        writeMappedElement(writer, rs, "BILL_STATUS", "BillStat", null);
-        writeMappedElement(writer, rs, "BILL_INFO_ID", "BillInfoId", null);
+        writeMappedElement(writer, rs, "ACTG_CYCLE_DOM", "ACDom", null);
+        XMLGenerationUtils.writeMappedElement(writer, rs, "PAY_TYPE", "PTyp", null);
 
+        // Custom static values
+        writer.write("      <ActgType>B</ActgType>\n");
+        // writer.write(" <ANxt>2024-05-01T00:00:00Z</ANxt>\n");
+
+        // updated anxt tag
+
+        String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
+        writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
+
+        try {
+            int acDom = Integer.parseInt(acDomValue);
+            LocalDate today = LocalDate.now();
+            int todayDay = today.getDayOfMonth();
+
+            // Determine correct month/year based on logic
+            LocalDate billingDate;
+            if (acDom > todayDay) {
+                // Use current month
+                billingDate = LocalDate.of(today.getYear(), today.getMonth(),
+                        Math.min(acDom, today.lengthOfMonth()));
+            } else {
+                // Use next month
+                LocalDate nextMonth = today.plusMonths(1);
+                billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(),
+                        Math.min(acDom, nextMonth.lengthOfMonth()));
+            }
+
+            writer.write(String.format("      <ANxt>%sT00:00:00Z</ANxt>\n", billingDate));
+        } catch (NumberFormatException e) {
+            writer.write("      <ANxt/>\n"); // fallback for invalid/missing ACTG_CYCLE_DOM
+        }
+
+        String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
+        if (billInfoId.isEmpty()) {
+            billInfoId = "Default BillInfo";
+        }
+        writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
+        XMLGenerationUtils.writeMappedElement(writer, rs, "BILLING_STATUS", "BillStat", null);
         writer.write("    </ABinfo>\n");
     }
 
-    private static void writeAPinfo(OutputStreamWriter writer, ResultSet rs, String accountNo) 
+    private static void writeAPinfo(OutputStreamWriter writer, ResultSet rs, String accountNo)
             throws SQLException, IOException {
-        writer.write(String.format(
-            "    <APinfo id=\"%s\" type=\"/payinfo/invoice\">\n",
-            escapeXml(accountNo)));
-
+        int randomApId = 200000 + new Random().nextInt(100000); // 6-digit ID starting with 2
+        writer.write(String.format("    <APinfo id=\"%s\" type=\"/payinfo/invoice\">\n",
+                escapeXml(String.valueOf(randomApId))));
         writeMappedElement(writer, rs, "DUE_DOM", "DDom", null);
         writeMappedElement(writer, rs, "PAYMENT_TERM", "PaymentTerm", null);
-        writeMappedElement(writer, rs, "REL_DUE", "RelDue", null);
-        writeTimestampElement(writer, rs, "AP_CRT_T", "CrtT");
 
-        // Payment Invoice Extension
         writer.write("      <payInvExtn>\n");
-        writeMappedElement(writer, rs, "CUSTOMER_NAME", "Nm", null);
-        writeMappedElement(writer, rs, "ADDRESS", "Add", null);
-        writeMappedElement(writer, rs, "CITY", "Cty", null);
-        writeMappedElement(writer, rs, "STATE", "Stt", null);
-        writeMappedElement(writer, rs, "ZIP", "Zip", null);
-        writeMappedElement(writer, rs, "COUNTRY", "Cntr", null);
-        writeMappedElement(writer, rs, "EMAIL", "EAdd", null);
-        writeMappedElement(writer, rs, "DELIVERY_PREF", "DelPrf", null);
-        writeMappedElement(writer, rs, "DELIVERY_DESC", "DelDsc", null);
+        writeMappedElement(writer, rs, "INV_ADDRESS", "Add", null);
+        writeMappedElement(writer, rs, "INV_CITY", "Cty", null);
+        writeMappedElement(writer, rs, "INV_COUNTRY", "Cntr", null);
+        writeMappedElement(writer, rs, "DELIVERY_DESCR", "DelDsc", null);
+        String rawVal = getColumnValue(rs, "INV_DELIVERY_PREFER");
+        String mappedVal = XmlTagMapping.getDelPrfMapping().getOrDefault(rawVal, rawVal);
+        writer.write(String.format("      <DelPrf>%s</DelPrf>%n", escapeXml(mappedVal)));
+        writeMappedElement(writer, rs, "INV_EMAIL_ADDR", "EAdd", null);
+        writeMappedElement(writer, rs, "INV_INSTR", "InvInstr", null);
+        writeMappedElement(writer, rs, "INV_NAME", "Nm", null);
+        writeMappedElement(writer, rs, "INV_STATE", "Stt", null);
+        writeMappedElement(writer, rs, "INV_ZIP", "Zip", null);
         writer.write("      </payInvExtn>\n");
 
-        // MyExtension section
         writer.write("      <myExtension>\n");
         writer.write("        <myArray table=\"profile_inv_ext_t\" elem=\"1\">\n");
-        writeOptionalElement(writer, rs, "ADR_LINE1");
-        writeOptionalElement(writer, rs, "ADR_LINE2");
-        writeOptionalElement(writer, rs, "ARB_ADR_LINE1");
-        writeOptionalElement(writer, rs, "ARB_ADR_LINE2");
-        writeOptionalElement(writer, rs, "ARB_NAME");
-        writeMappedElement(writer, rs, "BLOCK_NO", "BLOCK_NO", null);
-        writeMappedElement(writer, rs, "BUILDING_NO", "BUILDING_NUMBER", null);
-        writeMappedElement(writer, rs, "FLAT_NO", "FLAT_NO", null);
-        writeOptionalElement(writer, rs, "LANG_PREFER");
-        writeOptionalElement(writer, rs, "PO_BOX");
-        writeMappedElement(writer, rs, "ROAD_NO", "ROAD_NO", null);
-        writeMappedElement(writer, rs, "EMAIL", "EMAIL_ADDR", null);
-        writeOptionalElement(writer, rs, "MANAGER_EMAIL");
-        writeMappedElement(writer, rs, "PHONE", "PHONE", null);
-        writeOptionalElement(writer, rs, "LANGUAGE");
+
+        writeFieldElement(writer, rs, "BTC_FLD_ADR_LINE1", "FldAdLineA");
+        writeFieldElement(writer, rs, "BTC_FLD_ADR_LINE2", "FldAdLineB");
+        writeFieldElement(writer, rs, "BTC_FLD_ARB_ADR_LINE1", "FldArbAdLineA");
+        writeFieldElement(writer, rs, "BTC_FLD_ARB_ADR_LINE2", "FldArbAdLineB");
+        writeFieldElement(writer, rs, "BTC_FLD_ARB_NAME", "FldArbName");
+        writeFieldElement(writer, rs, "BTC_FLD_BLOCK_NO", "FldBlockNo");
+        writeFieldElement(writer, rs, "BTC_FLD_BUILDING_NUMBER", "FldBuildNum");
+        writeFieldElement(writer, rs, "BTC_FLD_FLAT_NO", "FldFlatNo");
+        writeFieldElement(writer, rs, "BTC_LANG_PREFER", "FldLangPref");
+        writeFieldElement(writer, rs, "BTC_LANGUAGE_PREFER", "FldLangPrefer");
+        writeFieldElement(writer, rs, "BTC_FLD_PO_BOX", "FldPoBox");
+        writeFieldElement(writer, rs, "BTC_FLD_ROAD_NO", "FldRoadNo");
+        writeFieldElement(writer, rs, "BTC_EMAIL_ADDR", "FldEmailAddr");
+        writeFieldElement(writer, rs, "BTC_MANAGER_EMAIL", "FldManEmail");
+        writeFieldElement(writer, rs, "BTC_FLD_PHONE", "FldPhone");
+        writeFieldElement(writer, rs, "BTC_FLAG", "FldFlag", "integer");
+        writeFieldElement(writer, rs, "BTC_NOTIFICATION_TYPE", "FldNotType");
+        writeFieldElement(writer, rs, "BTC_FLD_LANGUAGE", "FldLang");
+        writeFieldElement(writer, rs, "BTC_CARE_OF_NAME", "FldCOfName");
+
         writer.write("        </myArray>\n");
         writer.write("      </myExtension>\n");
-
         writer.write("    </APinfo>\n");
     }
 
-    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo) 
-            throws SQLException, IOException {
-        String prmNm = getColumnValue(rs, "PROF_NAME");
-        String nam = getColumnValue(rs, "PROF_ACCT_NAME");
-        String val = getColumnValue(rs, "VALUE");
+    /*
+     * private static void writePromotions(OutputStreamWriter writer, ResultSet rs,
+     * String accountNo)
+     * throws SQLException, IOException {
+     * writer.write(String.
+     * format("    <ActProm id=\"%s\" type=\"/profile/acct_extrating\" global=\"true\">\n"
+     * ,
+     * escapeXml(accountNo)));
+     * writer.write("      <PrmNm>TAXEXEMPT</PrmNm>\n");
+     * writer.write("      <PrmActLvlExtn>\n");
+     * writer.write("        <ALPArr elem=\"1\">\n");
+     * writer.write("          <Nam>TAXEXEMPT</Nam>\n");
+     * writer.write("          <Val>0</Val>\n");
+     * writer.write("        </ALPArr>\n");
+     * writer.write("      </PrmActLvlExtn>\n");
+     * writer.write("    </ActProm>\n");
+     * }
+     */
 
-        if (!prmNm.isEmpty()) {
-            writer.write(String.format(
-                "    <ActProm id=\"%s\" type=\"/profile/tab_customer_attributes\" global=\"true\">\n",
-                escapeXml(accountNo)));
-            writer.write(String.format("      <PrmNm>%s</PrmNm>\n", escapeXml(prmNm)));
-            writer.write("      <PrmActLvlExtn>\n");
-            writer.write("        <ALPArr elem=\"1\">\n");
-            writer.write(String.format("          <Nam>%s</Nam>\n", escapeXml(nam)));
-            writer.write(String.format("          <Val>%s</Val>\n", escapeXml(val)));
-            writer.write("        </ALPArr>\n");
-            writer.write("      </PrmActLvlExtn>\n");
-            writer.write("    </ActProm>\n");
-        }
+    private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo)
+            throws SQLException, IOException {
+        int randomId = 100000 + new Random().nextInt(100000); // Generates a number from 100000 to 199999
+        String generatedId = String.valueOf(randomId);
+
+        writer.write(String.format("    <ActProm id=\"%s\" type=\"/profile/acct_extrating\" global=\"true\">\n",
+                escapeXml(generatedId)));
+        writer.write("      <PrmNm>TAXEXEMPT</PrmNm>\n");
+        writer.write("      <PrmActLvlExtn>\n");
+        writer.write("        <ALPArr elem=\"1\">\n");
+        writer.write("          <Nam>TAXEXEMPT</Nam>\n");
+        writer.write("          <Val>0</Val>\n");
+        writer.write("        </ALPArr>\n");
+        writer.write("      </PrmActLvlExtn>\n");
+        writer.write("    </ActProm>\n");
     }
 
-    private static void writeTimestampElement(OutputStreamWriter writer, ResultSet rs, 
-                                            String columnName, String elementName)
+    private static void writeFieldElement(OutputStreamWriter writer, ResultSet rs, String columnName,
+            String elementName)
             throws SQLException, IOException {
-        try {
-            Date date = rs.getTimestamp(columnName);
-            if (date != null) {
-                writer.write(String.format("      <%s>%s</%s>\n",
-                        elementName,
-                        DATE_FORMAT.format(date),
-                        elementName));
-            }
-        } catch (SQLException e) {
-            // Column not found or null value
-        }
+        writeFieldElement(writer, rs, columnName, elementName, "string");
     }
 
-    private static void writeOptionalElement(OutputStreamWriter writer, ResultSet rs, String columnName)
+    private static void writeFieldElement(OutputStreamWriter writer, ResultSet rs, String columnName,
+            String elementName, String type)
             throws SQLException, IOException {
         String value = getColumnValue(rs, columnName);
-        if (!value.isEmpty()) {
-            writer.write(String.format("          <%s type=\"string\">%s</%s>\n",
-                    columnName,
-                    escapeXml(value),
-                    columnName));
-        } else {
-            writer.write(String.format("          <%s type=\"string\"/>\n", columnName));
-        }
+        writer.write(
+                String.format("          <%s type=\"%s\">%s</%s>\n", elementName, type, escapeXml(value), elementName));
+    }
+
+    // to be used for a method below this method. do not remove, tagging explictly
+    // made for
+    // BA xmls.
+    private static Map<String, String> getReverseMapping(String type) {
+        return switch (type) {
+            case "PhTyp" -> Map.of(
+                    "0", "Ph",
+                    "1", "H",
+                    "2", "W",
+                    "3", "P", // F also maps to 3, P preferred
+                    "4", "PG",
+                    "5", "PP",
+                    "6", "S");
+            case "Typ" -> Map.of(
+                    "0", "FED",
+                    "1", "STT",
+                    "2", "CIT",
+                    "4", "SCN",
+                    "5", "SCI",
+                    "7", "SST");
+            case "SubSta" -> Map.of(
+                    "10100", "A",
+                    "10102", "I",
+                    "10103", "C");
+            case "BType" -> Map.of(
+                    "0", "U",
+                    "1", "C",
+                    "2", "B",
+                    "3", "BAT",
+                    "4", "MGD",
+                    "5", "MSA",
+                    "6", "RES",
+                    "7", "UMG",
+                    "8", "VIP");
+            case "PTyp" -> Map.of(
+                    "10001", "INV",
+                    "10005", "DD",
+                    "10003", "CC",
+                    "10007", "NPC");
+            default -> Map.of(); // No mapping
+        };
     }
 
     private static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-                                         String columnName, String elementName,
-                                         Map<String, String> tagMap)
+            String columnName, String elementName,
+            Map<String, String> tagMap)
             throws SQLException, IOException {
-        try {
-            String value = getColumnValue(rs, columnName);
-            if (!value.isEmpty()) {
-                // Apply BA-specific mappings
-                switch(elementName) {
-                    case "SrvAACAccess":
-                        value = "Billing";  // Hardcoded for BA
-                        break;
-                    case "Typ":
-                        value = XmlTagMapping.getBATypMapping().getOrDefault(value, value);
-                        break;
-                }
-                
-                writer.write(String.format("      <%s>%s</%s>\n",
-                        elementName,
-                        escapeXml(value),
-                        elementName));
-            }
-        } catch (SQLException e) {
-            // Column not found
+        String value = getColumnValue(rs, columnName);
+
+        // Apply reverse mapping if present
+        if (tagMap != null && tagMap.containsKey(columnName)) {
+            Map<String, String> reverseMap = getReverseMapping(tagMap.get(columnName));
+            value = reverseMap.getOrDefault(value, value);
         }
+
+        if (!value.isEmpty()) {
+            writer.write(String.format("      <%s>%s</%s>\n",
+                    elementName, escapeXml(value), elementName));
+        }
+    }
+
+    private static void writeElement(OutputStreamWriter writer, String elementName, String value)
+            throws IOException {
+        writer.write(String.format("      <%s>%s</%s>\n", elementName, escapeXml(value), elementName));
     }
 
     private static String getColumnValue(ResultSet rs, String columnName) throws SQLException {
@@ -248,7 +391,8 @@ public class BAXMLGenerator {
     }
 
     private static String escapeXml(String value) {
-        if (value == null) return "";
+        if (value == null)
+            return "";
         return value.replace("&", "&amp;")
                 .replace("<", "&lt;")
                 .replace(">", "&gt;")

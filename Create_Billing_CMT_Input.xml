@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema" xmlns:math="xalana://java.lang.Math" xmlns:xalan="http://xml.apache.org/xalan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
-  <ActSbsc id="7100140624" isParent="Y">
+<Sbsc xmlns="http://www.portal.com/InfranetXMLSchema"
+      xmlns:math="xalana://java.lang.Math"
+      xmlns:xalan="http://xml.apache.org/xalan"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
+  <ActSbsc id="7105232865" isParent="Y" parenRef="CA_1000561664">
     <Act>
-      <ActNo>7100140624</ActNo>
+      <ActNo>7105232865</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>1231 A</Add>
+      <Add>0000 0001</Add>
       <City>NA</City>
-      <Cnt>Albania</Cnt>
-      <FNm>Deepya</FNm>
-      <LNm>Anumula</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <LNm>Dupe</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -26,7 +31,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140624" type="/profile/tab_customer_attributes" global="true">
+    <ActProm id="145878" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -35,48 +40,70 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140624">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>7</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>2000005482</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140624" type="/payinfo/invoice">
+    <APinfo id="241270" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>1231 A</Add>
-      <Cty>NA</Cty>
-      <Cntr>Albania</Cntr>
+      <Add>National</Add>
+      <Cty>Al Seef</Cty>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Ramesh Singh</Nm>
+      <Zip>0</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string">11we</FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ARABIC</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">97339389971</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140624_2" isParent="Y">
+  <ActSbsc id="7105232866" isParent="Y" parenRef="CA_1000561664">
     <Act>
-      <ActNo>7100140624_2</ActNo>
+      <ActNo>7105232866</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>1231 A</Add>
+      <Add>0000 0001</Add>
       <City>NA</City>
-      <Cnt>Albania</Cnt>
-      <FNm>Deepya</FNm>
-      <LNm>Anumula</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <LNm>Dupe</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -84,7 +111,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140624_2" type="/profile/tab_customer_attributes" global="true">
+    <ActProm id="137511" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -93,48 +120,147 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140624_2">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>28</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>28</ACDom>
+      <ANxt>2025-06-28T00:00:00Z</ANxt>
+      <BillInfoId>2000006456</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140624_2" type="/payinfo/invoice">
+    <APinfo id="226066" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>1231 A</Add>
-      <Cty>NA</Cty>
-      <Cntr>Albania</Cntr>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Ramesh Singh</Nm>
+      <Zip>Not Present</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">0001</FldAdLineB>
+          <FldArbAdLineA type="string">0001</FldArbAdLineA>
+          <FldArbAdLineB type="string">0001</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0001</FldBlockNo>
+          <FldBuildNum type="string">0001</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0001</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">97339191693</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140626" isParent="Y">
+  <ActSbsc id="7105232867" isParent="Y" parenRef="CA_1000561664">
     <Act>
-      <ActNo>7100140626</ActNo>
+      <ActNo>7105232867</ActNo>
       <Curr>48</Curr>
-      <CustSegList>8</CustSegList>
-      <BType>4</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20004</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 0817</Add>
+      <Add>0000 0001</Add>
       <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <LNm>Dupe</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="177216" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>15</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>2000006499</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="228320" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Ramesh Singh</Nm>
+      <Zip>Not Present</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">0001</FldAdLineB>
+          <FldArbAdLineA type="string">0001</FldArbAdLineA>
+          <FldArbAdLineB type="string">0001</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0001</FldBlockNo>
+          <FldBuildNum type="string">0001</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0001</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">97339191693</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232870" isParent="Y" parenRef="CA_1000490480">
+    <Act>
+      <ActNo>7105232870</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
       <Cnt>Bahrain</Cnt>
       <FNm>Test</FNm>
-      <LNm>Contact1</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <LNm>Test12</LNm>
+      <Zip>0</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -142,65 +268,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140626" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
-      <PrmActLvlExtn>
-        <ALPArr elem="1">
-          <Nam>TAXEXEMPT</Nam>
-          <Val>0</Val>
-        </ALPArr>
-      </PrmActLvlExtn>
-    </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140626">
-    </ABinfo>
-    <APinfo id="7100140626" type="/payinfo/invoice">
-      <payInvExtn>
-      <Add>0000 0817</Add>
-      <Cty>NA</Cty>
-      <Cntr>Bahrain</Cntr>
-      </payInvExtn>
-      <myExtension>
-        <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
-        </myArray>
-      </myExtension>
-    </APinfo>
-  </ActSbsc>
-  <ActSbsc id="7100140628" isParent="Y">
-    <Act>
-      <ActNo>7100140628</ActNo>
-      <Curr>48</Curr>
-      <CustSegList>8</CustSegList>
-      <BType>4</BType>
-      <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20004</GLSgmt>
-      <SubSta>10100</SubSta>
-      <ANArr elem="1">
-      <Add>0000 0947</Add>
-      <City>NA</City>
-      <Cnt>Bahrain</Cnt>
-      <FNm>Test</FNm>
-      <LNm>Contact2</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
-      </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
-    </Act>
-    <ActProm id="7100140628" type="/profile/tab_customer_attributes" global="true">
+    <ActProm id="108234" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -209,57 +277,73 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140628">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>13</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>13</ACDom>
+      <ANxt>2025-07-13T00:00:00Z</ANxt>
+      <BillInfoId>2000005741</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140628" type="/payinfo/invoice">
+    <APinfo id="232154" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 0947</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
+      <Cty>Abu Bham</Cty>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Penubarthia</Nm>
+      <Zip>0</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string">11we</FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">subrahmanya.85@wipro.com</FldManEmail>
+          <FldPhone type="string">8971558475</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833" isParent="Y">
+  <ActSbsc id="7105232871" isParent="Y" parenRef="CA_1000709829">
     <Act>
-      <ActNo>7100140833</ActNo>
+      <ActNo>7105232871</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0011 1983 3870 0738</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="174701" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -267,57 +351,73 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>2</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>2</ACDom>
+      <ANxt>2025-07-02T00:00:00Z</ANxt>
+      <BillInfoId>3000713208</BillInfoId>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="7100140833" type="/payinfo/invoice">
+    <APinfo id="278956" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelDsc>hussainbah84@hotmail.com</DelDsc>
+      <DelPrf>P</DelPrf>
+      <EAdd>hussainbah84@hotmail.com</EAdd>
+      <Nm>Hussain Jaffar Hassan Jaffar</Nm>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1938</FldBuildNum>
+          <FldFlatNo type="string">0001</FldFlatNo>
+          <FldLangPref type="string">English</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">17640505</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_2" isParent="Y">
+  <ActSbsc id="7105232872" isParent="Y" parenRef="CA_1000709829">
     <Act>
-      <ActNo>7100140833_2</ActNo>
+      <ActNo>7105232872</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0011 1983 3870 0738</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_2" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="166950" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -325,48 +425,70 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_2">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>16</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>1410009002</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_2" type="/payinfo/invoice">
+    <APinfo id="276523" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelDsc>hussainbah84@hotmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Nm>Husain Jaafar Hasan Jaafar</Nm>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1983</FldBuildNum>
+          <FldFlatNo type="string">0011</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string">bss.notif@gmail.com</FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97326555615</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_3" isParent="Y">
+  <ActSbsc id="7105232873" isParent="Y" parenRef="CA_1000561664">
     <Act>
-      <ActNo>7100140833_3</ActNo>
+      <ActNo>7105232873</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
+      <Add>0000 0001</Add>
       <City>NA</City>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Dupe Test</FNm>
+      <LNm>Dupe</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -374,8 +496,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_3" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="166291" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -383,48 +505,69 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_3">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>15</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>2000006500</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_3" type="/payinfo/invoice">
+    <APinfo id="252367" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Ramesh Singh</Nm>
+      <Zip>Not Present</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">0001</FldAdLineB>
+          <FldArbAdLineA type="string">0001</FldArbAdLineA>
+          <FldArbAdLineB type="string">0001</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0001</FldBlockNo>
+          <FldBuildNum type="string">0001</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0001</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">97339191693</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_4" isParent="Y">
+  <ActSbsc id="7105232874" isParent="Y" parenRef="CA_1000561664">
     <Act>
-      <ActNo>7100140833_4</ActNo>
+      <ActNo>7105232874</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
+      <Add>0000 0001</Add>
       <City>NA</City>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Dupe Test</FNm>
+      <LNm>Dupe</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -432,8 +575,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_4" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="113451" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -441,48 +584,69 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_4">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>10</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>10</ACDom>
+      <ANxt>2025-07-10T00:00:00Z</ANxt>
+      <BillInfoId>2000006611</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_4" type="/payinfo/invoice">
+    <APinfo id="270676" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
+      <Cty>Abu Bham</Cty>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Ramesh Singh</Nm>
+      <Zip>0</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">73737373737</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_5" isParent="Y">
+  <ActSbsc id="7105232895" isParent="Y" parenRef="CA_1000490480">
     <Act>
-      <ActNo>7100140833_5</ActNo>
+      <ActNo>7105232895</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Test</FNm>
+      <LNm>Test12</LNm>
+      <Zip>0</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -490,8 +654,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_5" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="143476" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -499,48 +663,69 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_5">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>13</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>13</ACDom>
+      <ANxt>2025-07-13T00:00:00Z</ANxt>
+      <BillInfoId>2000005735</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_5" type="/payinfo/invoice">
+    <APinfo id="252045" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
+      <Cty>Abu Bham</Cty>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Penubarthia</Nm>
+      <Zip>0</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string">11we</FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">subrahmanya.85@wipro.com</FldManEmail>
+          <FldPhone type="string">8971558475</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_6" isParent="Y">
+  <ActSbsc id="7105232901" isParent="Y" parenRef="CA_1000490480">
     <Act>
-      <ActNo>7100140833_6</ActNo>
+      <ActNo>7105232901</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Test</FNm>
+      <LNm>Test12</LNm>
+      <Zip>0</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -548,8 +733,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_6" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="166378" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -557,48 +742,69 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_6">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>18</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>18</ACDom>
+      <ANxt>2025-07-18T00:00:00Z</ANxt>
+      <BillInfoId>2000006056</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_6" type="/payinfo/invoice">
+    <APinfo id="214765" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
+      <Cty>Abu Bham</Cty>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Penubarthia</Nm>
+      <Zip>0</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string">11we</FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">subrahmanya.85@wipro.com</FldManEmail>
+          <FldPhone type="string">8774455112</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_7" isParent="Y">
+  <ActSbsc id="7105232904" isParent="Y" parenRef="CA_1000635023">
     <Act>
-      <ActNo>7100140833_7</ActNo>
+      <ActNo>7105232904</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0014 0352</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Anil</FNm>
+      <LNm>Kumar</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -606,8 +812,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_7" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="168194" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -615,48 +821,69 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_7">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>6</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>6</ACDom>
+      <ANxt>2025-07-06T00:00:00Z</ANxt>
+      <BillInfoId>3000822599</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_7" type="/payinfo/invoice">
+    <APinfo id="203640" type="/payinfo/invoice">
+      <PaymentTerm>1006</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Anil Kumar</Nm>
+      <Zip>Not Present</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">0352</FldAdLineB>
+          <FldArbAdLineA type="string">1210</FldArbAdLineA>
+          <FldArbAdLineB type="string">0312</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0312</FldBlockNo>
+          <FldBuildNum type="string">0352</FldBuildNum>
+          <FldFlatNo type="string">0014</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">1210</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">88888888888</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string">Anil Kumar Nair</FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_8" isParent="Y">
+  <ActSbsc id="7105232905" isParent="Y" parenRef="CA_1000827431">
     <Act>
-      <ActNo>7100140833_8</ActNo>
+      <ActNo>7105232905</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0000 2270</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -664,8 +891,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_8" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="193470" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -673,48 +900,69 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_8">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>14</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>14</ACDom>
+      <ANxt>2025-07-14T00:00:00Z</ANxt>
+      <BillInfoId>1010575002</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_8" type="/payinfo/invoice">
+    <APinfo id="258500" type="/payinfo/invoice">
+      <PaymentTerm>1002</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>PO Box</Add>
       <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>A.Wahed Murad Ali</Nm>
+      <Zip>106</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string"></FldBlockNo>
+          <FldBuildNum type="string"></FldBuildNum>
+          <FldFlatNo type="string"></FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string">106</FldPoBox>
+          <FldRoadNo type="string"></FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97300000000</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_9" isParent="Y">
+  <ActSbsc id="7105232906" isParent="Y" parenRef="CA_1000827431">
     <Act>
-      <ActNo>7100140833_9</ActNo>
+      <ActNo>7105232906</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0000 2270</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -722,8 +970,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_9" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="129216" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -731,48 +979,70 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_9">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>25</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>25</ACDom>
+      <ANxt>2025-06-25T00:00:00Z</ANxt>
+      <BillInfoId>1455994001</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_9" type="/payinfo/invoice">
+    <APinfo id="233291" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelDsc>waheedmurads@hotmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Nm>A.Wahed Murad Ali</Nm>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0255</FldBlockNo>
+          <FldBuildNum type="string">1650</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">5529</FldRoadNo>
+          <FldEmailAddr type="string">bss.notif@gmail.com</FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97323332189</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_10" isParent="Y">
+  <ActSbsc id="7105232907" isParent="Y" parenRef="CA_1000827431">
     <Act>
-      <ActNo>7100140833_10</ActNo>
+      <ActNo>7105232907</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0000 2270</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -780,8 +1050,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_10" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="101885" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -789,48 +1059,70 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_10">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>27</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>27</ACDom>
+      <ANxt>2025-06-27T00:00:00Z</ANxt>
+      <BillInfoId>1455996001</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_10" type="/payinfo/invoice">
+    <APinfo id="267165" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelDsc>waheedmurads@hotmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Nm>A.Wahed Murad Ali</Nm>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0255</FldBlockNo>
+          <FldBuildNum type="string">1650</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">5529</FldRoadNo>
+          <FldEmailAddr type="string">bss.notif@gmail.com</FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97323544550</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_11" isParent="Y">
+  <ActSbsc id="7105232908" isParent="Y" parenRef="CA_1000827431">
     <Act>
-      <ActNo>7100140833_11</ActNo>
+      <ActNo>7105232908</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0000 2270</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>A.Wahed Murad</FNm>
+      <MNm>MURAD ALI</MNm>
+      <LNm>Ali</LNm>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -838,8 +1130,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_11" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="140249" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -847,48 +1139,362 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_11">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>24</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>24</ACDom>
+      <ANxt>2025-06-24T00:00:00Z</ANxt>
+      <BillInfoId>3000795352</BillInfoId>
+      <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_11" type="/payinfo/invoice">
+    <APinfo id="235577" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
-      <Cntr>Bahrain</Cntr>
+      <Add>PO Box</Add>
+      <Cntr>BH</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>A.Wahed Murad Ali</Nm>
+      <Zip>Not Present</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string"></FldBlockNo>
+          <FldBuildNum type="string"></FldBuildNum>
+          <FldFlatNo type="string"></FldFlatNo>
+          <FldLangPref type="string">English</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string">106</FldPoBox>
+          <FldRoadNo type="string"></FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">88888888888</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string">A.WAHID MURAD ALI NASEEB</FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7100140833_12" isParent="Y">
+  <ActSbsc id="7105232909" isParent="Y" parenRef="CA_1000709829">
     <Act>
-      <ActNo>7100140833_12</ActNo>
+      <ActNo>7105232909</ActNo>
       <Curr>48</Curr>
-      <CustSegList>27</CustSegList>
-      <BType>7</BType>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
       <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.20001</GLSgmt>
-      <SubSta>10100</SubSta>
+      <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 2361</Add>
-      <City>NA</City>
+      <Add>0011 1983 3870 0738</Add>
       <Cnt>Bahrain</Cnt>
-      <FNm>OSM</FNm>
-      <LNm>Upgrade</LNm>
-        <Sal>Ms</Sal>
-        <Stt>NA</Stt>
-        <Tit>Engineer</Tit>
-        <Zip>NA</Zip>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      </AEArr>
+    </Act>
+    <ActProm id="127136" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>22</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>1298515001</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="245501" type="/payinfo/invoice">
+      <PaymentTerm>1002</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Husain Jaafar Hasan Jaafar</Nm>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1983</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97322227110</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232910" isParent="Y" parenRef="CA_1000709829">
+    <Act>
+      <ActNo>7105232910</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      </AEArr>
+    </Act>
+    <ActProm id="134207" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>22</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <BillInfoId>1298515002</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="239325" type="/payinfo/invoice">
+      <PaymentTerm>1002</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelDsc>hussainbah84@hotmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Nm>Husain Jaafar Hasan Jaafar</Nm>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1983</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string">bss.notif@gmail.com</FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97328877661</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232911" isParent="Y" parenRef="CA_1000709829">
+    <Act>
+      <ActNo>7105232911</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      </AEArr>
+    </Act>
+    <ActProm id="157954" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>16</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>1365776001</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="232991" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelDsc>Hussainbah84@hotmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Nm>Husain Jaafar Hasan Jaafar</Nm>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1983</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string">bss.notif@gmail.com</FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97326555615</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232912" isParent="Y" parenRef="CA_1000709829">
+    <Act>
+      <ActNo>7105232912</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      </AEArr>
+    </Act>
+    <ActProm id="119960" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>16</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>1410009001</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="210731" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelDsc>hussainbah84@hotmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>bss.notif@gmail.com</EAdd>
+      <Nm>Husain Jaafar Hasan Jaafar</Nm>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1983</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string">bss.notif@gmail.com</FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97326555647</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232913" isParent="Y" parenRef="DA_1000556826">
+    <Act>
+      <ActNo>7105232913</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>5</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>BAT</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.50003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 0514</Add>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Mohd</FNm>
+      <LNm>Abdulrahoof</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
       </ANArr>
       <AEArr>
         <CertNum/>
@@ -896,8 +1502,8 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="7100140833_12" type="/profile/tab_customer_attributes" global="true">
-      <PrmNm>PIN Profile Object</PrmNm>
+    <ActProm id="125986" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
           <Nam>TAXEXEMPT</Nam>
@@ -905,25 +1511,355 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" spnrCnt="1" spnreeCnt="2" elem="74728" bal_grp="true" isAccBillinfo="Yes" payInfoRefId="7100140833_12">
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>6</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>6</ACDom>
+      <ANxt>2025-07-06T00:00:00Z</ANxt>
+      <BillInfoId>3000705433</BillInfoId>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="7100140833_12" type="/payinfo/invoice">
+    <APinfo id="201044" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
-      <Add>0000 2361</Add>
-      <Cty>NA</Cty>
+      <Add>National</Add>
       <Cntr>Bahrain</Cntr>
+      <DelDsc>abc@abc.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <Nm>Mohd Kunju Abdulrahoof</Nm>
+      <Zip>Not Present</Zip>
       </payInvExtn>
       <myExtension>
         <myArray table="profile_inv_ext_t" elem="1">
-          <ADR_LINE1 type="string"/>
-          <ADR_LINE2 type="string"/>
-          <ARB_ADR_LINE1 type="string"/>
-          <ARB_ADR_LINE2 type="string"/>
-          <ARB_NAME type="string"/>
-          <LANG_PREFER type="string"/>
-          <PO_BOX type="string"/>
-          <MANAGER_EMAIL type="string"/>
-          <LANGUAGE type="string"/>
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">0514</FldAdLineB>
+          <FldArbAdLineA type="string">2910</FldArbAdLineA>
+          <FldArbAdLineB type="string">0929</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0929</FldBlockNo>
+          <FldBuildNum type="string">0514</FldBuildNum>
+          <FldFlatNo type="string">0011</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">2910</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">88888888888</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string">MOHD KUNJU ABDULRAHOOF</FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232914" isParent="Y" parenRef="DA_1000556828">
+    <Act>
+      <ActNo>7105232914</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0012 0373 0407 0304</Add>
+      <Cnt>Bahrain</Cnt>
+      <LNm>Cv</LNm>
+      <Stt>NA</Stt>
+      <Zip>0</Zip>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="180720" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>15</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>15</ACDom>
+      <ANxt>2025-07-15T00:00:00Z</ANxt>
+      <BillInfoId>3000698147</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="254463" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelDsc>manikcv@gmail.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <EAdd>manikcv@gmail.com</EAdd>
+      <Nm>mankandan veluthedath</Nm>
+      <Zip>0</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0304</FldBlockNo>
+          <FldBuildNum type="string">0373</FldBuildNum>
+          <FldFlatNo type="string">0012</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0407</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">manikcv@gmail.com</FldManEmail>
+          <FldPhone type="string">17211359</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232915" isParent="Y" parenRef="DA_1000418764">
+    <Act>
+      <ActNo>7105232915</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>5</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>BAT</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.50003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0002 1582</Add>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Moosa</FNm>
+      <LNm>Kandy</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="190135" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>16</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>16</ACDom>
+      <ANxt>2025-07-16T00:00:00Z</ANxt>
+      <BillInfoId>3000705669</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="264995" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelDsc>abc@abc.com</DelDsc>
+      <DelPrf>E</DelPrf>
+      <Nm>Moosa Chandan Kandy</Nm>
+      <Zip>Not Present</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string">1582</FldAdLineB>
+          <FldArbAdLineA type="string">0143</FldArbAdLineA>
+          <FldArbAdLineB type="string">0701</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0701</FldBlockNo>
+          <FldBuildNum type="string">1582</FldBuildNum>
+          <FldFlatNo type="string">0002</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0143</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">88888888888</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string">Moosa Chandan Kandy</FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232916" isParent="Y" parenRef="DA_1000418097">
+    <Act>
+      <ActNo>7105232916</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0022 0090 0405 0204</Add>
+      <Cnt>Bahrain</Cnt>
+      <LNm>.</LNm>
+      <Stt>NA</Stt>
+      <Zip>0</Zip>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="112935" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>7</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>3000712695</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="216235" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>E</DelPrf>
+      <Nm>Mohd Sulaiman</Nm>
+      <Zip>0</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0204</FldBlockNo>
+          <FldBuildNum type="string">0090</FldBuildNum>
+          <FldFlatNo type="string">0022</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0405</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">17229827</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232917" isParent="Y" parenRef="DA_1000396481">
+    <Act>
+      <ActNo>7105232917</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>18</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10003</GLSgmt>
+      <ANArr elem="1">
+      <Add>0038 1164 4128 0941</Add>
+      <Cnt>Bahrain</Cnt>
+      <LNm>Srivastava</LNm>
+      <Stt>NA</Stt>
+      <Zip>0</Zip>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="119251" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+      <ACDom>21</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>21</ACDom>
+      <ANxt>2025-07-21T00:00:00Z</ANxt>
+      <BillInfoId>3000815290</BillInfoId>
+      <BillStat>0</BillStat>
+    </ABinfo>
+    <APinfo id="202026" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>E</DelPrf>
+      <Nm>Satya Prakash Srivastava</Nm>
+      <Zip>0</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0941</FldBlockNo>
+          <FldBuildNum type="string">1164</FldBuildNum>
+          <FldFlatNo type="string">0038</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">4128</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">17258697</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
         </myArray>
       </myExtension>
     </APinfo>
