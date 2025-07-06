@@ -28,17 +28,12 @@
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -67,17 +62,12 @@
           <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -106,17 +96,12 @@
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -145,17 +130,12 @@
           <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -184,17 +164,12 @@
           <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>

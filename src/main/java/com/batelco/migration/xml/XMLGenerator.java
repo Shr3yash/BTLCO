@@ -86,12 +86,12 @@ public class XMLGenerator {
         writer.write("        <Zip/>\n");
         writePhoneElements(writer, rs);
         writer.write("      </ANArr>\n");
-
-        writer.write("      <AEArr>\n");
-        writer.write("        <CertNum/>\n");
-        XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-        XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-        writer.write("      </AEArr>\n");
+// REMOVED AS REQUESTED
+        // writer.write("      <AEArr>\n");
+        // writer.write("        <CertNum/>\n");
+        // XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+        // XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+        // writer.write("      </AEArr>\n");
 
         writer.write("    </Act>\n");
 
@@ -148,11 +148,10 @@ public class XMLGenerator {
             throws SQLException, IOException {
         writer.write(String.format(
                 // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                // bal_grp=\"true\" isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-                "    <ABinfo global=\"true\" bal_grp=\"true\" isAccBillinfo=\"Yes\">\n",
+                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\">\n",
 
                 XMLGenerationUtils.escapeXml(accountNo)));
-        XMLGenerationUtils.writeMappedElement(writer, rs, "ACTG_CYCLE_DOM", "ACDom", null);
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
         if (billInfoId.isEmpty()) {
             billInfoId = "Default BillInfo";

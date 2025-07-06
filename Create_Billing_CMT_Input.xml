@@ -4,86 +4,6 @@
       xmlns:xalan="http://xml.apache.org/xalan"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
-  <ActSbsc id="7105232865" isParent="Y" parenRef="CA_1000561664">
-    <Act>
-      <ActNo>7105232865</ActNo>
-      <Curr>48</Curr>
-      <CustSegList>22</CustSegList>
-      <SubSta>A</SubSta>
-      <BType>RES</BType>
-      <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.10016</GLSgmt>
-      <ANArr elem="1">
-      <Add>0000 0001</Add>
-      <City>NA</City>
-      <Cnt>Bahrain</Cnt>
-      <FNm>Dupe Test</FNm>
-      <LNm>Dupe</LNm>
-      <Zip>Not Present</Zip>
-        <APhArr id="0">
-      <Ph>9799676555</Ph>
-      <PhTyp>Ph</PhTyp>
-        </APhArr>
-      </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
-    </Act>
-    <ActProm id="145878" type="/profile/acct_extrating" global="true">
-      <PrmNm>TAXEXEMPT</PrmNm>
-      <PrmActLvlExtn>
-        <ALPArr elem="1">
-          <Nam>TAXEXEMPT</Nam>
-          <Val>0</Val>
-        </ALPArr>
-      </PrmActLvlExtn>
-    </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
-      <ACDom>7</ACDom>
-      <PTyp>INV</PTyp>
-      <ActgType>B</ActgType>
-      <ACDom>7</ACDom>
-      <ANxt>2025-07-07T00:00:00Z</ANxt>
-      <BillInfoId>2000005482</BillInfoId>
-      <BillStat>1</BillStat>
-    </ABinfo>
-    <APinfo id="241270" type="/payinfo/invoice">
-      <PaymentTerm>1001</PaymentTerm>
-      <payInvExtn>
-      <Add>National</Add>
-      <Cty>Al Seef</Cty>
-      <Cntr>Bahrain</Cntr>
-      <DelPrf>P</DelPrf>
-      <Nm>Ramesh Singh</Nm>
-      <Zip>0</Zip>
-      </payInvExtn>
-      <myExtension>
-        <myArray table="profile_inv_ext_t" elem="1">
-          <FldAdLineA type="string">11we</FldAdLineA>
-          <FldAdLineB type="string">0110A</FldAdLineB>
-          <FldArbAdLineA type="string">0043</FldArbAdLineA>
-          <FldArbAdLineB type="string">0743</FldArbAdLineB>
-          <FldArbName type="string"></FldArbName>
-          <FldBlockNo type="string">0743</FldBlockNo>
-          <FldBuildNum type="string">0110A</FldBuildNum>
-          <FldFlatNo type="string">0000</FldFlatNo>
-          <FldLangPref type="string"></FldLangPref>
-          <FldLangPrefer type="string">ARABIC</FldLangPrefer>
-          <FldPoBox type="string"></FldPoBox>
-          <FldRoadNo type="string">0043</FldRoadNo>
-          <FldEmailAddr type="string"></FldEmailAddr>
-          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
-          <FldPhone type="string">97339389971</FldPhone>
-          <FldFlag type="integer">0</FldFlag>
-          <FldNotType type="string"></FldNotType>
-          <FldLang type="string"></FldLang>
-          <FldCOfName type="string"></FldCOfName>
-        </myArray>
-      </myExtension>
-    </APinfo>
-  </ActSbsc>
   <ActSbsc id="7105232866" isParent="Y" parenRef="CA_1000561664">
     <Act>
       <ActNo>7105232866</ActNo>
@@ -111,7 +31,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="137511" type="/profile/acct_extrating" global="true">
+    <ActProm id="180712" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -120,16 +40,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>28</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>28</ACDom>
-      <ANxt>2025-06-28T00:00:00Z</ANxt>
-      <BillInfoId>2000006456</BillInfoId>
+      <ANxt>2025-07-28T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="226066" type="/payinfo/invoice">
+    <APinfo id="217681" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -190,7 +110,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="177216" type="/profile/acct_extrating" global="true">
+    <ActProm id="180894" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -199,16 +119,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>15</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
       <ANxt>2025-07-15T00:00:00Z</ANxt>
-      <BillInfoId>2000006499</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="228320" type="/payinfo/invoice">
+    <APinfo id="268910" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -242,85 +162,6 @@
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7105232870" isParent="Y" parenRef="CA_1000490480">
-    <Act>
-      <ActNo>7105232870</ActNo>
-      <Curr>48</Curr>
-      <CustSegList>22</CustSegList>
-      <SubSta>A</SubSta>
-      <BType>RES</BType>
-      <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.10016</GLSgmt>
-      <ANArr elem="1">
-      <Add>0000 0110</Add>
-      <City>Abu Bham</City>
-      <Cnt>Bahrain</Cnt>
-      <FNm>Test</FNm>
-      <LNm>Test12</LNm>
-      <Zip>0</Zip>
-        <APhArr id="0">
-      <PhTyp>W</PhTyp>
-        </APhArr>
-      </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
-    </Act>
-    <ActProm id="108234" type="/profile/acct_extrating" global="true">
-      <PrmNm>TAXEXEMPT</PrmNm>
-      <PrmActLvlExtn>
-        <ALPArr elem="1">
-          <Nam>TAXEXEMPT</Nam>
-          <Val>0</Val>
-        </ALPArr>
-      </PrmActLvlExtn>
-    </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
-      <ACDom>13</ACDom>
-      <PTyp>INV</PTyp>
-      <ActgType>B</ActgType>
-      <ACDom>13</ACDom>
-      <ANxt>2025-07-13T00:00:00Z</ANxt>
-      <BillInfoId>2000005741</BillInfoId>
-      <BillStat>1</BillStat>
-    </ABinfo>
-    <APinfo id="232154" type="/payinfo/invoice">
-      <PaymentTerm>1001</PaymentTerm>
-      <payInvExtn>
-      <Add>National</Add>
-      <Cty>Abu Bham</Cty>
-      <Cntr>Bahrain</Cntr>
-      <DelPrf>P</DelPrf>
-      <Nm>Penubarthia</Nm>
-      <Zip>0</Zip>
-      </payInvExtn>
-      <myExtension>
-        <myArray table="profile_inv_ext_t" elem="1">
-          <FldAdLineA type="string">11we</FldAdLineA>
-          <FldAdLineB type="string">0110A</FldAdLineB>
-          <FldArbAdLineA type="string">0043</FldArbAdLineA>
-          <FldArbAdLineB type="string">0743</FldArbAdLineB>
-          <FldArbName type="string"></FldArbName>
-          <FldBlockNo type="string">0743</FldBlockNo>
-          <FldBuildNum type="string">0110A</FldBuildNum>
-          <FldFlatNo type="string">0000</FldFlatNo>
-          <FldLangPref type="string"></FldLangPref>
-          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
-          <FldPoBox type="string"></FldPoBox>
-          <FldRoadNo type="string">0043</FldRoadNo>
-          <FldEmailAddr type="string"></FldEmailAddr>
-          <FldManEmail type="string">subrahmanya.85@wipro.com</FldManEmail>
-          <FldPhone type="string">8971558475</FldPhone>
-          <FldFlag type="integer">0</FldFlag>
-          <FldNotType type="string"></FldNotType>
-          <FldLang type="string"></FldLang>
-          <FldCOfName type="string"></FldCOfName>
-        </myArray>
-      </myExtension>
-    </APinfo>
-  </ActSbsc>
   <ActSbsc id="7105232871" isParent="Y" parenRef="CA_1000709829">
     <Act>
       <ActNo>7105232871</ActNo>
@@ -342,7 +183,7 @@
         <CertNum/>
       </AEArr>
     </Act>
-    <ActProm id="174701" type="/profile/acct_extrating" global="true">
+    <ActProm id="141350" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -351,16 +192,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>2</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>2</ACDom>
-      <ANxt>2025-07-02T00:00:00Z</ANxt>
-      <BillInfoId>3000713208</BillInfoId>
+      <ANxt>2025-08-02T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="278956" type="/payinfo/invoice">
+    <APinfo id="270066" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -416,7 +257,7 @@
         <CertNum/>
       </AEArr>
     </Act>
-    <ActProm id="166950" type="/profile/acct_extrating" global="true">
+    <ActProm id="195207" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -425,16 +266,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>16</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
       <ANxt>2025-07-16T00:00:00Z</ANxt>
-      <BillInfoId>1410009002</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="276523" type="/payinfo/invoice">
+    <APinfo id="236833" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -496,7 +337,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="166291" type="/profile/acct_extrating" global="true">
+    <ActProm id="102934" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -505,16 +346,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>15</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
       <ANxt>2025-07-15T00:00:00Z</ANxt>
-      <BillInfoId>2000006500</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="252367" type="/payinfo/invoice">
+    <APinfo id="238366" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -575,7 +416,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="113451" type="/profile/acct_extrating" global="true">
+    <ActProm id="140760" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -584,16 +425,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>10</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>10</ACDom>
       <ANxt>2025-07-10T00:00:00Z</ANxt>
-      <BillInfoId>2000006611</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="270676" type="/payinfo/invoice">
+    <APinfo id="275024" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -654,7 +495,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="143476" type="/profile/acct_extrating" global="true">
+    <ActProm id="191881" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -663,16 +504,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>13</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>13</ACDom>
       <ANxt>2025-07-13T00:00:00Z</ANxt>
-      <BillInfoId>2000005735</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="252045" type="/payinfo/invoice">
+    <APinfo id="255977" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -733,7 +574,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="166378" type="/profile/acct_extrating" global="true">
+    <ActProm id="152193" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -742,16 +583,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>18</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
       <ANxt>2025-07-18T00:00:00Z</ANxt>
-      <BillInfoId>2000006056</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="214765" type="/payinfo/invoice">
+    <APinfo id="249319" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -812,7 +653,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="168194" type="/profile/acct_extrating" global="true">
+    <ActProm id="142093" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -821,16 +662,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>6</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
-      <ANxt>2025-07-06T00:00:00Z</ANxt>
-      <BillInfoId>3000822599</BillInfoId>
+      <ANxt>2025-08-06T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="203640" type="/payinfo/invoice">
+    <APinfo id="271988" type="/payinfo/invoice">
       <PaymentTerm>1006</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -891,7 +732,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="193470" type="/profile/acct_extrating" global="true">
+    <ActProm id="181608" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -900,16 +741,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>14</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>14</ACDom>
       <ANxt>2025-07-14T00:00:00Z</ANxt>
-      <BillInfoId>1010575002</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="258500" type="/payinfo/invoice">
+    <APinfo id="234153" type="/payinfo/invoice">
       <PaymentTerm>1002</PaymentTerm>
       <payInvExtn>
       <Add>PO Box</Add>
@@ -970,7 +811,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="129216" type="/profile/acct_extrating" global="true">
+    <ActProm id="152142" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -979,16 +820,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>25</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>25</ACDom>
-      <ANxt>2025-06-25T00:00:00Z</ANxt>
-      <BillInfoId>1455994001</BillInfoId>
+      <ANxt>2025-07-25T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="233291" type="/payinfo/invoice">
+    <APinfo id="201004" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1050,7 +891,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="101885" type="/profile/acct_extrating" global="true">
+    <ActProm id="147477" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1059,16 +900,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>27</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>27</ACDom>
-      <ANxt>2025-06-27T00:00:00Z</ANxt>
-      <BillInfoId>1455996001</BillInfoId>
+      <ANxt>2025-07-27T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="267165" type="/payinfo/invoice">
+    <APinfo id="253196" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1130,7 +971,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="140249" type="/profile/acct_extrating" global="true">
+    <ActProm id="156847" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1139,16 +980,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>24</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>24</ACDom>
-      <ANxt>2025-06-24T00:00:00Z</ANxt>
-      <BillInfoId>3000795352</BillInfoId>
+      <ANxt>2025-07-24T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="235577" type="/payinfo/invoice">
+    <APinfo id="289031" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>PO Box</Add>
@@ -1182,78 +1023,6 @@
       </myExtension>
     </APinfo>
   </ActSbsc>
-  <ActSbsc id="7105232909" isParent="Y" parenRef="CA_1000709829">
-    <Act>
-      <ActNo>7105232909</ActNo>
-      <Curr>48</Curr>
-      <CustSegList>21</CustSegList>
-      <SubSta>A</SubSta>
-      <BType>RES</BType>
-      <SrvAACAccess>Billing</SrvAACAccess>
-      <GLSgmt>.10008</GLSgmt>
-      <ANArr elem="1">
-      <Add>0011 1983 3870 0738</Add>
-      <Cnt>Bahrain</Cnt>
-      <FNm>Husain Jaafar Hasan Jaafar</FNm>
-      <LNm>Hasan Jaafar</LNm>
-        <APhArr id="0">
-        </APhArr>
-      </ANArr>
-      <AEArr>
-        <CertNum/>
-      </AEArr>
-    </Act>
-    <ActProm id="127136" type="/profile/acct_extrating" global="true">
-      <PrmNm>TAXEXEMPT</PrmNm>
-      <PrmActLvlExtn>
-        <ALPArr elem="1">
-          <Nam>TAXEXEMPT</Nam>
-          <Val>0</Val>
-        </ALPArr>
-      </PrmActLvlExtn>
-    </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
-      <ACDom>22</ACDom>
-      <PTyp>INV</PTyp>
-      <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
-      <BillInfoId>1298515001</BillInfoId>
-      <BillStat>1</BillStat>
-    </ABinfo>
-    <APinfo id="245501" type="/payinfo/invoice">
-      <PaymentTerm>1002</PaymentTerm>
-      <payInvExtn>
-      <Add>National</Add>
-      <Cntr>Bahrain</Cntr>
-      <DelPrf>P</DelPrf>
-      <Nm>Husain Jaafar Hasan Jaafar</Nm>
-      </payInvExtn>
-      <myExtension>
-        <myArray table="profile_inv_ext_t" elem="1">
-          <FldAdLineA type="string"></FldAdLineA>
-          <FldAdLineB type="string"></FldAdLineB>
-          <FldArbAdLineA type="string"></FldArbAdLineA>
-          <FldArbAdLineB type="string"></FldArbAdLineB>
-          <FldArbName type="string"></FldArbName>
-          <FldBlockNo type="string">0738</FldBlockNo>
-          <FldBuildNum type="string">1983</FldBuildNum>
-          <FldFlatNo type="string">0000</FldFlatNo>
-          <FldLangPref type="string">ENGLISH</FldLangPref>
-          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
-          <FldPoBox type="string"></FldPoBox>
-          <FldRoadNo type="string">3870</FldRoadNo>
-          <FldEmailAddr type="string"></FldEmailAddr>
-          <FldManEmail type="string"></FldManEmail>
-          <FldPhone type="string">97322227110</FldPhone>
-          <FldFlag type="integer"></FldFlag>
-          <FldNotType type="string"></FldNotType>
-          <FldLang type="string"></FldLang>
-          <FldCOfName type="string"></FldCOfName>
-        </myArray>
-      </myExtension>
-    </APinfo>
-  </ActSbsc>
   <ActSbsc id="7105232910" isParent="Y" parenRef="CA_1000709829">
     <Act>
       <ActNo>7105232910</ActNo>
@@ -1275,7 +1044,7 @@
         <CertNum/>
       </AEArr>
     </Act>
-    <ActProm id="134207" type="/profile/acct_extrating" global="true">
+    <ActProm id="194224" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1284,16 +1053,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>22</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
-      <BillInfoId>1298515002</BillInfoId>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="239325" type="/payinfo/invoice">
+    <APinfo id="299510" type="/payinfo/invoice">
       <PaymentTerm>1002</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1349,7 +1118,7 @@
         <CertNum/>
       </AEArr>
     </Act>
-    <ActProm id="157954" type="/profile/acct_extrating" global="true">
+    <ActProm id="143201" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1358,16 +1127,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>16</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
       <ANxt>2025-07-16T00:00:00Z</ANxt>
-      <BillInfoId>1365776001</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="232991" type="/payinfo/invoice">
+    <APinfo id="275562" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1423,7 +1192,7 @@
         <CertNum/>
       </AEArr>
     </Act>
-    <ActProm id="119960" type="/profile/acct_extrating" global="true">
+    <ActProm id="129243" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1432,16 +1201,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>16</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
       <ANxt>2025-07-16T00:00:00Z</ANxt>
-      <BillInfoId>1410009001</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="210731" type="/payinfo/invoice">
+    <APinfo id="228414" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1476,6 +1245,237 @@
       </myExtension>
     </APinfo>
   </ActSbsc>
+  <ActSbsc id="7105232870" isParent="Y" parenRef="CA_1000490480">
+    <Act>
+      <ActNo>7105232870</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Test</FNm>
+      <LNm>Test12</LNm>
+      <Zip>0</Zip>
+        <APhArr id="0">
+      <PhTyp>W</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="142259" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true"  isAccBillinfo="Yes" >
+      <ACDom>13</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>13</ACDom>
+      <ANxt>2025-07-13T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="275965" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cty>Abu Bham</Cty>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Penubarthia</Nm>
+      <Zip>0</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string">11we</FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">subrahmanya.85@wipro.com</FldManEmail>
+          <FldPhone type="string">8971558475</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232909" isParent="Y" parenRef="CA_1000709829">
+    <Act>
+      <ActNo>7105232909</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>21</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10008</GLSgmt>
+      <ANArr elem="1">
+      <Add>0011 1983 3870 0738</Add>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <LNm>Hasan Jaafar</LNm>
+        <APhArr id="0">
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      </AEArr>
+    </Act>
+    <ActProm id="103824" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true"  isAccBillinfo="Yes" >
+      <ACDom>22</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="287965" type="/payinfo/invoice">
+      <PaymentTerm>1002</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Husain Jaafar Hasan Jaafar</Nm>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string"></FldAdLineA>
+          <FldAdLineB type="string"></FldAdLineB>
+          <FldArbAdLineA type="string"></FldArbAdLineA>
+          <FldArbAdLineB type="string"></FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0738</FldBlockNo>
+          <FldBuildNum type="string">1983</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string">ENGLISH</FldLangPref>
+          <FldLangPrefer type="string">ENGLISH</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">3870</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string"></FldManEmail>
+          <FldPhone type="string">97322227110</FldPhone>
+          <FldFlag type="integer"></FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
+  <ActSbsc id="7105232865" isParent="Y" parenRef="CA_1000561664">
+    <Act>
+      <ActNo>7105232865</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Billing</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <LNm>Dupe</LNm>
+      <Zip>Not Present</Zip>
+        <APhArr id="0">
+      <Ph>9799676555</Ph>
+      <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+      <AEArr>
+        <CertNum/>
+      <Perc>0</Perc>
+      <Typ>FED</Typ>
+      </AEArr>
+    </Act>
+    <ActProm id="162377" type="/profile/acct_extrating" global="true">
+      <PrmNm>TAXEXEMPT</PrmNm>
+      <PrmActLvlExtn>
+        <ALPArr elem="1">
+          <Nam>TAXEXEMPT</Nam>
+          <Val>0</Val>
+        </ALPArr>
+      </PrmActLvlExtn>
+    </ActProm>
+    <ABinfo global="true"  isAccBillinfo="Yes" >
+      <ACDom>7</ACDom>
+      <PTyp>INV</PTyp>
+      <ActgType>B</ActgType>
+      <ACDom>7</ACDom>
+      <ANxt>2025-07-07T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat>1</BillStat>
+    </ABinfo>
+    <APinfo id="228352" type="/payinfo/invoice">
+      <PaymentTerm>1001</PaymentTerm>
+      <payInvExtn>
+      <Add>National</Add>
+      <Cty>Al Seef</Cty>
+      <Cntr>Bahrain</Cntr>
+      <DelPrf>P</DelPrf>
+      <Nm>Ramesh Singh</Nm>
+      <Zip>0</Zip>
+      </payInvExtn>
+      <myExtension>
+        <myArray table="profile_inv_ext_t" elem="1">
+          <FldAdLineA type="string">11we</FldAdLineA>
+          <FldAdLineB type="string">0110A</FldAdLineB>
+          <FldArbAdLineA type="string">0043</FldArbAdLineA>
+          <FldArbAdLineB type="string">0743</FldArbAdLineB>
+          <FldArbName type="string"></FldArbName>
+          <FldBlockNo type="string">0743</FldBlockNo>
+          <FldBuildNum type="string">0110A</FldBuildNum>
+          <FldFlatNo type="string">0000</FldFlatNo>
+          <FldLangPref type="string"></FldLangPref>
+          <FldLangPrefer type="string">ARABIC</FldLangPrefer>
+          <FldPoBox type="string"></FldPoBox>
+          <FldRoadNo type="string">0043</FldRoadNo>
+          <FldEmailAddr type="string"></FldEmailAddr>
+          <FldManEmail type="string">Bss.notif@gmail.com</FldManEmail>
+          <FldPhone type="string">97339389971</FldPhone>
+          <FldFlag type="integer">0</FldFlag>
+          <FldNotType type="string"></FldNotType>
+          <FldLang type="string"></FldLang>
+          <FldCOfName type="string"></FldCOfName>
+        </myArray>
+      </myExtension>
+    </APinfo>
+  </ActSbsc>
   <ActSbsc id="7105232913" isParent="Y" parenRef="DA_1000556826">
     <Act>
       <ActNo>7105232913</ActNo>
@@ -1502,7 +1502,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="125986" type="/profile/acct_extrating" global="true">
+    <ActProm id="159110" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1511,16 +1511,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>6</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
-      <ANxt>2025-07-06T00:00:00Z</ANxt>
-      <BillInfoId>3000705433</BillInfoId>
+      <ANxt>2025-08-06T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="201044" type="/payinfo/invoice">
+    <APinfo id="262304" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1579,7 +1579,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="180720" type="/profile/acct_extrating" global="true">
+    <ActProm id="173742" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1588,16 +1588,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>15</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
       <ANxt>2025-07-15T00:00:00Z</ANxt>
-      <BillInfoId>3000698147</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="254463" type="/payinfo/invoice">
+    <APinfo id="238158" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1659,7 +1659,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="190135" type="/profile/acct_extrating" global="true">
+    <ActProm id="144180" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1668,16 +1668,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>16</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
       <ANxt>2025-07-16T00:00:00Z</ANxt>
-      <BillInfoId>3000705669</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="264995" type="/payinfo/invoice">
+    <APinfo id="285588" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1736,7 +1736,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="112935" type="/profile/acct_extrating" global="true">
+    <ActProm id="125402" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1745,16 +1745,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>7</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
       <ANxt>2025-07-07T00:00:00Z</ANxt>
-      <BillInfoId>3000712695</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="216235" type="/payinfo/invoice">
+    <APinfo id="223687" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>
@@ -1812,7 +1812,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="119251" type="/profile/acct_extrating" global="true">
+    <ActProm id="183019" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1821,16 +1821,16 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes" >
+    <ABinfo global="true"  isAccBillinfo="Yes" >
       <ACDom>21</ACDom>
       <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>21</ACDom>
       <ANxt>2025-07-21T00:00:00Z</ANxt>
-      <BillInfoId>3000815290</BillInfoId>
+      <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="202026" type="/payinfo/invoice">
+    <APinfo id="284618" type="/payinfo/invoice">
       <PaymentTerm>1001</PaymentTerm>
       <payInvExtn>
       <Add>National</Add>

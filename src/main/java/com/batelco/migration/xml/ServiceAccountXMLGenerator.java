@@ -113,10 +113,9 @@ public class ServiceAccountXMLGenerator {
             throws SQLException, IOException {
         writer.write(String.format(
                 // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"74728\"
-                // bal_grp=\"true\" isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-                "    <ABinfo global=\"true\" bal_grp=\"true\" isAccBillinfo=\"Yes\" payingParenRefId=\"%s\">\n",
+                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" payingParenRefId=\"%s\">\n",
                 XMLGenerationUtils.escapeXml(parentAccount)));
-        XMLGenerationUtils.writeMappedElement(writer, rs, "ACTG_CYCLE_DOM", "ACDom", null);
         String rawPayType = XMLGenerationUtils.getColumnValue(rs, "PAY_TYPE");
         String mappedPayType = switch (rawPayType) {
             case "10001" -> "INV";

@@ -166,11 +166,10 @@ public class BAXMLGenerator {
             throws SQLException, IOException {
         writer.write(String.format(
                 // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                // bal_grp=\"true\" isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-                "    <ABinfo global=\"true\" bal_grp=\"true\" isAccBillinfo=\"Yes\" >\n",
+                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" >\n",
                 escapeXml(formattedParentRef)));
 
-        writeMappedElement(writer, rs, "ACTG_CYCLE_DOM", "ACDom", null);
         XMLGenerationUtils.writeMappedElement(writer, rs, "PAY_TYPE", "PTyp", null);
 
         // Custom static values
@@ -206,9 +205,11 @@ public class BAXMLGenerator {
         }
 
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
-        if (billInfoId.isEmpty()) {
-            billInfoId = "Default BillInfo";
-        }
+        // if (billInfoId.isEmpty()) {
+        //     billInfoId = "Default BillInfo";
+        // }
+        billInfoId = "Default BillInfo";
+        // defaulted as requested
         writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
         XMLGenerationUtils.writeMappedElement(writer, rs, "BILLING_STATUS", "BillStat", null);
         writer.write("    </ABinfo>\n");

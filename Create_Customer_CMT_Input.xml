@@ -4,80 +4,36 @@
       xmlns:xalan="http://xml.apache.org/xalan"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.oracle.com/schema/brm CMT_Subscribers.xsd">
-  <ActSbsc id="CA_1000490480" isParent="Y">
+  <ActSbsc id="CA_1000709829" isParent="Y">
     <Act>
-      <ActNo>CA_1000490480</ActNo>
+      <ActNo>CA_1000709829</ActNo>
       <Curr>48</Curr>
-      <CustSegList>22</CustSegList>
+      <CustSegList>21</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
-      <GLSgmt>.10016</GLSgmt>
+      <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
-      <Add>0000 0110</Add>
-      <City>Abu Bham</City>
+      <Add>0011 1983 3870 0738</Add>
+      <City></City>
       <Cnt>Bahrain</Cnt>
-      <FNm>Test</FNm>
+      <FNm>Husain Jaafar Hasan Jaafar</FNm>
       <MNm></MNm>
-      <LNm>Test12</LNm>
+      <LNm>Hasan Jaafar</LNm>
         <Stt/>
         <Tit/>
         <Zip/>
         <APhArr elem="0">
           <Ph></Ph>
-          <PhTyp>W</PhTyp>
+          <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
-      <BillStat></BillStat>
-    </ABinfo>
-  </ActSbsc>
-  <ActSbsc id="CA_1000561664" isParent="Y">
-    <Act>
-      <ActNo>CA_1000561664</ActNo>
-      <Curr>48</Curr>
-      <CustSegList>22</CustSegList>
-      <SubSta>A</SubSta>
-      <BType>RES</BType>
-      <SrvAACAccess>Customer</SrvAACAccess>
-      <GLSgmt>.10016</GLSgmt>
-      <ANArr elem="1">
-      <Add>0000 0001</Add>
-      <City>NA</City>
-      <Cnt>Bahrain</Cnt>
-      <FNm>Dupe Test</FNm>
-      <MNm></MNm>
-      <LNm>Dupe</LNm>
-        <Stt/>
-        <Tit/>
-        <Zip/>
-        <APhArr elem="0">
-          <Ph>9799676555</Ph>
-          <PhTyp>Ph</PhTyp>
-        </APhArr>
-      </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
-    </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
-      <ACDom>22</ACDom>
-      <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -106,56 +62,80 @@
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
   </ActSbsc>
-  <ActSbsc id="CA_1000709829" isParent="Y">
+  <ActSbsc id="CA_1000490480" isParent="Y">
     <Act>
-      <ActNo>CA_1000709829</ActNo>
+      <ActNo>CA_1000490480</ActNo>
       <Curr>48</Curr>
-      <CustSegList>21</CustSegList>
+      <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
       <SrvAACAccess>Customer</SrvAACAccess>
-      <GLSgmt>.10008</GLSgmt>
+      <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
-      <Add>0011 1983 3870 0738</Add>
-      <City></City>
+      <Add>0000 0110</Add>
+      <City>Abu Bham</City>
       <Cnt>Bahrain</Cnt>
-      <FNm>Husain Jaafar Hasan Jaafar</FNm>
+      <FNm>Test</FNm>
       <MNm></MNm>
-      <LNm>Hasan Jaafar</LNm>
+      <LNm>Test12</LNm>
         <Stt/>
         <Tit/>
         <Zip/>
         <APhArr elem="0">
           <Ph></Ph>
-          <PhTyp></PhTyp>
+          <PhTyp>W</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc></Perc>
-      <Typ></Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <BillInfoId>Default BillInfo</BillInfoId>
+      <BillStat></BillStat>
+    </ABinfo>
+  </ActSbsc>
+  <ActSbsc id="CA_1000561664" isParent="Y">
+    <Act>
+      <ActNo>CA_1000561664</ActNo>
+      <Curr>48</Curr>
+      <CustSegList>22</CustSegList>
+      <SubSta>A</SubSta>
+      <BType>RES</BType>
+      <SrvAACAccess>Customer</SrvAACAccess>
+      <GLSgmt>.10016</GLSgmt>
+      <ANArr elem="1">
+      <Add>0000 0001</Add>
+      <City>NA</City>
+      <Cnt>Bahrain</Cnt>
+      <FNm>Dupe Test</FNm>
+      <MNm></MNm>
+      <LNm>Dupe</LNm>
+        <Stt/>
+        <Tit/>
+        <Zip/>
+        <APhArr elem="0">
+          <Ph>9799676555</Ph>
+          <PhTyp>Ph</PhTyp>
+        </APhArr>
+      </ANArr>
+    </Act>
+    <ABinfo global="true"  isAccBillinfo="Yes">
+      <ACDom>22</ACDom>
+      <ActgType>B</ActgType>
+      <ACDom>22</ACDom>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -184,17 +164,12 @@
           <PhTyp>W</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -223,17 +198,12 @@
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -262,17 +232,12 @@
           <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -301,17 +266,12 @@
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -340,17 +300,12 @@
           <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -379,17 +334,12 @@
           <PhTyp></PhTyp>
         </APhArr>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc>0</Perc>
-      <Typ>FED</Typ>
-      </AEArr>
     </Act>
-    <ABinfo global="true" bal_grp="true" isAccBillinfo="Yes">
+    <ABinfo global="true"  isAccBillinfo="Yes">
       <ACDom>22</ACDom>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-06-22T00:00:00Z</ANxt>
+      <ANxt>2025-07-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
