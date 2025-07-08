@@ -142,11 +142,23 @@ public class BAXMLGenerator {
         writeMappedElement(writer, rs, "STATE", "Stt", tagMap);
         writeMappedElement(writer, rs, "ZIP", "Zip", tagMap);
 
-        writer.write("        <APhArr id=\"0\">\n");
-        writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
-        writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
-        writer.write("        </APhArr>\n");
-        writer.write("      </ANArr>\n");
+        // Write APhArr only if PHONE or PHONE_TYPE is non-empty
+        String phone = getColumnValue(rs, "PHONE");
+        String phoneType = getColumnValue(rs, "PHONE_TYPE");
+
+        if (!phone.isEmpty() || !phoneType.isEmpty()) {
+            writer.write("        <APhArr id=\"0\">\n");
+
+            if (!phone.isEmpty()) {
+                writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
+            }
+
+            if (!phoneType.isEmpty()) {
+                writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
+            }
+
+            writer.write("        </APhArr>\n");
+        }
 
         writer.write("      <AEArr>\n");
         writer.write("        <CertNum/>\n");
@@ -166,7 +178,7 @@ public class BAXMLGenerator {
             throws SQLException, IOException {
         writer.write(String.format(
                 // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+                // isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
                 "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" >\n",
                 escapeXml(formattedParentRef)));
 
@@ -206,7 +218,7 @@ public class BAXMLGenerator {
 
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
         // if (billInfoId.isEmpty()) {
-        //     billInfoId = "Default BillInfo";
+        // billInfoId = "Default BillInfo";
         // }
         billInfoId = "Default BillInfo";
         // defaulted as requested

@@ -1,7 +1,6 @@
 package com.batelco.migration.xml;
 
 import com.batelco.migration.config.XmlTagMapping;
-import com.batelco.migration.xml.XMLGenerationUtils;
 import com.batelco.migration.sql.QueryExecutor;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -16,7 +15,6 @@ public class DepartmentAccountXMLGenerator {
     public static void generateXML(Connection connection, String sqlQuery, String outputFile) {
         Map<String, String> tagMap = XmlTagMapping.getDepartmentTagMap();
 
-        // Enhance SQL query if target is stg_dept_acct_t
         String enhancedQuery = sqlQuery.toLowerCase().contains("from stg_dept_acct_t")
                 ? """
                           SELECT d.*, c.IS_ENTER_ACCT
@@ -27,8 +25,8 @@ public class DepartmentAccountXMLGenerator {
                 : sqlQuery;
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, enhancedQuery);
-                FileOutputStream fos = new FileOutputStream(outputFile);
-                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+             FileOutputStream fos = new FileOutputStream(outputFile);
+             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc xmlns=\"http://www.portal.com/InfranetXMLSchema\"\n");
@@ -51,17 +49,14 @@ public class DepartmentAccountXMLGenerator {
     }
 
     private static void writeDepartmentElement(OutputStreamWriter writer, ResultSet rs,
-            Map<String, String> tagMap)
+                                               Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = XMLGenerationUtils.getColumnValue(rs, "ACCOUNT_NO");
         String parentAccount = XMLGenerationUtils.getColumnValue(rs, "CUST_ACCOUNT_NO");
         String isEnterprise = XMLGenerationUtils.getColumnValue(rs, "IS_ENTER_ACCT");
-        System.out.println("AccountNo: " + accountNo + ", IS_ENTER_ACCT: '" + isEnterprise + "'");
 
         String actId = "yes".equalsIgnoreCase(isEnterprise) ? "DA_" + accountNo : accountNo;
-        // String parentRef = "yes".equalsIgnoreCase(isEnterprise) ? "CA_" +
-        // parentAccount : parentAccount;
-        String parentRef = "yes".equalsIgnoreCase(isEnterprise) ? parentAccount : parentAccount;
+        String parentRef = parentAccount;
 
         writer.write(String.format("  <ActSbsc id=\"%s\" isParent=\"Y\" parenRef=\"%s\">\n",
                 XMLGenerationUtils.escapeXml(actId), XMLGenerationUtils.escapeXml(parentRef)));
@@ -85,60 +80,39 @@ public class DepartmentAccountXMLGenerator {
         writer.write("        <Stt/>\n");
         writer.write("        <Tit/>\n");
         writer.write("        <Zip/>\n");
-        writePhoneElements(writer, rs);
-        writer.write("      </ANArr>\n");
-// REMOVED AS REQUESTED
-        // writer.write("      <AEArr>\n");
-        // writer.write("        <CertNum/>\n");
-        // XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-        // XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-        // writer.write("      </AEArr>\n");
 
+        writePhoneElements(writer, rs, tagMap);
+
+        writer.write("      </ANArr>\n");
         writer.write("    </Act>\n");
+
         writeABinfo(writer, rs, actId);
         writer.write("  </ActSbsc>\n");
     }
 
-    private static void writePhoneElements(OutputStreamWriter writer, ResultSet rs)
+    private static void writePhoneElements(OutputStreamWriter writer, ResultSet rs, Map<String, String> tagMap)
             throws SQLException, IOException {
         String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE");
         String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE");
 
-        String mappedPhTyp = switch (phoneType) {
-            case "0" -> "Ph";
-            case "1" -> "H";
-            case "2" -> "W";
-            case "3" -> "P"; // or "F" — pick one representative
-            case "4" -> "PG";
-            case "5" -> "PP";
-            case "6" -> "S";
-            default -> phoneType;
-        };
+        if (!phone.isEmpty() || !phoneType.isEmpty()) {
+            writer.write("        <APhArr id=\"0\">\n");
 
-        writer.write("        <APhArr elem=\"0\">\n");
-        writer.write(String.format("          <Ph>%s</Ph>\n", XMLGenerationUtils.escapeXml(phone)));
-        writer.write(String.format("          <PhTyp>%s</PhTyp>\n", XMLGenerationUtils.escapeXml(mappedPhTyp)));
-        writer.write("        </APhArr>\n");
+            if (!phone.isEmpty()) {
+                XMLGenerationUtils.writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
+            }
+
+            if (!phoneType.isEmpty()) {
+                XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
+            }
+
+            writer.write("        </APhArr>\n");
+        }
     }
 
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String actId)
             throws SQLException, IOException {
-        writer.write(String.format(
-                // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\">\n",
-
-                XMLGenerationUtils.escapeXml(actId)));
-        String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
-        if (billInfoId.isEmpty()) {
-            billInfoId = "Default BillInfo";
-        }
-
-        // Custom static values
-        writer.write("      <ActgType>B</ActgType>\n");
-        // writer.write(" <ANxt>2024-05-01T00:00:00Z</ANxt>\n");
-
-        // updated anxt tag
+        writer.write("    <ABinfo global=\"true\" isAccBillinfo=\"Yes\">\n");
 
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
@@ -148,22 +122,24 @@ public class DepartmentAccountXMLGenerator {
             LocalDate today = LocalDate.now();
             int todayDay = today.getDayOfMonth();
 
-            // Determine correct month/year based on logic
             LocalDate billingDate;
-            if (acDom > todayDay) {
-                // Use current month
-                billingDate = LocalDate.of(today.getYear(), today.getMonth(),
-                        Math.min(acDom, today.lengthOfMonth()));
+            if (todayDay < acDom) {
+                // Use this month
+                billingDate = LocalDate.of(today.getYear(), today.getMonth(), Math.min(acDom, today.lengthOfMonth()));
             } else {
                 // Use next month
                 LocalDate nextMonth = today.plusMonths(1);
-                billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(),
-                        Math.min(acDom, nextMonth.lengthOfMonth()));
+                billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(), Math.min(acDom, nextMonth.lengthOfMonth()));
             }
 
             writer.write(String.format("      <ANxt>%sT00:00:00Z</ANxt>\n", billingDate));
         } catch (NumberFormatException e) {
-            writer.write("      <ANxt/>\n"); // fallback for invalid/missing ACTG_CYCLE_DOM
+            writer.write("      <ANxt/>\n");
+        }
+
+        String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
+        if (billInfoId.isEmpty()) {
+            billInfoId = "Default BillInfo";
         }
 
         writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));

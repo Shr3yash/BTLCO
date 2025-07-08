@@ -86,12 +86,12 @@ public class XMLGenerator {
         writer.write("        <Zip/>\n");
         writePhoneElements(writer, rs);
         writer.write("      </ANArr>\n");
-// REMOVED AS REQUESTED
-        // writer.write("      <AEArr>\n");
-        // writer.write("        <CertNum/>\n");
+        // REMOVED AS REQUESTED
+        // writer.write(" <AEArr>\n");
+        // writer.write(" <CertNum/>\n");
         // XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
         // XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-        // writer.write("      </AEArr>\n");
+        // writer.write(" </AEArr>\n");
 
         writer.write("    </Act>\n");
 
@@ -103,23 +103,35 @@ public class XMLGenerator {
 
     private static void writePhoneElements(OutputStreamWriter writer, ResultSet rs)
             throws SQLException, IOException {
-        String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE");
-        String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE");
+        String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE").trim();
+        String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE").trim();
 
-        String mappedPhTyp = switch (phoneType.toUpperCase()) {
+        if (phone.isEmpty() && phoneType.isEmpty()) {
+            return; // Don't write anything if both are empty
+        }
+
+        // Map phoneType code to its corresponding label
+        String mappedPhTyp = switch (phoneType) {
             case "0" -> "Ph";
             case "1" -> "H";
             case "2" -> "W";
-            case "3" -> "P"; // CANT HAVE BOTH!
+            case "3" -> "P"; // P and F both map to 3 — you can decide which one to keep
             case "4" -> "PG";
             case "5" -> "PP";
             case "6" -> "S";
-            default -> phoneType;
+            default -> ""; // If unknown or empty, skip
         };
 
         writer.write("        <APhArr elem=\"0\">\n");
-        writer.write(String.format("          <Ph>%s</Ph>\n", XMLGenerationUtils.escapeXml(phone)));
-        writer.write(String.format("          <PhTyp>%s</PhTyp>\n", XMLGenerationUtils.escapeXml(mappedPhTyp)));
+
+        if (!phone.isEmpty()) {
+            writer.write(String.format("          <Ph>%s</Ph>\n", XMLGenerationUtils.escapeXml(phone)));
+        }
+
+        if (!mappedPhTyp.isEmpty()) {
+            writer.write(String.format("          <PhTyp>%s</PhTyp>\n", XMLGenerationUtils.escapeXml(mappedPhTyp)));
+        }
+
         writer.write("        </APhArr>\n");
     }
 
@@ -148,7 +160,7 @@ public class XMLGenerator {
             throws SQLException, IOException {
         writer.write(String.format(
                 // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+                // isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
                 "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\">\n",
 
                 XMLGenerationUtils.escapeXml(accountNo)));

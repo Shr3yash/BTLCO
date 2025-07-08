@@ -72,10 +72,23 @@ public class ServiceAccountXMLGenerator {
         writer.write("        <Tit/>\n");
         writer.write("        <Stt/>\n");
         writer.write("        <Zip/>\n");
-        writer.write("        <APhArr id=\"0\">\n");
-        XMLGenerationUtils.writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
-        XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
-        writer.write("        </APhArr>\n");
+        String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE");
+        String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE");
+        
+        if (!phone.isEmpty() || !phoneType.isEmpty()) {
+            writer.write("        <APhArr id=\"0\">\n");
+        
+            if (!phone.isEmpty()) {
+                XMLGenerationUtils.writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
+            }
+        
+            if (!phoneType.isEmpty()) {
+                XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
+            }
+        
+            writer.write("        </APhArr>\n");
+        }
+        
         writer.write("      </ANArr>\n");
 
         writer.write("      <AEArr>\n");
