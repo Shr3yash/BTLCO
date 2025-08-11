@@ -23,17 +23,16 @@
         <Stt/>
         <Tit/>
         <Zip/>
-        <APhArr elem="0">
-          <Ph>88888888888</Ph>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true"  isAccBillinfo="Yes">
-      <ACDom>22</ACDom>
+    <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <ANxt>2025-08-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -57,17 +56,12 @@
         <Stt/>
         <Tit/>
         <Zip/>
-        <APhArr elem="0">
-          <Ph></Ph>
-          <PhTyp></PhTyp>
-        </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true"  isAccBillinfo="Yes">
-      <ACDom>22</ACDom>
+    <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <ANxt>2025-08-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -91,17 +85,16 @@
         <Stt/>
         <Tit/>
         <Zip/>
-        <APhArr elem="0">
-          <Ph>88888888888</Ph>
+        <APhArr id="0">
+      <Ph>88888888888</Ph>
           <PhTyp>Ph</PhTyp>
         </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true"  isAccBillinfo="Yes">
-      <ACDom>22</ACDom>
+    <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <ANxt>2025-08-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -125,17 +118,12 @@
         <Stt/>
         <Tit/>
         <Zip/>
-        <APhArr elem="0">
-          <Ph></Ph>
-          <PhTyp></PhTyp>
-        </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true"  isAccBillinfo="Yes">
-      <ACDom>22</ACDom>
+    <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <ANxt>2025-08-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -159,17 +147,12 @@
         <Stt/>
         <Tit/>
         <Zip/>
-        <APhArr elem="0">
-          <Ph></Ph>
-          <PhTyp></PhTyp>
-        </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true"  isAccBillinfo="Yes">
-      <ACDom>22</ACDom>
+    <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
-      <ANxt>2025-07-22T00:00:00Z</ANxt>
+      <ANxt>2025-08-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>

@@ -99,7 +99,7 @@ public class BAXMLGenerator {
 
         writePromotions(writer, rs, accountNo);
         writeABinfo(writer, rs, parentRef);
-        writeAPinfo(writer, rs, accountNo);
+        // writeAPinfo(writer, rs, accountNo);
 
         writer.write("  </ActSbsc>\n");
     }

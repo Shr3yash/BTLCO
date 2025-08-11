@@ -113,7 +113,7 @@ public class DepartmentAccountXMLGenerator {
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String actId)
             throws SQLException, IOException {
         writer.write("    <ABinfo global=\"true\" isAccBillinfo=\"Yes\">\n");
-
+        writer.write("      <ActgType>B</ActgType>\n");
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
 
