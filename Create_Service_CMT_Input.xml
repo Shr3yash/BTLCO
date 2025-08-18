@@ -25,13 +25,8 @@
         <Stt/>
         <Zip/>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc></Perc>
-      <Typ></Typ>
-      </AEArr>
     </Act>
-    <ActProm id="151032" type="/profile/acct_extrating" global="true">
+    <ActProm id="113982" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -48,7 +43,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="249845" type="/payinfo/subord">
+    <APinfo id="273226" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -73,13 +68,8 @@
         <Stt/>
         <Zip/>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc></Perc>
-      <Typ></Typ>
-      </AEArr>
     </Act>
-    <ActProm id="145862" type="/profile/acct_extrating" global="true">
+    <ActProm id="118386" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -92,11 +82,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
-      <ANxt>2025-08-16T00:00:00Z</ANxt>
+      <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="272186" type="/payinfo/subord">
+    <APinfo id="229389" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -130,7 +120,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="138967" type="/profile/acct_extrating" global="true">
+    <ActProm id="160353" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -143,11 +133,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
-      <ANxt>2025-08-18T00:00:00Z</ANxt>
+      <ANxt>2025-09-18T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="294019" type="/payinfo/subord">
+    <APinfo id="255506" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -181,7 +171,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="142539" type="/profile/acct_extrating" global="true">
+    <ActProm id="101004" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -194,11 +184,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
-      <ANxt>2025-08-18T00:00:00Z</ANxt>
+      <ANxt>2025-09-18T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="292161" type="/payinfo/subord">
+    <APinfo id="248980" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -232,7 +222,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="195743" type="/profile/acct_extrating" global="true">
+    <ActProm id="113236" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -245,11 +235,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
-      <ANxt>2025-08-18T00:00:00Z</ANxt>
+      <ANxt>2025-09-18T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="292509" type="/payinfo/subord">
+    <APinfo id="232405" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -284,7 +274,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="170590" type="/profile/acct_extrating" global="true">
+    <ActProm id="158796" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -301,7 +291,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="263268" type="/payinfo/subord">
+    <APinfo id="230704" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -335,7 +325,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="157669" type="/profile/acct_extrating" global="true">
+    <ActProm id="115736" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -352,7 +342,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="231654" type="/payinfo/subord">
+    <APinfo id="227792" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -386,7 +376,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="149146" type="/profile/acct_extrating" global="true">
+    <ActProm id="176355" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -403,7 +393,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="217442" type="/payinfo/subord">
+    <APinfo id="265757" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -437,7 +427,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="158327" type="/profile/acct_extrating" global="true">
+    <ActProm id="148769" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -454,7 +444,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="218262" type="/payinfo/subord">
+    <APinfo id="235574" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -479,13 +469,8 @@
         <Stt/>
         <Zip/>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc></Perc>
-      <Typ></Typ>
-      </AEArr>
     </Act>
-    <ActProm id="156901" type="/profile/acct_extrating" global="true">
+    <ActProm id="115743" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -502,7 +487,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="244698" type="/payinfo/subord">
+    <APinfo id="216238" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -527,13 +512,8 @@
         <Stt/>
         <Zip/>
       </ANArr>
-      <AEArr>
-        <CertNum/>
-      <Perc></Perc>
-      <Typ></Typ>
-      </AEArr>
     </Act>
-    <ActProm id="152301" type="/profile/acct_extrating" global="true">
+    <ActProm id="186915" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -546,11 +526,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
-      <ANxt>2025-08-16T00:00:00Z</ANxt>
+      <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="284121" type="/payinfo/subord">
+    <APinfo id="256210" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -584,7 +564,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="192249" type="/profile/acct_extrating" global="true">
+    <ActProm id="193964" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -597,11 +577,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>13</ACDom>
-      <ANxt>2025-08-13T00:00:00Z</ANxt>
+      <ANxt>2025-09-13T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="297170" type="/payinfo/subord">
+    <APinfo id="270672" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -636,7 +616,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="109374" type="/profile/acct_extrating" global="true">
+    <ActProm id="194216" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -653,7 +633,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="287104" type="/payinfo/subord">
+    <APinfo id="231100" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -684,7 +664,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="199716" type="/profile/acct_extrating" global="true">
+    <ActProm id="136471" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -697,11 +677,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
-      <ANxt>2025-08-15T00:00:00Z</ANxt>
+      <ANxt>2025-09-15T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="248203" type="/payinfo/subord">
+    <APinfo id="224420" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -736,7 +716,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="150745" type="/profile/acct_extrating" global="true">
+    <ActProm id="191884" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -749,11 +729,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
-      <ANxt>2025-08-16T00:00:00Z</ANxt>
+      <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="257898" type="/payinfo/subord">
+    <APinfo id="271972" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -784,7 +764,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="161977" type="/profile/acct_extrating" global="true">
+    <ActProm id="117695" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -797,11 +777,11 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
-      <ANxt>2025-08-07T00:00:00Z</ANxt>
+      <ANxt>2025-09-07T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="286004" type="/payinfo/subord">
+    <APinfo id="286270" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -832,7 +812,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="173440" type="/profile/acct_extrating" global="true">
+    <ActProm id="126513" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -849,7 +829,7 @@
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="210578" type="/payinfo/subord">
+    <APinfo id="278641" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>

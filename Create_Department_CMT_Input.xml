@@ -11,6 +11,8 @@
       <CustSegList>5</CustSegList>
       <SubSta>A</SubSta>
       <BType>BAT</BType>
+      <Eff>2020-03-03T18:02:39Z</Eff>
+      <CrtT>2020-03-03T19:37:17Z</CrtT>
       <SrvAACAccess>Department</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
       <ANArr elem="1">
@@ -44,6 +46,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:56:51Z</Eff>
+      <CrtT>2020-03-03T18:45:30Z</CrtT>
       <SrvAACAccess>Department</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -73,6 +77,8 @@
       <CustSegList>5</CustSegList>
       <SubSta>A</SubSta>
       <BType>BAT</BType>
+      <Eff>2020-03-03T18:02:39Z</Eff>
+      <CrtT>2020-03-03T20:01:19Z</CrtT>
       <SrvAACAccess>Department</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
       <ANArr elem="1">
@@ -106,6 +112,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:51:14Z</CrtT>
       <SrvAACAccess>Department</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -135,6 +143,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Department</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">

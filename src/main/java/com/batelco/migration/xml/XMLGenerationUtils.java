@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 import java.sql.ResultSetMetaData;
+import java.time.Instant;
 
 public class XMLGenerationUtils {
 
@@ -121,6 +122,42 @@ public class XMLGenerationUtils {
                 elementName,
                 escapeXml(value),
                 elementName));
+    }
+
+    //  epoch/ISO formatting helpers for Eff/CrtT 
+
+    public static String formatEpochToIso(String epochLike) {
+        if (epochLike == null || epochLike.trim().isEmpty()) {
+            return "";
+        }
+        String v = epochLike.trim();
+        try {
+            long ts = Long.parseLong(v);
+            if (v.length() >= 13) {
+                ts = ts / 1000L;
+            }
+            Instant inst = Instant.ofEpochSecond(ts);
+            return inst.toString(); 
+        } catch (NumberFormatException e) {
+            // Not epoch assume already an ISO or leave as-is
+            return v;
+        }
+    }
+
+    public static void writeEffAndCrtT(OutputStreamWriter writer, ResultSet rs)
+            throws SQLException, IOException {
+        String effRaw = getColumnValue(rs, "ACC_EFFECTIVE_T");
+        String crtRaw = getColumnValue(rs, "ACC_CREATED_T");
+
+        String effIso = formatEpochToIso(effRaw);
+        String crtIso = formatEpochToIso(crtRaw);
+
+        if (!effIso.isEmpty()) {
+            writer.write(String.format("      <Eff>%s</Eff>%n", escapeXml(effIso)));
+        }
+        if (!crtIso.isEmpty()) {
+            writer.write(String.format("      <CrtT>%s</CrtT>%n", escapeXml(crtIso)));
+        }
     }
 
 }

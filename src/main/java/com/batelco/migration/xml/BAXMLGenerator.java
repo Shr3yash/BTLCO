@@ -69,6 +69,7 @@ public class BAXMLGenerator {
         writeMappedElement(writer, rs, "CUSTOMER_SEGMENT_LIST", "CustSegList", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
         writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        XMLGenerationUtils.writeEffAndCrtT(writer, rs);
         writeMappedElement(writer, rs, "AAC_ACCESS", "SrvAACAccess", tagMap);
         writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
 
@@ -84,17 +85,33 @@ public class BAXMLGenerator {
         writeMappedElement(writer, rs, "STATE", "Stt", tagMap);
         writeMappedElement(writer, rs, "ZIP", "Zip", tagMap);
 
-        writer.write("        <APhArr id=\"0\">\n");
-        writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
-        writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
-        writer.write("        </APhArr>\n");
+        // PHONE/TYPE → Only emit phone array if PHONE_TYPE (type) exists.
+        // If phone type is absent, the wrapper tag (APhArr / APar) must NOT appear.
+        String phone = getColumnValue(rs, "PHONE");
+        String phoneType = getColumnValue(rs, "PHONE_TYPE");
+        if (!phoneType.isEmpty()) {
+            writer.write("        <APhArr id=\"0\">\n");
+            if (!phone.isEmpty()) {
+                writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
+            }
+            writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
+            writer.write("        </APhArr>\n");
+        }
+        // Else: do not emit APhArr at all.
+
         writer.write("      </ANArr>\n");
 
-        writer.write("      <AEArr>\n");
-        writer.write("        <CertNum/>\n");
-        writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-        writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-        writer.write("      </AEArr>\n");
+        // EXEMPTIONS/TYPE → If exemptions TYPE is absent, the wrapper tag (AEArr / AEar) must NOT appear.
+        String exType = getColumnValue(rs, "TYPE");
+        if (!exType.isEmpty()) {
+            writer.write("      <AEArr>\n");
+            writer.write("        <CertNum/>\n");
+            writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+            writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+            writer.write("      </AEArr>\n");
+        }
+        // Else: do not emit AEArr at all.
+
         writer.write("    </Act>\n");
 
         writePromotions(writer, rs, accountNo);
@@ -142,29 +159,30 @@ public class BAXMLGenerator {
         writeMappedElement(writer, rs, "STATE", "Stt", tagMap);
         writeMappedElement(writer, rs, "ZIP", "Zip", tagMap);
 
-        // Write APhArr only if PHONE or PHONE_TYPE is non-empty
+        // Write APhArr only if PHONE_TYPE is non-empty (gate on type per requirement)
         String phone = getColumnValue(rs, "PHONE");
         String phoneType = getColumnValue(rs, "PHONE_TYPE");
-
-        if (!phone.isEmpty() || !phoneType.isEmpty()) {
+        if (!phoneType.isEmpty()) {
             writer.write("        <APhArr id=\"0\">\n");
-
             if (!phone.isEmpty()) {
                 writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
             }
-
-            if (!phoneType.isEmpty()) {
-                writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
-            }
-
+            writeMappedElement(writer, rs, "PHONE_TYPE", "PhTyp", tagMap);
             writer.write("        </APhArr>\n");
         }
+        // Else: do not emit APhArr at all.
 
-        writer.write("      <AEArr>\n");
-        writer.write("        <CertNum/>\n");
-        writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-        writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-        writer.write("      </AEArr>\n");
+        // Emit AEArr only when TYPE (exemptions type) exists
+        String exType = getColumnValue(rs, "TYPE");
+        if (!exType.isEmpty()) {
+            writer.write("      <AEArr>\n");
+            writer.write("        <CertNum/>\n");
+            writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+            writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+            writer.write("      </AEArr>\n");
+        }
+        // Else: do not emit AEArr at all.
+
         writer.write("    </Act>\n");
 
         writePromotions(writer, rs, accountNo);

@@ -67,6 +67,7 @@ public class DepartmentAccountXMLGenerator {
         XMLGenerationUtils.writeMappedElement(writer, rs, "CUSTOMER_SEGMENT_LIST", "CustSegList", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        XMLGenerationUtils.writeEffAndCrtT(writer, rs);
         writer.write("      <SrvAACAccess>Department</SrvAACAccess>\n");
         XMLGenerationUtils.writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
 
@@ -81,7 +82,13 @@ public class DepartmentAccountXMLGenerator {
         writer.write("        <Tit/>\n");
         writer.write("        <Zip/>\n");
 
+        // PHONE/TYPE → Only emit phone array if PHONE_TYPE (type) exists.
+        // If phone type is absent, the wrapper tag (APhArr / APar-equivalent) must NOT appear.
         writePhoneElements(writer, rs, tagMap);
+
+        // EXEMPTIONS/TYPE → If exemptions type is absent, the wrapper tag (AEar) must NOT appear.
+        // (No-op here unless you later add exemptions emission; this preserves the rule.)
+        // writeExemptionsElements(writer, rs, tagMap); // Intentionally omitted unless types exist.
 
         writer.write("      </ANArr>\n");
         writer.write("    </Act>\n");
@@ -95,19 +102,20 @@ public class DepartmentAccountXMLGenerator {
         String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE");
         String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE");
 
-        if (!phone.isEmpty() || !phoneType.isEmpty()) {
+        // Change: gate the entire array on PHONE_TYPE presence.
+        if (!phoneType.isEmpty()) {
             writer.write("        <APhArr id=\"0\">\n");
 
             if (!phone.isEmpty()) {
                 XMLGenerationUtils.writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
             }
 
-            if (!phoneType.isEmpty()) {
-                XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
-            }
+            // PHONE_TYPE exists by guard above; emit type-specific element(s)
+            XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
 
             writer.write("        </APhArr>\n");
         }
+        // Else: do not emit APhArr (aka APar-equivalent) at all.
     }
 
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String actId)

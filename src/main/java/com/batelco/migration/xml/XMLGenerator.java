@@ -1,4 +1,4 @@
-package com.batelco.migration.xml;
+package com.batelco.migration.xml; 
 
 import com.batelco.migration.config.XmlTagMapping;
 import com.batelco.migration.sql.QueryExecutor;
@@ -71,6 +71,7 @@ public class XMLGenerator {
         XMLGenerationUtils.writeMappedElement(writer, rs, "CUSTOMER_SEGMENT_LIST", "CustSegList", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        XMLGenerationUtils.writeEffAndCrtT(writer, rs);
         writer.write("      <SrvAACAccess>Customer</SrvAACAccess>\n");
         XMLGenerationUtils.writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
 
@@ -84,14 +85,26 @@ public class XMLGenerator {
         writer.write("        <Stt/>\n");
         writer.write("        <Tit/>\n");
         writer.write("        <Zip/>\n");
-        writePhoneElements(writer, rs);
+        writePhoneElements(writer, rs); // APar (APhArr) gated by PHONE_TYPE
         writer.write("      </ANArr>\n");
+
         // REMOVED AS REQUESTED
         // writer.write(" <AEArr>\n");
         // writer.write(" <CertNum/>\n");
         // XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
         // XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
         // writer.write(" </AEArr>\n");
+
+        // AEar (AEArr) rule: emit only if TYPE exists (mirrors teammate’s requirement)
+        String exType = XMLGenerationUtils.getColumnValue(rs, "TYPE").trim();
+        if (!exType.isEmpty()) {
+            writer.write("      <AEArr>\n");
+            writer.write("        <CertNum/>\n");
+            XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+            XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+            writer.write("      </AEArr>\n");
+        }
+        // Else: skip AEArr entirely.
 
         writer.write("    </Act>\n");
 
@@ -106,8 +119,9 @@ public class XMLGenerator {
         String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE").trim();
         String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE").trim();
 
-        if (phone.isEmpty() && phoneType.isEmpty()) {
-            return; // Don't write anything if both are empty
+        // NEW RULE: Only emit the phone wrapper (APhArr / APar) if PHONE_TYPE exists.
+        if (phoneType.isEmpty()) {
+            return; // No type → no APhArr tag at all
         }
 
         // Map phoneType code to its corresponding label
@@ -119,7 +133,7 @@ public class XMLGenerator {
             case "4" -> "PG";
             case "5" -> "PP";
             case "6" -> "S";
-            default -> ""; // If unknown or empty, skip
+            default -> ""; // If unknown, we'll still write the wrapper but skip PhTyp element
         };
 
         writer.write("        <APhArr elem=\"0\">\n");
@@ -131,6 +145,7 @@ public class XMLGenerator {
         if (!mappedPhTyp.isEmpty()) {
             writer.write(String.format("          <PhTyp>%s</PhTyp>\n", XMLGenerationUtils.escapeXml(mappedPhTyp)));
         }
+        // If mapping was unknown, PhTyp is omitted but wrapper exists since type was provided.
 
         writer.write("        </APhArr>\n");
     }

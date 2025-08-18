@@ -17,8 +17,8 @@ public class ServiceAccountXMLGenerator {
         Map<String, String> tagMap = XmlTagMapping.getServiceTagMap();
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
-                FileOutputStream fos = new FileOutputStream(outputFile);
-                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+             FileOutputStream fos = new FileOutputStream(outputFile);
+             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc xmlns=\"http://www.portal.com/InfranetXMLSchema\"\n");
@@ -41,7 +41,7 @@ public class ServiceAccountXMLGenerator {
     }
 
     private static void writeServiceElement(OutputStreamWriter writer, ResultSet rs,
-            Map<String, String> tagMap)
+                                            Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = XMLGenerationUtils.getColumnValue(rs, "ACCOUNT_NO");
         String parentRef = XMLGenerationUtils.getColumnValue(rs, "BILL_ACCOUNT_NO");
@@ -58,6 +58,7 @@ public class ServiceAccountXMLGenerator {
         XMLGenerationUtils.writeMappedElement(writer, rs, "CUSTOMER_SEGMENT_LIST", "CustSegList", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "STATUS", "SubSta", tagMap);
         XMLGenerationUtils.writeMappedElement(writer, rs, "BUSINESS_TYPE", "BType", tagMap);
+        XMLGenerationUtils.writeEffAndCrtT(writer, rs);
         writer.write("      <SrvAACAccess>Service</SrvAACAccess>\n");
         XMLGenerationUtils.writeMappedElement(writer, rs, "GL_SEGMENT", "GLSgmt", tagMap);
 
@@ -72,30 +73,36 @@ public class ServiceAccountXMLGenerator {
         writer.write("        <Tit/>\n");
         writer.write("        <Stt/>\n");
         writer.write("        <Zip/>\n");
+
+        // PHONE/TYPE → Only emit <APhArr> if PHONE_TYPE exists (APar rule)
         String phone = XMLGenerationUtils.getColumnValue(rs, "PHONE");
         String phoneType = XMLGenerationUtils.getColumnValue(rs, "PHONE_TYPE");
-        
-        if (!phone.isEmpty() || !phoneType.isEmpty()) {
+        if (!phoneType.isEmpty()) {
             writer.write("        <APhArr id=\"0\">\n");
-        
+
             if (!phone.isEmpty()) {
                 XMLGenerationUtils.writeMappedElement(writer, rs, "PHONE", "Ph", tagMap);
             }
-        
-            if (!phoneType.isEmpty()) {
-                XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
-            }
-        
+
+            XMLGenerationUtils.writePhTypElement(writer, rs, "PHONE_TYPE", "PhTyp");
+
             writer.write("        </APhArr>\n");
         }
-        
+        // Else: skip APhArr entirely
+
         writer.write("      </ANArr>\n");
 
-        writer.write("      <AEArr>\n");
-        writer.write("        <CertNum/>\n");
-        XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-        XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-        writer.write("      </AEArr>\n");
+        // EXEMPTIONS/TYPE → Only emit <AEArr> if TYPE exists (AEar rule)
+        String exType = XMLGenerationUtils.getColumnValue(rs, "TYPE");
+        if (!exType.isEmpty()) {
+            writer.write("      <AEArr>\n");
+            writer.write("        <CertNum/>\n");
+            XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+            XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+            writer.write("      </AEArr>\n");
+        }
+        // Else: skip AEArr entirely
+
         writer.write("    </Act>\n");
 
         writePromotions(writer, rs, accountNo);
@@ -125,8 +132,6 @@ public class ServiceAccountXMLGenerator {
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String parentAccount)
             throws SQLException, IOException {
         writer.write(String.format(
-                // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"74728\"
-                //  isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
                 "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" payingParenRefId=\"%s\">\n",
                 XMLGenerationUtils.escapeXml(parentAccount)));
         String rawPayType = XMLGenerationUtils.getColumnValue(rs, "PAY_TYPE");
@@ -143,9 +148,6 @@ public class ServiceAccountXMLGenerator {
 
         // Custom static values
         writer.write("      <ActgType>B</ActgType>\n");
-        // writer.write(" <ANxt>2024-05-01T00:00:00Z</ANxt>\n");
-
-        // updated anxt tag
 
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
@@ -155,14 +157,11 @@ public class ServiceAccountXMLGenerator {
             LocalDate today = LocalDate.now();
             int todayDay = today.getDayOfMonth();
 
-            // Determine correct month/year based on logic
             LocalDate billingDate;
             if (acDom > todayDay) {
-                // Use current month
                 billingDate = LocalDate.of(today.getYear(), today.getMonth(),
                         Math.min(acDom, today.lengthOfMonth()));
             } else {
-                // Use next month
                 LocalDate nextMonth = today.plusMonths(1);
                 billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(),
                         Math.min(acDom, nextMonth.lengthOfMonth()));
@@ -170,7 +169,7 @@ public class ServiceAccountXMLGenerator {
 
             writer.write(String.format("      <ANxt>%sT00:00:00Z</ANxt>\n", billingDate));
         } catch (NumberFormatException e) {
-            writer.write("      <ANxt/>\n"); // fallback for invalid/missing ACTG_CYCLE_DOM
+            writer.write("      <ANxt/>\n");
         }
 
         writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
@@ -180,7 +179,7 @@ public class ServiceAccountXMLGenerator {
 
     private static void writeAPinfo(OutputStreamWriter writer, ResultSet rs, String accountNo)
             throws SQLException, IOException {
-        int randomApId = 200000 + new Random().nextInt(100000); // 6-digit ID starting with 2
+        int randomApId = 200000 + new Random().nextInt(100000);
         writer.write(String.format("    <APinfo id=\"%s\" type=\"/payinfo/subord\">\n",
                 XMLGenerationUtils.escapeXml(String.valueOf(randomApId))));
         XMLGenerationUtils.writeMappedElement(writer, rs, "PAYMENT_TERM", "PaymentTerm", null);

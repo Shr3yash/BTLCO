@@ -11,6 +11,8 @@
       <CustSegList>21</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
@@ -40,6 +42,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -73,6 +77,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -105,6 +111,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -138,6 +146,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Customer</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
