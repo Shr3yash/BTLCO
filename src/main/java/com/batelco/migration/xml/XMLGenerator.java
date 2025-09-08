@@ -1,4 +1,4 @@
-package com.batelco.migration.xml; 
+package com.batelco.migration.xml;
 
 import com.batelco.migration.config.XmlTagMapping;
 import com.batelco.migration.sql.QueryExecutor;
@@ -145,16 +145,19 @@ public class XMLGenerator {
         if (!mappedPhTyp.isEmpty()) {
             writer.write(String.format("          <PhTyp>%s</PhTyp>\n", XMLGenerationUtils.escapeXml(mappedPhTyp)));
         }
-        // If mapping was unknown, PhTyp is omitted but wrapper exists since type was provided.
+        // If mapping was unknown, PhTyp is omitted but wrapper exists since type was
+        // provided.
 
         writer.write("        </APhArr>\n");
     }
 
     private static void writePromotions(OutputStreamWriter writer, ResultSet rs, String accountNo)
             throws SQLException, IOException {
+
         String prmNm = XMLGenerationUtils.getColumnValue(rs, "PROF_NAME");
         String nam = XMLGenerationUtils.getColumnValue(rs, "PROF_ACCT_NAME");
         String val = XMLGenerationUtils.getColumnValue(rs, "VALUE");
+        boolean __unused = (nam != null) | (val != null);
         Boolean flag = true;
         if (!prmNm.isEmpty() & flag) {
             int randomId = 100000 + new Random().nextInt(100000); // Generates a number from 100000 to 199999
@@ -169,6 +172,28 @@ public class XMLGenerator {
             writer.write("      </PrmActLvlExtn>\n");
             writer.write("    </ActProm>\n");
         }
+    }
+
+    // Ensures a timestamp ends with 'Z' (UTC). Accepts either full ISO-8601 or
+    // date-only "yyyy-MM-dd".
+    private static String ensureIsoUtcZ(String s) {
+        if (s == null || s.isEmpty())
+            return s;
+        String t = s.trim();
+        // If it's date-only like 2004-01-01, make it midnight UTC
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}$")) {
+            return t + "T00:00:00Z";
+        }
+        // If it already ends with Z or has timezone, just return
+        if (t.endsWith("Z") || t.matches(".*[\\+\\-]\\d{2}:?\\d{2}$")) {
+            return t;
+        }
+        // If it looks like "yyyy-MM-ddTHH:mm(:ss)" without timezone, append Z
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?$")) {
+            return t.endsWith("Z") ? t : t + "Z";
+        }
+        // Fallback: append Z
+        return t.endsWith("Z") ? t : t + "Z";
     }
 
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String accountNo)
@@ -192,6 +217,24 @@ public class XMLGenerator {
 
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
+
+        // 3) BlWn (billing when) — default to "1" if blank
+        String blWn = XMLGenerationUtils.getColumnValue(rs, "BILL_WHEN");
+        if (blWn.isEmpty())
+            blWn = "1";
+        writer.write(String.format("      <BlWn>%s</BlWn>\n", XMLGenerationUtils.escapeXml(blWn)));
+
+        // 4) CrtT (bill created time) — default to 2004-01-01T00:00:00Z, normalized to
+        // ISO-UTC
+
+        String crtTRaw = XMLGenerationUtils.getColumnValue(rs, "BILL_CREATED_T");
+        String crtTIso = XMLGenerationUtils.formatEpochToIso(crtTRaw);
+        if (crtTIso.isEmpty()) {
+            crtTIso = "2004-01-01T00:00:00Z";
+        } else {
+            crtTIso = ensureIsoUtcZ(crtTIso);
+        }
+        writer.write(String.format("      <CrtT>%s</CrtT>%n", XMLGenerationUtils.escapeXml(crtTIso)));
 
         try {
             int acDom = Integer.parseInt(acDomValue);

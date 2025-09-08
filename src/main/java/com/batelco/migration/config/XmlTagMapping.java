@@ -31,6 +31,54 @@ public class XmlTagMapping {
         return tagMap;
     }
 
+    // ---------- NEW: ABinfo child-tag mapping (columns -> XML tags) ----------
+    // Make sure your SQL returns these column names (aliases OK).
+    public static Map<String, String> getABinfoTagMap() {
+        Map<String, String> m = new HashMap<>();
+        m.put("ACTG_TYPE",        "ActgType");      // e.g., 'B'
+        m.put("AC_DOM",           "ACDom");         // e.g., '01'
+        m.put("BILL_WHEN",        "BlWn");          // NEW
+        m.put("BILL_CREATED_T",   "CrtT");          // NEW (ISO 8601 UTC)
+        m.put("ACTG_NEXT_T",      "ANxt");          // NEW (ISO 8601 UTC)
+        m.put("PAY_TYPE",         "PTyp");          // e.g., 'PREPAID'
+        m.put("BI_STATUS",        "BISta");         // e.g., 'A'
+        m.put("BILL_STATUS",      "BillStat");      // e.g., '0'
+        m.put("BILLINFO_ID",      "BillInfoId");    // e.g., 'Prepaid Bill Info'
+        return m;
+    }
+
+    // ---------- OPTIONAL: ABinfo attribute mapping ----------
+    // These are not column->tag, but column->attributeName for the <ABinfo ...> open tag.
+    // If some are constants, you can hardcode them in the generator instead.
+    public static Map<String, String> getABinfoAttributeMap() {
+        Map<String, String> attrs = new HashMap<>();
+        attrs.put("GLOBAL_FLAG",     "global");         // 'true'/'false'
+        attrs.put("SPNR_CNT",        "spnrCnt");        // '0'
+        attrs.put("SPNREE_CNT",      "spnreeCnt");      // '0'
+        attrs.put("ELEM",            "elem");           // '1'
+        attrs.put("BAL_GRP",         "bal_grp");        // 'false'
+        attrs.put("IS_ACC_BILLINFO", "isAccBillinfo");  // 'Yes'
+        attrs.put("PAY_INFO_REF_ID", "payInfoRefId");   // '61352144'
+        return attrs;
+    }
+
+    // If you want a single merged map for services that also includes ABinfo child tags:
+    public static Map<String, String> getServiceTagMap() {
+        Map<String, String> merged = new HashMap<>(getColumnToTagMap());
+        merged.putAll(getABinfoTagMap());
+        return merged;
+    }
+
+    public static Map<String, String> getBATagMap() {
+        return getColumnToTagMap();
+    }
+
+    public static Map<String, String> getDepartmentTagMap() {
+        return getColumnToTagMap();
+    }
+
+    // ----- existing code below -----
+
     public static Map<String, String> getBusinessTypeMapping() {
         return Map.of(
                 "0", "U",
@@ -85,19 +133,6 @@ public class XmlTagMapping {
                 "0", "E",
                 "1", "P",
                 "2", "F");
-
-    }
-
-    public static Map<String, String> getBATagMap() {
-        return getColumnToTagMap();
-    }
-
-    public static Map<String, String> getDepartmentTagMap() {
-        return getColumnToTagMap();
-    }
-
-    public static Map<String, String> getServiceTagMap() {
-        return getColumnToTagMap();
     }
 
     public static String getRootAttributes() {

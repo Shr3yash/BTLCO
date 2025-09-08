@@ -33,8 +33,10 @@
     </Act>
     <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-08-22T00:00:00Z</ANxt>
+      <ACDom>6</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T19:37:17Z</CrtT>
+      <ANxt>2025-09-06T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -64,8 +66,10 @@
     </Act>
     <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-08-22T00:00:00Z</ANxt>
+      <ACDom>15</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T18:45:30Z</CrtT>
+      <ANxt>2025-09-15T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -99,8 +103,10 @@
     </Act>
     <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-08-22T00:00:00Z</ANxt>
+      <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T20:01:19Z</CrtT>
+      <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -130,8 +136,10 @@
     </Act>
     <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-08-22T00:00:00Z</ANxt>
+      <ACDom>7</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2016-06-20T21:00:00Z</CrtT>
+      <ANxt>2025-09-07T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>
@@ -161,8 +169,10 @@
     </Act>
     <ABinfo global="true" isAccBillinfo="Yes">
       <ActgType>B</ActgType>
-      <ACDom>22</ACDom>
-      <ANxt>2025-08-22T00:00:00Z</ANxt>
+      <ACDom>21</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
+      <ANxt>2025-08-21T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat></BillStat>
     </ABinfo>

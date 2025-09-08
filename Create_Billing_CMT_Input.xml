@@ -33,7 +33,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="100701" type="/profile/acct_extrating" global="true">
+    <ActProm id="187057" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -43,12 +43,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>28</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2018-04-04T07:32:17Z</CrtT>
       <ANxt>2025-08-28T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232867" isParent="Y" parenRef="CA_1000561664">
@@ -80,7 +82,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="102677" type="/profile/acct_extrating" global="true">
+    <ActProm id="118170" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -90,12 +92,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2018-04-18T07:58:06Z</CrtT>
       <ANxt>2025-09-15T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232871" isParent="Y" parenRef="CA_1000709829">
@@ -116,7 +120,7 @@
       <LNm>Hasan Jaafar</LNm>
       </ANArr>
     </Act>
-    <ActProm id="126405" type="/profile/acct_extrating" global="true">
+    <ActProm id="148253" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -126,12 +130,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>2</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-04T01:34:35Z</CrtT>
       <ANxt>2025-09-02T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>0</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232872" isParent="Y" parenRef="CA_1000709829">
@@ -152,7 +158,7 @@
       <LNm>Hasan Jaafar</LNm>
       </ANArr>
     </Act>
-    <ActProm id="183210" type="/profile/acct_extrating" global="true">
+    <ActProm id="157373" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -162,12 +168,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232873" isParent="Y" parenRef="CA_1000561664">
@@ -199,7 +207,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="191519" type="/profile/acct_extrating" global="true">
+    <ActProm id="160239" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -209,12 +217,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2018-04-18T09:09:46Z</CrtT>
       <ANxt>2025-09-15T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232874" isParent="Y" parenRef="CA_1000561664">
@@ -246,7 +256,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="116755" type="/profile/acct_extrating" global="true">
+    <ActProm id="155091" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -256,12 +266,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>10</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2018-08-14T10:23:57Z</CrtT>
       <ANxt>2025-09-10T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232895" isParent="Y" parenRef="CA_1000490480">
@@ -292,7 +304,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="161454" type="/profile/acct_extrating" global="true">
+    <ActProm id="180539" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -302,12 +314,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>13</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-04T15:26:15Z</CrtT>
       <ANxt>2025-09-13T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232901" isParent="Y" parenRef="CA_1000490480">
@@ -338,7 +352,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="197357" type="/profile/acct_extrating" global="true">
+    <ActProm id="139743" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -348,12 +362,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-20T06:46:51Z</CrtT>
       <ANxt>2025-09-18T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232904" isParent="Y" parenRef="CA_1000635023">
@@ -384,7 +400,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="169190" type="/profile/acct_extrating" global="true">
+    <ActProm id="135682" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -394,12 +410,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2019-09-18T21:00:00Z</CrtT>
       <ANxt>2025-09-06T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232905" isParent="Y" parenRef="CA_1000827431">
@@ -431,7 +449,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="196269" type="/profile/acct_extrating" global="true">
+    <ActProm id="115596" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -441,12 +459,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>14</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>1996-03-24T21:00:00Z</CrtT>
       <ANxt>2025-09-14T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232906" isParent="Y" parenRef="CA_1000827431">
@@ -478,7 +498,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="148991" type="/profile/acct_extrating" global="true">
+    <ActProm id="106167" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -488,12 +508,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>25</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>1996-03-24T21:00:00Z</CrtT>
       <ANxt>2025-08-25T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232907" isParent="Y" parenRef="CA_1000827431">
@@ -525,7 +547,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="149389" type="/profile/acct_extrating" global="true">
+    <ActProm id="109827" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -535,12 +557,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>27</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>1996-03-24T21:00:00Z</CrtT>
       <ANxt>2025-08-27T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232908" isParent="Y" parenRef="CA_1000827431">
@@ -572,7 +596,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="119863" type="/profile/acct_extrating" global="true">
+    <ActProm id="140956" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -582,12 +606,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>24</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-04T03:22:58Z</CrtT>
       <ANxt>2025-08-24T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232910" isParent="Y" parenRef="CA_1000709829">
@@ -608,7 +634,7 @@
       <LNm>Hasan Jaafar</LNm>
       </ANArr>
     </Act>
-    <ActProm id="189259" type="/profile/acct_extrating" global="true">
+    <ActProm id="185844" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -618,12 +644,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-08-22T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232912" isParent="Y" parenRef="CA_1000709829">
@@ -644,7 +672,7 @@
       <LNm>Hasan Jaafar</LNm>
       </ANArr>
     </Act>
-    <ActProm id="142671" type="/profile/acct_extrating" global="true">
+    <ActProm id="101344" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -654,12 +682,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232870" isParent="Y" parenRef="CA_1000490480">
@@ -690,7 +720,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="193060" type="/profile/acct_extrating" global="true">
+    <ActProm id="172079" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -700,12 +730,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>13</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-20T05:20:39Z</CrtT>
       <ANxt>2025-09-13T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232909" isParent="Y" parenRef="CA_1000709829">
@@ -726,7 +758,7 @@
       <LNm>Hasan Jaafar</LNm>
       </ANArr>
     </Act>
-    <ActProm id="113901" type="/profile/acct_extrating" global="true">
+    <ActProm id="123333" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -736,12 +768,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-08-22T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232865" isParent="Y" parenRef="CA_1000561664">
@@ -773,7 +807,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="121878" type="/profile/acct_extrating" global="true">
+    <ActProm id="103872" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -783,12 +817,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2018-02-15T14:46:14Z</CrtT>
       <ANxt>2025-09-07T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232911" isParent="Y" parenRef="CA_1000709829">
@@ -809,7 +845,7 @@
       <LNm>Hasan Jaafar</LNm>
       </ANArr>
     </Act>
-    <ActProm id="150810" type="/profile/acct_extrating" global="true">
+    <ActProm id="144121" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -819,12 +855,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>1</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232913" isParent="Y" parenRef="DA_1000556826">
@@ -834,6 +872,8 @@
       <CustSegList>5</CustSegList>
       <SubSta>A</SubSta>
       <BType>BAT</BType>
+      <Eff>2020-03-03T18:02:39Z</Eff>
+      <CrtT>2020-03-03T19:37:17Z</CrtT>
       <SrvAACAccess>Billing</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
       <ANArr elem="1">
@@ -853,7 +893,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="176101" type="/profile/acct_extrating" global="true">
+    <ActProm id="106937" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -863,12 +903,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T19:37:17Z</CrtT>
       <ANxt>2025-09-06T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>0</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232914" isParent="Y" parenRef="DA_1000556828">
@@ -878,6 +920,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:56:51Z</Eff>
+      <CrtT>2020-03-03T18:45:30Z</CrtT>
       <SrvAACAccess>Billing</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -893,7 +937,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="164671" type="/profile/acct_extrating" global="true">
+    <ActProm id="108999" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -903,12 +947,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T18:45:30Z</CrtT>
       <ANxt>2025-09-15T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>0</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232915" isParent="Y" parenRef="DA_1000418764">
@@ -918,6 +964,8 @@
       <CustSegList>5</CustSegList>
       <SubSta>A</SubSta>
       <BType>BAT</BType>
+      <Eff>2020-03-03T18:02:39Z</Eff>
+      <CrtT>2020-03-03T20:01:19Z</CrtT>
       <SrvAACAccess>Billing</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
       <ANArr elem="1">
@@ -937,7 +985,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="134180" type="/profile/acct_extrating" global="true">
+    <ActProm id="177630" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -947,12 +995,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T20:01:19Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>0</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232916" isParent="Y" parenRef="DA_1000418097">
@@ -962,6 +1012,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:51:14Z</CrtT>
       <SrvAACAccess>Billing</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -977,7 +1029,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="185606" type="/profile/acct_extrating" global="true">
+    <ActProm id="184693" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -987,12 +1039,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2016-06-20T21:00:00Z</CrtT>
       <ANxt>2025-09-07T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>0</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="7105232917" isParent="Y" parenRef="DA_1000396481">
@@ -1002,6 +1056,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Billing</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -1017,7 +1073,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="125670" type="/profile/acct_extrating" global="true">
+    <ActProm id="150849" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -1027,12 +1083,14 @@
       </PrmActLvlExtn>
     </ActProm>
     <ABinfo global="true"  isAccBillinfo="Yes" >
-      <PTyp>INV</PTyp>
       <ActgType>B</ActgType>
       <ACDom>21</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <ANxt>2025-08-21T00:00:00Z</ANxt>
-      <BillInfoId>Default BillInfo</BillInfoId>
+      <PTyp>INV</PTyp>
       <BillStat>0</BillStat>
+      <BillInfoId>Default BillInfo</BillInfoId>
     </ABinfo>
   </ActSbsc>
 </Sbsc>

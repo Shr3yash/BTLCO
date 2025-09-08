@@ -17,8 +17,8 @@ public class ServiceAccountXMLGenerator {
         Map<String, String> tagMap = XmlTagMapping.getServiceTagMap();
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, sqlQuery);
-             FileOutputStream fos = new FileOutputStream(outputFile);
-             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                FileOutputStream fos = new FileOutputStream(outputFile);
+                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc xmlns=\"http://www.portal.com/InfranetXMLSchema\"\n");
@@ -41,7 +41,7 @@ public class ServiceAccountXMLGenerator {
     }
 
     private static void writeServiceElement(OutputStreamWriter writer, ResultSet rs,
-                                            Map<String, String> tagMap)
+            Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = XMLGenerationUtils.getColumnValue(rs, "ACCOUNT_NO");
         String parentRef = XMLGenerationUtils.getColumnValue(rs, "BILL_ACCOUNT_NO");
@@ -129,6 +129,28 @@ public class ServiceAccountXMLGenerator {
         writer.write("    </ActProm>\n");
     }
 
+    // Ensures a timestamp ends with 'Z' (UTC). Accepts either full ISO-8601 or
+    // date-only "yyyy-MM-dd".
+    private static String ensureIsoUtcZ(String s) {
+        if (s == null || s.isEmpty())
+            return s;
+        String t = s.trim();
+        // If it's date-only like 2004-01-01, make it midnight UTC
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}$")) {
+            return t + "T00:00:00Z";
+        }
+        // If it already ends with Z or has timezone, just return
+        if (t.endsWith("Z") || t.matches(".*[\\+\\-]\\d{2}:?\\d{2}$")) {
+            return t;
+        }
+        // If it looks like "yyyy-MM-ddTHH:mm(:ss)" without timezone, append Z
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?$")) {
+            return t.endsWith("Z") ? t : t + "Z";
+        }
+        // Fallback: append Z
+        return t.endsWith("Z") ? t : t + "Z";
+    }
+
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String parentAccount)
             throws SQLException, IOException {
         writer.write(String.format(
@@ -151,6 +173,23 @@ public class ServiceAccountXMLGenerator {
 
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
+
+        // 3) BlWn (billing when) — default to "1" if blank
+        String blWn = XMLGenerationUtils.getColumnValue(rs, "BILL_WHEN");
+        if (blWn.isEmpty())
+            blWn = "1";
+        writer.write(String.format("      <BlWn>%s</BlWn>\n", XMLGenerationUtils.escapeXml(blWn)));
+
+  
+       // 4) CrtT (bill created time) — default & normalize to ISO-UTC
+        String crtTRaw = XMLGenerationUtils.getColumnValue(rs, "BILL_CREATED_T");
+        String crtTIso = XMLGenerationUtils.formatEpochToIso(crtTRaw);
+        if (crtTIso.isEmpty()) {
+            crtTIso = "2004-01-01T00:00:00Z";
+        } else {
+            crtTIso = ensureIsoUtcZ(crtTIso);
+        }
+        writer.write(String.format("      <CrtT>%s</CrtT>%n", XMLGenerationUtils.escapeXml(crtTIso)));
 
         try {
             int acDom = Integer.parseInt(acDomValue);

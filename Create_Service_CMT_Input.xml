@@ -11,6 +11,8 @@
       <CustSegList>21</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
@@ -26,7 +28,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="113982" type="/profile/acct_extrating" global="true">
+    <ActProm id="183920" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -39,11 +41,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>2</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-04T01:34:35Z</CrtT>
       <ANxt>2025-09-02T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="273226" type="/payinfo/subord">
+    <APinfo id="273507" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -54,6 +58,8 @@
       <CustSegList>21</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
@@ -69,7 +75,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="118386" type="/profile/acct_extrating" global="true">
+    <ActProm id="109511" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -82,11 +88,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="229389" type="/payinfo/subord">
+    <APinfo id="231247" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -97,6 +105,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -120,7 +130,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="160353" type="/profile/acct_extrating" global="true">
+    <ActProm id="192638" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -133,11 +143,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-20T06:46:51Z</CrtT>
       <ANxt>2025-09-18T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="255506" type="/payinfo/subord">
+    <APinfo id="228344" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -148,6 +160,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -171,7 +185,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="101004" type="/profile/acct_extrating" global="true">
+    <ActProm id="152499" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -184,11 +198,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-20T06:46:51Z</CrtT>
       <ANxt>2025-09-18T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="248980" type="/payinfo/subord">
+    <APinfo id="225068" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -199,6 +215,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -222,7 +240,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="113236" type="/profile/acct_extrating" global="true">
+    <ActProm id="146494" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -235,11 +253,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-20T06:46:51Z</CrtT>
       <ANxt>2025-09-18T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="232405" type="/payinfo/subord">
+    <APinfo id="260119" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -250,6 +270,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -274,7 +296,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="158796" type="/profile/acct_extrating" global="true">
+    <ActProm id="173849" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -287,11 +309,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2019-09-18T21:00:00Z</CrtT>
       <ANxt>2025-09-06T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="230704" type="/payinfo/subord">
+    <APinfo id="215293" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -302,6 +326,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -325,7 +351,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="115736" type="/profile/acct_extrating" global="true">
+    <ActProm id="151242" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -338,11 +364,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>25</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>1996-03-24T21:00:00Z</CrtT>
       <ANxt>2025-08-25T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="227792" type="/payinfo/subord">
+    <APinfo id="236380" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -353,6 +381,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -376,7 +406,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="176355" type="/profile/acct_extrating" global="true">
+    <ActProm id="137532" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -389,11 +419,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>27</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>1996-03-24T21:00:00Z</CrtT>
       <ANxt>2025-08-27T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="265757" type="/payinfo/subord">
+    <APinfo id="273900" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -404,6 +436,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -427,7 +461,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="148769" type="/profile/acct_extrating" global="true">
+    <ActProm id="186913" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -440,11 +474,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>24</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-04T03:22:58Z</CrtT>
       <ANxt>2025-08-24T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="235574" type="/payinfo/subord">
+    <APinfo id="248725" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -455,6 +491,8 @@
       <CustSegList>21</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
@@ -470,7 +508,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="115743" type="/profile/acct_extrating" global="true">
+    <ActProm id="138858" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -483,11 +521,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-08-22T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="216238" type="/payinfo/subord">
+    <APinfo id="270948" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -498,6 +538,8 @@
       <CustSegList>21</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10008</GLSgmt>
       <ANArr elem="1">
@@ -513,7 +555,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="186915" type="/profile/acct_extrating" global="true">
+    <ActProm id="126884" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -526,11 +568,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2011-07-04T17:19:00Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="256210" type="/payinfo/subord">
+    <APinfo id="293968" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -541,6 +585,8 @@
       <CustSegList>22</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10016</GLSgmt>
       <ANArr elem="1">
@@ -564,7 +610,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="193964" type="/profile/acct_extrating" global="true">
+    <ActProm id="134418" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -577,11 +623,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>13</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2017-12-20T05:20:39Z</CrtT>
       <ANxt>2025-09-13T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>1</BillStat>
     </ABinfo>
-    <APinfo id="270672" type="/payinfo/subord">
+    <APinfo id="217757" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -592,6 +640,8 @@
       <CustSegList>5</CustSegList>
       <SubSta>A</SubSta>
       <BType>BAT</BType>
+      <Eff>2020-03-03T18:02:39Z</Eff>
+      <CrtT>2020-03-03T19:37:17Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
       <ANArr elem="1">
@@ -616,7 +666,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="194216" type="/profile/acct_extrating" global="true">
+    <ActProm id="167169" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -629,11 +679,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T19:37:17Z</CrtT>
       <ANxt>2025-09-06T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="231100" type="/payinfo/subord">
+    <APinfo id="272242" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -644,6 +696,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:56:51Z</Eff>
+      <CrtT>2020-03-03T18:45:30Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -664,7 +718,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="136471" type="/profile/acct_extrating" global="true">
+    <ActProm id="193201" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -677,11 +731,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T18:45:30Z</CrtT>
       <ANxt>2025-09-15T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="224420" type="/payinfo/subord">
+    <APinfo id="286578" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -692,6 +748,8 @@
       <CustSegList>5</CustSegList>
       <SubSta>A</SubSta>
       <BType>BAT</BType>
+      <Eff>2020-03-03T18:02:39Z</Eff>
+      <CrtT>2020-03-03T20:01:19Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.50003</GLSgmt>
       <ANArr elem="1">
@@ -716,7 +774,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="191884" type="/profile/acct_extrating" global="true">
+    <ActProm id="106169" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -729,11 +787,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T20:01:19Z</CrtT>
       <ANxt>2025-09-16T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="271972" type="/payinfo/subord">
+    <APinfo id="226125" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -744,6 +804,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:51:14Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -764,7 +826,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="117695" type="/profile/acct_extrating" global="true">
+    <ActProm id="133645" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -777,11 +839,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2016-06-20T21:00:00Z</CrtT>
       <ANxt>2025-09-07T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="286270" type="/payinfo/subord">
+    <APinfo id="248387" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -792,6 +856,8 @@
       <CustSegList>18</CustSegList>
       <SubSta>A</SubSta>
       <BType>RES</BType>
+      <Eff>2020-03-03T17:58:51Z</Eff>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <SrvAACAccess>Service</SrvAACAccess>
       <GLSgmt>.10003</GLSgmt>
       <ANArr elem="1">
@@ -812,7 +878,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="126513" type="/profile/acct_extrating" global="true">
+    <ActProm id="125455" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -825,11 +891,13 @@
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>21</ACDom>
+      <BlWn>1</BlWn>
+      <CrtT>2020-03-03T19:25:32Z</CrtT>
       <ANxt>2025-08-21T00:00:00Z</ANxt>
       <BillInfoId>Default BillInfo</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="278641" type="/payinfo/subord">
+    <APinfo id="209122" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>

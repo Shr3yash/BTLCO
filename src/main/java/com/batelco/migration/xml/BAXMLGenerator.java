@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class BAXMLGenerator {
-
+    @SuppressWarnings("unused")
     private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 
     public static void generateXML(Connection connection, String sqlQuery, String outputFile) {
@@ -101,7 +101,8 @@ public class BAXMLGenerator {
 
         writer.write("      </ANArr>\n");
 
-        // EXEMPTIONS/TYPE → If exemptions TYPE is absent, the wrapper tag (AEArr / AEar) must NOT appear.
+        // EXEMPTIONS/TYPE → If exemptions TYPE is absent, the wrapper tag (AEArr /
+        // AEar) must NOT appear.
         String exType = getColumnValue(rs, "TYPE");
         if (!exType.isEmpty()) {
             writer.write("      <AEArr>\n");
@@ -121,6 +122,7 @@ public class BAXMLGenerator {
         writer.write("  </ActSbsc>\n");
     }
 
+    @SuppressWarnings("unused")
     private static void writeAccountElementFlag(OutputStreamWriter writer, ResultSet rs, Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = getColumnValue(rs, "ACCOUNT_NO").replaceAll("_1$", "");
@@ -200,48 +202,56 @@ public class BAXMLGenerator {
                 "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" >\n",
                 escapeXml(formattedParentRef)));
 
-        XMLGenerationUtils.writeMappedElement(writer, rs, "PAY_TYPE", "PTyp", null);
-
-        // Custom static values
+        // 1) ActgType (static)
         writer.write("      <ActgType>B</ActgType>\n");
-        // writer.write(" <ANxt>2024-05-01T00:00:00Z</ANxt>\n");
 
-        // updated anxt tag
-
+        // 2) ACDom (from ACTG_CYCLE_DOM)
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
 
+        // 3) BlWn (billing when) — default to "1" if blank
+        String blWn = XMLGenerationUtils.getColumnValue(rs, "BILL_WHEN");
+        if (blWn.isEmpty())
+            blWn = "1";
+        writer.write(String.format("      <BlWn>%s</BlWn>\n", XMLGenerationUtils.escapeXml(blWn)));
+
+        // 4) CrtT (bill created time) — default & normalize to ISO-UTC
+        String crtTRaw = XMLGenerationUtils.getColumnValue(rs, "BILL_CREATED_T");
+        String crtTIso = XMLGenerationUtils.formatEpochToIso(crtTRaw);
+        if (crtTIso.isEmpty()) {
+            crtTIso = "2004-01-01T00:00:00Z";
+        } else {
+            crtTIso = ensureIsoUtcZ(crtTIso);
+        }
+        writer.write(String.format("      <CrtT>%s</CrtT>%n", XMLGenerationUtils.escapeXml(crtTIso)));
+
+        // 5) ANxt (next accounting date) — computed from ACTG_CYCLE_DOM
         try {
             int acDom = Integer.parseInt(acDomValue);
             LocalDate today = LocalDate.now();
             int todayDay = today.getDayOfMonth();
 
-            // Determine correct month/year based on logic
-            LocalDate billingDate;
-            if (acDom > todayDay) {
-                // Use current month
-                billingDate = LocalDate.of(today.getYear(), today.getMonth(),
-                        Math.min(acDom, today.lengthOfMonth()));
-            } else {
-                // Use next month
-                LocalDate nextMonth = today.plusMonths(1);
-                billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(),
-                        Math.min(acDom, nextMonth.lengthOfMonth()));
-            }
-
+            LocalDate targetMonth = (acDom > todayDay) ? today : today.plusMonths(1);
+            LocalDate billingDate = LocalDate.of(
+                    targetMonth.getYear(),
+                    targetMonth.getMonth(),
+                    Math.min(acDom, targetMonth.lengthOfMonth()));
             writer.write(String.format("      <ANxt>%sT00:00:00Z</ANxt>\n", billingDate));
         } catch (NumberFormatException e) {
-            writer.write("      <ANxt/>\n"); // fallback for invalid/missing ACTG_CYCLE_DOM
+            writer.write("      <ANxt/>\n"); // fallback if ACTG_CYCLE_DOM invalid/missing
         }
 
-        String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
-        // if (billInfoId.isEmpty()) {
-        // billInfoId = "Default BillInfo";
-        // }
-        billInfoId = "Default BillInfo";
-        // defaulted as requested
-        writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
+        // 6) PTyp (pay type)
+        XMLGenerationUtils.writeMappedElement(writer, rs, "PAY_TYPE", "PTyp", null);
+
+        // 7) BillStat (billing status)
         XMLGenerationUtils.writeMappedElement(writer, rs, "BILLING_STATUS", "BillStat", null);
+
+        // 8) BillInfoId (default forced as per your note)
+        String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
+        billInfoId = "Default BillInfo";
+        writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
+
         writer.write("    </ABinfo>\n");
     }
 
@@ -429,5 +439,27 @@ public class BAXMLGenerator {
                 .replace(">", "&gt;")
                 .replace("\"", "&quot;")
                 .replace("'", "&apos;");
+    }
+
+    // Ensures a timestamp ends with 'Z' (UTC). Accepts either full ISO-8601 or
+    // date-only "yyyy-MM-dd".
+    private static String ensureIsoUtcZ(String s) {
+        if (s == null || s.isEmpty())
+            return s;
+        String t = s.trim();
+        // If it's date-only like 2004-01-01, make it midnight UTC
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}$")) {
+            return t + "T00:00:00Z";
+        }
+        // If it already ends with Z or has timezone, just return
+        if (t.endsWith("Z") || t.matches(".*[\\+\\-]\\d{2}:?\\d{2}$")) {
+            return t;
+        }
+        // If it looks like "yyyy-MM-ddTHH:mm:ss" without timezone, append Z
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?$")) {
+            return t.endsWith("Z") ? t : t + "Z";
+        }
+        // Fallback: append Z
+        return t.endsWith("Z") ? t : t + "Z";
     }
 }

@@ -25,8 +25,8 @@ public class DepartmentAccountXMLGenerator {
                 : sqlQuery;
 
         try (ResultSet rs = QueryExecutor.executeQuery(connection, enhancedQuery);
-             FileOutputStream fos = new FileOutputStream(outputFile);
-             OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                FileOutputStream fos = new FileOutputStream(outputFile);
+                OutputStreamWriter writer = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
 
             writer.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
             writer.write("<Sbsc xmlns=\"http://www.portal.com/InfranetXMLSchema\"\n");
@@ -49,7 +49,7 @@ public class DepartmentAccountXMLGenerator {
     }
 
     private static void writeDepartmentElement(OutputStreamWriter writer, ResultSet rs,
-                                               Map<String, String> tagMap)
+            Map<String, String> tagMap)
             throws SQLException, IOException {
         String accountNo = XMLGenerationUtils.getColumnValue(rs, "ACCOUNT_NO");
         String parentAccount = XMLGenerationUtils.getColumnValue(rs, "CUST_ACCOUNT_NO");
@@ -83,12 +83,16 @@ public class DepartmentAccountXMLGenerator {
         writer.write("        <Zip/>\n");
 
         // PHONE/TYPE → Only emit phone array if PHONE_TYPE (type) exists.
-        // If phone type is absent, the wrapper tag (APhArr / APar-equivalent) must NOT appear.
+        // If phone type is absent, the wrapper tag (APhArr / APar-equivalent) must NOT
+        // appear.
         writePhoneElements(writer, rs, tagMap);
 
-        // EXEMPTIONS/TYPE → If exemptions type is absent, the wrapper tag (AEar) must NOT appear.
-        // (No-op here unless you later add exemptions emission; this preserves the rule.)
-        // writeExemptionsElements(writer, rs, tagMap); // Intentionally omitted unless types exist.
+        // EXEMPTIONS/TYPE → If exemptions type is absent, the wrapper tag (AEar) must
+        // NOT appear.
+        // (No-op here unless you later add exemptions emission; this preserves the
+        // rule.)
+        // writeExemptionsElements(writer, rs, tagMap); // Intentionally omitted unless
+        // types exist.
 
         writer.write("      </ANArr>\n");
         writer.write("    </Act>\n");
@@ -118,12 +122,50 @@ public class DepartmentAccountXMLGenerator {
         // Else: do not emit APhArr (aka APar-equivalent) at all.
     }
 
+    // Ensures a timestamp ends with 'Z' (UTC). Accepts either full ISO-8601 or
+    // date-only "yyyy-MM-dd".
+    private static String ensureIsoUtcZ(String s) {
+        if (s == null || s.isEmpty())
+            return s;
+        String t = s.trim();
+        // If it's date-only like 2004-01-01, make it midnight UTC
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}$")) {
+            return t + "T00:00:00Z";
+        }
+        // If it already ends with Z or has timezone, just return
+        if (t.endsWith("Z") || t.matches(".*[\\+\\-]\\d{2}:?\\d{2}$")) {
+            return t;
+        }
+        // If it looks like "yyyy-MM-ddTHH:mm(:ss)" without timezone, append Z
+        if (t.matches("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?$")) {
+            return t.endsWith("Z") ? t : t + "Z";
+        }
+        // Fallback: append Z
+        return t.endsWith("Z") ? t : t + "Z";
+    }
+
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String actId)
             throws SQLException, IOException {
         writer.write("    <ABinfo global=\"true\" isAccBillinfo=\"Yes\">\n");
         writer.write("      <ActgType>B</ActgType>\n");
         String acDomValue = XMLGenerationUtils.getColumnValue(rs, "ACTG_CYCLE_DOM");
         writer.write(String.format("      <ACDom>%s</ACDom>\n", XMLGenerationUtils.escapeXml(acDomValue)));
+
+        // 3) BlWn (billing when) — default to "1" if blank
+        String blWn = XMLGenerationUtils.getColumnValue(rs, "BILL_WHEN");
+        if (blWn.isEmpty())
+            blWn = "1";
+        writer.write(String.format("      <BlWn>%s</BlWn>\n", XMLGenerationUtils.escapeXml(blWn)));
+
+         // 4) CrtT (bill created time) — default & normalize to ISO-UTC
+        String crtTRaw = XMLGenerationUtils.getColumnValue(rs, "BILL_CREATED_T");
+        String crtTIso = XMLGenerationUtils.formatEpochToIso(crtTRaw);
+        if (crtTIso.isEmpty()) {
+            crtTIso = "2004-01-01T00:00:00Z";
+        } else {
+            crtTIso = ensureIsoUtcZ(crtTIso);
+        }
+        writer.write(String.format("      <CrtT>%s</CrtT>%n", XMLGenerationUtils.escapeXml(crtTIso)));
 
         try {
             int acDom = Integer.parseInt(acDomValue);
@@ -137,7 +179,8 @@ public class DepartmentAccountXMLGenerator {
             } else {
                 // Use next month
                 LocalDate nextMonth = today.plusMonths(1);
-                billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(), Math.min(acDom, nextMonth.lengthOfMonth()));
+                billingDate = LocalDate.of(nextMonth.getYear(), nextMonth.getMonth(),
+                        Math.min(acDom, nextMonth.lengthOfMonth()));
             }
 
             writer.write(String.format("      <ANxt>%sT00:00:00Z</ANxt>\n", billingDate));
@@ -154,4 +197,5 @@ public class DepartmentAccountXMLGenerator {
         XMLGenerationUtils.writeMappedElement(writer, rs, "BILLING_STATUS", "BillStat", null);
         writer.write("    </ABinfo>\n");
     }
+
 }

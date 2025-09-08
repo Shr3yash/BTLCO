@@ -126,6 +126,7 @@ public class XMLGenerationUtils {
 
     //  epoch/ISO formatting helpers for Eff/CrtT 
 
+    
     public static String formatEpochToIso(String epochLike) {
         if (epochLike == null || epochLike.trim().isEmpty()) {
             return "";
@@ -143,6 +144,7 @@ public class XMLGenerationUtils {
             return v;
         }
     }
+    
 
     public static void writeEffAndCrtT(OutputStreamWriter writer, ResultSet rs)
             throws SQLException, IOException {
