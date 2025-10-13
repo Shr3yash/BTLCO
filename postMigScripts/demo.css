@@ -1,0 +1,61 @@
+/* Global box sizing so padding/borders are included in width/height */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Center the form horizontally & vertically */
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+}
+
+/* Card container */
+.login-container {
+  width: 300px;
+  background: #ffffff;
+  padding: 20px;
+}
+
+/* Title */
+.login-container h1 {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 8px 10px;
+  display: block;
+  margin-bottom: 20px; /* 20px between input fields */
+}
+
+/* Space between last input and button (22px) */
+.login-container input[type="password"]:last-of-type,
+.login-container input[type="text"]:last-of-type {
+  margin-bottom: 22px;
+}
+
+/* Button */
+.login-container button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 16px;
+  background: #28a745;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
