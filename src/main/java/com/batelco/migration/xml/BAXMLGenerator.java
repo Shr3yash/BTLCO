@@ -249,7 +249,7 @@ public class BAXMLGenerator {
 
         // 8) BillInfoId (default forced as per your note)
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
-        billInfoId = "Default BillInfo";
+        billInfoId = "Bill Unit";
         writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
 
         writer.write("    </ABinfo>\n");

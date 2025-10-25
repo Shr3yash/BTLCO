@@ -206,7 +206,7 @@ public class XMLGenerator {
                 XMLGenerationUtils.escapeXml(accountNo)));
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
         if (billInfoId.isEmpty()) {
-            billInfoId = "Default BillInfo";
+            billInfoId = "Bill Unit";
         }
 
         // Custom static values

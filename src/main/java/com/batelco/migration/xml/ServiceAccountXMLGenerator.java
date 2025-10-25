@@ -165,7 +165,7 @@ public class ServiceAccountXMLGenerator {
         writer.write(String.format("      <PTyp>%s</PTyp>%n", XMLGenerationUtils.escapeXml(mappedPayType)));
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
         if (billInfoId.isEmpty()) {
-            billInfoId = "Default BillInfo";
+            billInfoId = "Bill Unit";
         }
 
         // Custom static values

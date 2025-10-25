@@ -190,7 +190,7 @@ public class DepartmentAccountXMLGenerator {
 
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
         if (billInfoId.isEmpty()) {
-            billInfoId = "Default BillInfo";
+            billInfoId = "Bill Unit";
         }
 
         writer.write(String.format("      <BillInfoId>%s</BillInfoId>\n", XMLGenerationUtils.escapeXml(billInfoId)));
