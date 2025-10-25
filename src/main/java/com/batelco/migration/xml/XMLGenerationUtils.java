@@ -9,6 +9,9 @@ import java.sql.SQLException;
 import java.util.Map;
 import java.sql.ResultSetMetaData;
 import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class XMLGenerationUtils {
 
@@ -127,23 +130,29 @@ public class XMLGenerationUtils {
     //  epoch/ISO formatting helpers for Eff/CrtT 
 
     
-    public static String formatEpochToIso(String epochLike) {
-        if (epochLike == null || epochLike.trim().isEmpty()) {
-            return "";
-        }
-        String v = epochLike.trim();
-        try {
-            long ts = Long.parseLong(v);
-            if (v.length() >= 13) {
-                ts = ts / 1000L;
-            }
-            Instant inst = Instant.ofEpochSecond(ts);
-            return inst.toString(); 
-        } catch (NumberFormatException e) {
-            // Not epoch assume already an ISO or leave as-is
-            return v;
-        }
+
+private static final ZoneId OUTPUT_ZONE =
+        ZoneId.of("Asia/Kolkata"); // gives +05:30 including DST rules (IST has no DST)
+private static final DateTimeFormatter OUTPUT_FMT =
+        DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
+
+public static String formatEpochToIso(String epochRaw) {
+    if (epochRaw == null || epochRaw.isBlank()) {
+        return "";
     }
+
+    // created_t / effective_t in BRM are epoch seconds, not ms
+    long epochSeconds = Long.parseLong(epochRaw.trim());
+
+    // 1. Instant in UTC
+    Instant instant = Instant.ofEpochSecond(epochSeconds);
+
+    // 2. Represent that same moment in IST (+05:30)
+    ZonedDateTime zdt = instant.atZone(OUTPUT_ZONE);
+
+    // 3. Format like 2024-01-30T02:30:00+05:30
+    return OUTPUT_FMT.format(zdt);
+}
     
 
     public static void writeEffAndCrtT(OutputStreamWriter writer, ResultSet rs)
