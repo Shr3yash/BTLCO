@@ -102,8 +102,8 @@ public class XMLGenerationUtils {
                 "SubSta", XmlTagMapping.getSubStaMapping(),
                 "Typ", XmlTagMapping.getTypMapping(),
                 "PTyp", Map.of(
-                    "10001", "INV", 
-                    "10007", "NPC"),
+                        "10001", "INV",
+                        "10007", "NPC"),
                 "PhTyp", Map.of(
                         "0", "Ph",
                         "1", "H",
@@ -127,33 +127,27 @@ public class XMLGenerationUtils {
                 elementName));
     }
 
-    //  epoch/ISO formatting helpers for Eff/CrtT 
+    // epoch/ISO formatting helpers for Eff/CrtT
 
-    
+    private static final DateTimeFormatter OUTPUT_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
 
-private static final ZoneId OUTPUT_ZONE =
-        ZoneId.of("Asia/Kolkata"); // gives +05:30 including DST rules (IST has no DST)
-private static final DateTimeFormatter OUTPUT_FMT =
-        DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
+    public static String formatEpochToIso(String epochRaw) {
+        if (epochRaw == null || epochRaw.isBlank()) {
+            return "";
+        }
 
-public static String formatEpochToIso(String epochRaw) {
-    if (epochRaw == null || epochRaw.isBlank()) {
-        return "";
+        long epochSeconds = Long.parseLong(epochRaw.trim()); // BRM timestamps are seconds since epoch
+        Instant instant = Instant.ofEpochSecond(epochSeconds);
+
+        // key line: use the server's default timezone at runtime
+        ZoneId serverZone = ZoneId.systemDefault();
+
+        ZonedDateTime zdt = instant.atZone(serverZone);
+
+        // Example output: 2024-01-30T02:30:00+05:30
+        // or 2024-01-30T00:00:00+03:00, etc., depending on server config
+        return OUTPUT_FMT.format(zdt);
     }
-
-    // created_t / effective_t in BRM are epoch seconds, not ms
-    long epochSeconds = Long.parseLong(epochRaw.trim());
-
-    // 1. Instant in UTC
-    Instant instant = Instant.ofEpochSecond(epochSeconds);
-
-    // 2. Represent that same moment in IST (+05:30)
-    ZonedDateTime zdt = instant.atZone(OUTPUT_ZONE);
-
-    // 3. Format like 2024-01-30T02:30:00+05:30
-    return OUTPUT_FMT.format(zdt);
-}
-    
 
     public static void writeEffAndCrtT(OutputStreamWriter writer, ResultSet rs)
             throws SQLException, IOException {
