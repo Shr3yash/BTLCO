@@ -92,40 +92,54 @@ public class XMLGenerationUtils {
     }
 
     public static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-            String columnName, String elementName,
-            Map<String, String> tagMap) throws IOException {
-        String value = getColumnValue(rs, columnName);
+        String columnName, String elementName,
+        Map<String, String> tagMap) throws IOException {
 
-        // Centralized element-specific mappings
-        Map<String, Map<String, String>> elementMappings = Map.of(
-                "BType", XmlTagMapping.getBusinessTypeMapping(),
-                "SubSta", XmlTagMapping.getSubStaMapping(),
-                "Typ", XmlTagMapping.getTypMapping(),
-                "PTyp", Map.of(
-                        "10001", "INV",
-                        "10007", "NPC"),
-                "PhTyp", Map.of(
-                        "0", "Ph",
-                        "1", "H",
-                        "2", "W",
-                        "3", "P", // Since both "P" and "F" map to "3", we keep only one key, "3", with any one
-                                  // value.
-                        "4", "PG",
-                        "5", "PP",
-                        "6", "S"),
-                "DelPrf", XmlTagMapping.getDelPrfMapping());
+    String raw = getColumnValue(rs, columnName);
+    String value = (raw == null) ? null : raw.trim();
 
-        // Apply mapping if available
-        if (elementMappings.containsKey(elementName)) {
-            value = elementMappings.get(elementName).getOrDefault(value, value);
-        }
+    // Centralized element-specific mappings
+    Map<String, Map<String, String>> elementMappings = Map.of(
+            "BType", XmlTagMapping.getBusinessTypeMapping(),
+            "SubSta", XmlTagMapping.getSubStaMapping(),
+            "Typ",   XmlTagMapping.getTypMapping(),
+            "PTyp",  Map.of(
+                    "10001", "INV",
+                    "10007", "NPC"),
+            "PhTyp", Map.of(
+                    "0", "Ph",
+                    "1", "H",
+                    "2", "W",
+                    "3", "P",
+                    "4", "PG",
+                    "5", "PP",
+                    "6", "S"),
+            "DelPrf", XmlTagMapping.getDelPrfMapping(),
+            // NEW: BillStat mapping
+            "BillStat", Map.of(
+                    "1", "0") // convert 1 -> 0
+    );
 
-        // Always write the tag, even if value is empty
-        writer.write(String.format("      <%s>%s</%s>%n",
-                elementName,
-                escapeXml(value),
-                elementName));
+    // Apply mapping if available
+    if (elementMappings.containsKey(elementName) && value != null) {
+        value = elementMappings.get(elementName).getOrDefault(value, value);
     }
+
+    // Element-specific defaults (applied when value is null/blank)
+    Map<String, String> elementDefaults = Map.of(
+            "BillStat", "0" // defaulted to 0 as req by azra
+    );
+
+    if ((value == null || value.isEmpty()) && elementDefaults.containsKey(elementName)) {
+        value = elementDefaults.get(elementName);
+    }
+
+    // Always write the tag, even if value is empty
+    writer.write(String.format("      <%s>%s</%s>%n",
+            elementName,
+            escapeXml(value == null ? "" : value),
+            elementName));
+}
 
     // epoch/ISO formatting helpers for Eff/CrtT
 
