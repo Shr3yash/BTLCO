@@ -36,7 +36,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="121600" type="/profile/acct_extrating" global="true">
+    <ActProm id="116578" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -45,7 +45,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232870">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232870">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>13</ACDom>
@@ -53,9 +53,9 @@
       <CrtT>2017-12-20T10:50:39+05:30</CrtT>
       <ANxt>2025-11-13T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="238995" type="/payinfo/subord">
+    <APinfo id="209013" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -83,7 +83,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="167470" type="/profile/acct_extrating" global="true">
+    <ActProm id="121905" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -92,17 +92,17 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232871">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232871">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>2</ACDom>
       <BlWn>1</BlWn>
       <CrtT>2020-03-04T07:04:35+05:30</CrtT>
-      <ANxt>2025-11-02T00:00:00Z</ANxt>
+      <ANxt>2025-12-02T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="291468" type="/payinfo/subord">
+    <APinfo id="235779" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -130,7 +130,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="135275" type="/profile/acct_extrating" global="true">
+    <ActProm id="104308" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -139,7 +139,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232872">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232872">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
@@ -147,9 +147,9 @@
       <CrtT>2011-07-04T22:49:00+05:30</CrtT>
       <ANxt>2025-11-16T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="218015" type="/payinfo/subord">
+    <APinfo id="261675" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -185,7 +185,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="179198" type="/profile/acct_extrating" global="true">
+    <ActProm id="118175" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -194,7 +194,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232901">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232901">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
@@ -202,9 +202,9 @@
       <CrtT>2017-12-20T12:16:51+05:30</CrtT>
       <ANxt>2025-11-18T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="204091" type="/payinfo/subord">
+    <APinfo id="240099" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -240,7 +240,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="107314" type="/profile/acct_extrating" global="true">
+    <ActProm id="139394" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -249,7 +249,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232901">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232901">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
@@ -257,9 +257,9 @@
       <CrtT>2017-12-20T12:16:51+05:30</CrtT>
       <ANxt>2025-11-18T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="265287" type="/payinfo/subord">
+    <APinfo id="296675" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -295,7 +295,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="167748" type="/profile/acct_extrating" global="true">
+    <ActProm id="186612" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -304,7 +304,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232901">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232901">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>18</ACDom>
@@ -312,9 +312,9 @@
       <CrtT>2017-12-20T12:16:51+05:30</CrtT>
       <ANxt>2025-11-18T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="256302" type="/payinfo/subord">
+    <APinfo id="299656" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -351,7 +351,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="159429" type="/profile/acct_extrating" global="true">
+    <ActProm id="128733" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -360,7 +360,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232904">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232904">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
@@ -368,9 +368,9 @@
       <CrtT>2019-09-19T02:30:00+05:30</CrtT>
       <ANxt>2025-11-06T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="241096" type="/payinfo/subord">
+    <APinfo id="284692" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -406,7 +406,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="166335" type="/profile/acct_extrating" global="true">
+    <ActProm id="121463" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -415,7 +415,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232906">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232906">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>25</ACDom>
@@ -423,9 +423,9 @@
       <CrtT>1996-03-25T02:30:00+05:30</CrtT>
       <ANxt>2025-11-25T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="207955" type="/payinfo/subord">
+    <APinfo id="252868" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -461,7 +461,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="130148" type="/profile/acct_extrating" global="true">
+    <ActProm id="144935" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -470,17 +470,17 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232907">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232907">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>27</ACDom>
       <BlWn>1</BlWn>
       <CrtT>1996-03-25T02:30:00+05:30</CrtT>
-      <ANxt>2025-10-27T00:00:00Z</ANxt>
+      <ANxt>2025-11-27T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="289224" type="/payinfo/subord">
+    <APinfo id="236233" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -516,7 +516,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="130019" type="/profile/acct_extrating" global="true">
+    <ActProm id="170586" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -525,7 +525,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232908">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232908">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>24</ACDom>
@@ -533,9 +533,9 @@
       <CrtT>2020-03-04T08:52:58+05:30</CrtT>
       <ANxt>2025-11-24T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="288254" type="/payinfo/subord">
+    <APinfo id="268736" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -563,7 +563,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="114896" type="/profile/acct_extrating" global="true">
+    <ActProm id="185069" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -572,7 +572,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232910">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232910">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>22</ACDom>
@@ -580,9 +580,9 @@
       <CrtT>2011-07-04T22:49:00+05:30</CrtT>
       <ANxt>2025-11-22T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="269234" type="/payinfo/subord">
+    <APinfo id="251332" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -610,7 +610,7 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ActProm id="132675" type="/profile/acct_extrating" global="true">
+    <ActProm id="134430" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -619,7 +619,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232912">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232912">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
@@ -627,9 +627,9 @@
       <CrtT>2011-07-04T22:49:00+05:30</CrtT>
       <ANxt>2025-11-16T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat>1</BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="291808" type="/payinfo/subord">
+    <APinfo id="296993" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -666,7 +666,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="121172" type="/profile/acct_extrating" global="true">
+    <ActProm id="101507" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -675,7 +675,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232913">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232913">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
@@ -685,7 +685,7 @@
       <BillInfoId>Bill Unit</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="241760" type="/payinfo/subord">
+    <APinfo id="282470" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -718,7 +718,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="188487" type="/profile/acct_extrating" global="true">
+    <ActProm id="162532" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -727,7 +727,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232914">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232914">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
@@ -737,7 +737,7 @@
       <BillInfoId>Bill Unit</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="237974" type="/payinfo/subord">
+    <APinfo id="242660" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -774,7 +774,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="168690" type="/profile/acct_extrating" global="true">
+    <ActProm id="149738" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -783,7 +783,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232915">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232915">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
@@ -793,7 +793,7 @@
       <BillInfoId>Bill Unit</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="243214" type="/payinfo/subord">
+    <APinfo id="286431" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -826,7 +826,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="100586" type="/profile/acct_extrating" global="true">
+    <ActProm id="133340" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -835,7 +835,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232916">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232916">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
@@ -845,7 +845,7 @@
       <BillInfoId>Bill Unit</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="298785" type="/payinfo/subord">
+    <APinfo id="299389" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>
@@ -878,7 +878,7 @@
       <Typ>FED</Typ>
       </AEArr>
     </Act>
-    <ActProm id="175989" type="/profile/acct_extrating" global="true">
+    <ActProm id="136791" type="/profile/acct_extrating" global="true">
       <PrmNm>TAXEXEMPT</PrmNm>
       <PrmActLvlExtn>
         <ALPArr elem="1">
@@ -887,7 +887,7 @@
         </ALPArr>
       </PrmActLvlExtn>
     </ActProm>
-    <ABinfo global="true"  isAccBillinfo="Yes" payingParenRefId="7105232917">
+    <ABinfo bal_grp="true" bal_grp_name="Account Level Balance Group" elem="1" global="true" isAccBillinfo="Y" parentElem="1" payingParenRefId="7105232917">
       <PTyp>NPC</PTyp>
       <ActgType>B</ActgType>
       <ACDom>21</ACDom>
@@ -897,7 +897,7 @@
       <BillInfoId>Bill Unit</BillInfoId>
       <BillStat>0</BillStat>
     </ABinfo>
-    <APinfo id="221620" type="/payinfo/subord">
+    <APinfo id="285745" type="/payinfo/subord">
       <PaymentTerm>1001</PaymentTerm>
     </APinfo>
   </ActSbsc>

@@ -153,9 +153,12 @@ public class ServiceAccountXMLGenerator {
 
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String parentAccount)
             throws SQLException, IOException {
-        writer.write(String.format(
-                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" payingParenRefId=\"%s\">\n",
-                XMLGenerationUtils.escapeXml(parentAccount)));
+        // writer.write(String.format(
+        // " <ABinfo global=\"true\" isAccBillinfo=\"Yes\" payingParenRefId=\"%s\">\n",
+        // XMLGenerationUtils.escapeXml(parentAccount)));
+        // SA (pass the BA account ref you already have)
+        writer.write(XMLGenerationUtils.buildABinfoOpenTag("SA", parentAccount));
+
         String rawPayType = XMLGenerationUtils.getColumnValue(rs, "PAY_TYPE");
         String mappedPayType = switch (rawPayType) {
             case "10001" -> "INV";
@@ -180,8 +183,7 @@ public class ServiceAccountXMLGenerator {
             blWn = "1";
         writer.write(String.format("      <BlWn>%s</BlWn>\n", XMLGenerationUtils.escapeXml(blWn)));
 
-  
-       // 4) CrtT (bill created time) — default & normalize to ISO-UTC
+        // 4) CrtT (bill created time) — default & normalize to ISO-UTC
         String crtTRaw = XMLGenerationUtils.getColumnValue(rs, "BILL_CREATED_T");
         String crtTIso = XMLGenerationUtils.formatEpochToIso(crtTRaw);
         if (crtTIso.isEmpty()) {

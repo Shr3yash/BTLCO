@@ -196,11 +196,13 @@ public class BAXMLGenerator {
 
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String formattedParentRef)
             throws SQLException, IOException {
-        writer.write(String.format(
-                // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                // isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\" >\n",
-                escapeXml(formattedParentRef)));
+        // writer.write(String.format(
+        // // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
+        // // isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+        // " <ABinfo global=\"true\" isAccBillinfo=\"Yes\" >\n",
+        // escapeXml(formattedParentRef)));
+        // BA
+        writer.write(XMLGenerationUtils.buildABinfoOpenTag("BA", null));
 
         // 1) ActgType (static)
         writer.write("      <ActgType>B</ActgType>\n");

@@ -27,14 +27,14 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ABinfo global="true" isAccBillinfo="Yes">
+    <ABinfo bal_grp="true" bal_grp_name="Default Balance Group" elem="1" global="true" hasNoPayInfoRef="true" isAccBillinfo="Y">
       <ActgType>B</ActgType>
       <ACDom>15</ACDom>
       <BlWn>1</BlWn>
       <CrtT>2020-03-04T00:15:30+05:30</CrtT>
       <ANxt>2025-11-15T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat></BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="DA_1000418764" isParent="Y" parenRef="7105232923">
@@ -64,14 +64,14 @@
         </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true" isAccBillinfo="Yes">
+    <ABinfo bal_grp="true" bal_grp_name="Default Balance Group" elem="1" global="true" hasNoPayInfoRef="true" isAccBillinfo="Y">
       <ActgType>B</ActgType>
       <ACDom>16</ACDom>
       <BlWn>1</BlWn>
       <CrtT>2020-03-04T01:31:19+05:30</CrtT>
       <ANxt>2025-11-16T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat></BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="DA_1000396481" isParent="Y" parenRef="7105232922">
@@ -97,14 +97,14 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ABinfo global="true" isAccBillinfo="Yes">
+    <ABinfo bal_grp="true" bal_grp_name="Default Balance Group" elem="1" global="true" hasNoPayInfoRef="true" isAccBillinfo="Y">
       <ActgType>B</ActgType>
       <ACDom>21</ACDom>
       <BlWn>1</BlWn>
       <CrtT>2020-03-04T00:55:32+05:30</CrtT>
       <ANxt>2025-11-21T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat></BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="DA_1000556826" isParent="Y" parenRef="7105232921">
@@ -134,14 +134,14 @@
         </APhArr>
       </ANArr>
     </Act>
-    <ABinfo global="true" isAccBillinfo="Yes">
+    <ABinfo bal_grp="true" bal_grp_name="Default Balance Group" elem="1" global="true" hasNoPayInfoRef="true" isAccBillinfo="Y">
       <ActgType>B</ActgType>
       <ACDom>6</ACDom>
       <BlWn>1</BlWn>
       <CrtT>2020-03-04T01:07:17+05:30</CrtT>
       <ANxt>2025-11-06T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat></BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
   </ActSbsc>
   <ActSbsc id="DA_1000418097" isParent="Y" parenRef="7105232925">
@@ -167,14 +167,14 @@
         <Zip/>
       </ANArr>
     </Act>
-    <ABinfo global="true" isAccBillinfo="Yes">
+    <ABinfo bal_grp="true" bal_grp_name="Default Balance Group" elem="1" global="true" hasNoPayInfoRef="true" isAccBillinfo="Y">
       <ActgType>B</ActgType>
       <ACDom>7</ACDom>
       <BlWn>1</BlWn>
       <CrtT>2016-06-21T02:30:00+05:30</CrtT>
       <ANxt>2025-11-07T00:00:00Z</ANxt>
       <BillInfoId>Bill Unit</BillInfoId>
-      <BillStat></BillStat>
+      <BillStat>0</BillStat>
     </ABinfo>
   </ActSbsc>
 </Sbsc>

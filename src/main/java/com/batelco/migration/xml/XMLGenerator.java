@@ -198,12 +198,15 @@ public class XMLGenerator {
 
     private static void writeABinfo(OutputStreamWriter writer, ResultSet rs, String accountNo)
             throws SQLException, IOException {
-        writer.write(String.format(
-                // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
-                // isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
-                "    <ABinfo global=\"true\"  isAccBillinfo=\"Yes\">\n",
+        // writer.write(String.format(
+        // // " <ABinfo global=\"true\" spnrCnt=\"1\" spnreeCnt=\"2\" elem=\"1\"
+        // // isAccBillinfo=\"Yes\" payInfoRefId=\"%s\">\n",
+        // " <ABinfo global=\"true\" isAccBillinfo=\"Yes\">\n",
 
-                XMLGenerationUtils.escapeXml(accountNo)));
+        // XMLGenerationUtils.escapeXml(accountNo)));
+        // CA
+        writer.write(XMLGenerationUtils.buildABinfoOpenTag("CA", null));
+
         String billInfoId = XMLGenerationUtils.getColumnValue(rs, "BILL_INFO_ID");
         if (billInfoId.isEmpty()) {
             billInfoId = "Bill Unit";

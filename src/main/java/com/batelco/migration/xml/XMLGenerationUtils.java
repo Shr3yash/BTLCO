@@ -92,54 +92,54 @@ public class XMLGenerationUtils {
     }
 
     public static void writeMappedElement(OutputStreamWriter writer, ResultSet rs,
-        String columnName, String elementName,
-        Map<String, String> tagMap) throws IOException {
+            String columnName, String elementName,
+            Map<String, String> tagMap) throws IOException {
 
-    String raw = getColumnValue(rs, columnName);
-    String value = (raw == null) ? null : raw.trim();
+        String raw = getColumnValue(rs, columnName);
+        String value = (raw == null) ? null : raw.trim();
 
-    // Centralized element-specific mappings
-    Map<String, Map<String, String>> elementMappings = Map.of(
-            "BType", XmlTagMapping.getBusinessTypeMapping(),
-            "SubSta", XmlTagMapping.getSubStaMapping(),
-            "Typ",   XmlTagMapping.getTypMapping(),
-            "PTyp",  Map.of(
-                    "10001", "INV",
-                    "10007", "NPC"),
-            "PhTyp", Map.of(
-                    "0", "Ph",
-                    "1", "H",
-                    "2", "W",
-                    "3", "P",
-                    "4", "PG",
-                    "5", "PP",
-                    "6", "S"),
-            "DelPrf", XmlTagMapping.getDelPrfMapping(),
-            // NEW: BillStat mapping
-            "BillStat", Map.of(
-                    "1", "0") // convert 1 -> 0
-    );
+        // Centralized element-specific mappings
+        Map<String, Map<String, String>> elementMappings = Map.of(
+                "BType", XmlTagMapping.getBusinessTypeMapping(),
+                "SubSta", XmlTagMapping.getSubStaMapping(),
+                "Typ", XmlTagMapping.getTypMapping(),
+                "PTyp", Map.of(
+                        "10001", "INV",
+                        "10007", "NPC"),
+                "PhTyp", Map.of(
+                        "0", "Ph",
+                        "1", "H",
+                        "2", "W",
+                        "3", "P",
+                        "4", "PG",
+                        "5", "PP",
+                        "6", "S"),
+                "DelPrf", XmlTagMapping.getDelPrfMapping(),
+                // NEW: BillStat mapping
+                "BillStat", Map.of(
+                        "1", "0") // convert 1 -> 0
+        );
 
-    // Apply mapping if available
-    if (elementMappings.containsKey(elementName) && value != null) {
-        value = elementMappings.get(elementName).getOrDefault(value, value);
+        // Apply mapping if available
+        if (elementMappings.containsKey(elementName) && value != null) {
+            value = elementMappings.get(elementName).getOrDefault(value, value);
+        }
+
+        // Element-specific defaults (applied when value is null/blank)
+        Map<String, String> elementDefaults = Map.of(
+                "BillStat", "0" // defaulted to 0 as req by azra
+        );
+
+        if ((value == null || value.isEmpty()) && elementDefaults.containsKey(elementName)) {
+            value = elementDefaults.get(elementName);
+        }
+
+        // Always write the tag, even if value is empty
+        writer.write(String.format("      <%s>%s</%s>%n",
+                elementName,
+                escapeXml(value == null ? "" : value),
+                elementName));
     }
-
-    // Element-specific defaults (applied when value is null/blank)
-    Map<String, String> elementDefaults = Map.of(
-            "BillStat", "0" // defaulted to 0 as req by azra
-    );
-
-    if ((value == null || value.isEmpty()) && elementDefaults.containsKey(elementName)) {
-        value = elementDefaults.get(elementName);
-    }
-
-    // Always write the tag, even if value is empty
-    writer.write(String.format("      <%s>%s</%s>%n",
-            elementName,
-            escapeXml(value == null ? "" : value),
-            elementName));
-}
 
     // epoch/ISO formatting helpers for Eff/CrtT
 
@@ -177,6 +177,50 @@ public class XMLGenerationUtils {
         if (!crtIso.isEmpty()) {
             writer.write(String.format("      <CrtT>%s</CrtT>%n", escapeXml(crtIso)));
         }
+    }
+
+    public static String buildABinfoOpenTag(String scope, String formattedParentRef) {
+        String balGrpName;
+        boolean addHasNoPayInfoRef = false;
+
+        switch (scope) {
+            case "CA":
+            case "DA":
+                balGrpName = "Default Balance Group";
+                addHasNoPayInfoRef = true;
+                break;
+            case "BA":
+                balGrpName = "Account Level Balance Group";
+                break;
+            case "SA":
+                balGrpName = "Account Level Balance Group";
+                break;
+            default: // safe default if unknown scope
+                balGrpName = "Default Balance Group";
+        }
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("    <ABinfo");
+        sb.append(" bal_grp=\"true\"");
+        sb.append(" bal_grp_name=\"").append(XMLGenerationUtils.escapeXml(balGrpName)).append("\"");
+        sb.append(" elem=\"1\"");
+        sb.append(" global=\"true\"");
+        if (addHasNoPayInfoRef) {
+            sb.append(" hasNoPayInfoRef=\"true\"");
+        }
+        sb.append(" isAccBillinfo=\"Y\"");
+
+        if ("SA".equals(scope)) {
+            sb.append(" parentElem=\"1\"");
+            if (formattedParentRef != null && !formattedParentRef.isEmpty()) {
+                sb.append(" payingParenRefId=\"")
+                        .append(XMLGenerationUtils.escapeXml(formattedParentRef))
+                        .append("\"");
+            }
+        }
+
+        sb.append(">\n");
+        return sb.toString();
     }
 
 }
