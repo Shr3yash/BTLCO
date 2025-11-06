@@ -103,14 +103,14 @@ public class BAXMLGenerator {
 
         // EXEMPTIONS/TYPE → If exemptions TYPE is absent, the wrapper tag (AEArr /
         // AEar) must NOT appear.
-        String exType = getColumnValue(rs, "TYPE");
-        if (!exType.isEmpty()) {
-            writer.write("      <AEArr>\n");
-            writer.write("        <CertNum/>\n");
-            writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-            writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-            writer.write("      </AEArr>\n");
-        }
+        // String exType = getColumnValue(rs, "TYPE");
+        // if (!exType.isEmpty() ) {
+        //     writer.write("      <AEArr>\n");
+        //     writer.write("        <CertNum/>\n");
+        //     writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+        //     writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+        //     writer.write("      </AEArr>\n");
+        // }
         // Else: do not emit AEArr at all.
 
         writer.write("    </Act>\n");
@@ -176,7 +176,7 @@ public class BAXMLGenerator {
 
         // Emit AEArr only when TYPE (exemptions type) exists
         String exType = getColumnValue(rs, "TYPE");
-        if (!exType.isEmpty()) {
+        if (!exType.isEmpty() && false) {
             writer.write("      <AEArr>\n");
             writer.write("        <CertNum/>\n");
             writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);

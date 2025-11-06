@@ -93,14 +93,14 @@ public class ServiceAccountXMLGenerator {
         writer.write("      </ANArr>\n");
 
         // EXEMPTIONS/TYPE → Only emit <AEArr> if TYPE exists (AEar rule)
-        String exType = XMLGenerationUtils.getColumnValue(rs, "TYPE");
-        if (!exType.isEmpty()) {
-            writer.write("      <AEArr>\n");
-            writer.write("        <CertNum/>\n");
-            XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
-            XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
-            writer.write("      </AEArr>\n");
-        }
+        // String exType = XMLGenerationUtils.getColumnValue(rs, "TYPE");
+        // if (!exType.isEmpty()) {
+        //     writer.write("      <AEArr>\n");
+        //     writer.write("        <CertNum/>\n");
+        //     XMLGenerationUtils.writeMappedElement(writer, rs, "PERCENT", "Perc", tagMap);
+        //     XMLGenerationUtils.writeMappedElement(writer, rs, "TYPE", "Typ", tagMap);
+        //     writer.write("      </AEArr>\n");
+        // }
         // Else: skip AEArr entirely
 
         writer.write("    </Act>\n");
