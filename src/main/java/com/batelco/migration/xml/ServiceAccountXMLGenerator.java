@@ -117,16 +117,16 @@ public class ServiceAccountXMLGenerator {
         int randomId = 100000 + new Random().nextInt(100000); // Generates a number from 100000 to 199999
         String generatedId = String.valueOf(randomId);
 
-        writer.write(String.format("    <ActProm id=\"%s\" type=\"/profile/acct_extrating\" global=\"true\">\n",
-                XMLGenerationUtils.escapeXml(generatedId)));
-        writer.write("      <PrmNm>TAXEXEMPT</PrmNm>\n");
-        writer.write("      <PrmActLvlExtn>\n");
-        writer.write("        <ALPArr elem=\"1\">\n");
-        writer.write("          <Nam>TAXEXEMPT</Nam>\n");
-        writer.write("          <Val>0</Val>\n");
-        writer.write("        </ALPArr>\n");
-        writer.write("      </PrmActLvlExtn>\n");
-        writer.write("    </ActProm>\n");
+        // writer.write(String.format("    <ActProm id=\"%s\" type=\"/profile/acct_extrating\" global=\"true\">\n",
+        //         XMLGenerationUtils.escapeXml(generatedId)));
+        // writer.write("      <PrmNm>TAXEXEMPT</PrmNm>\n");
+        // writer.write("      <PrmActLvlExtn>\n");
+        // writer.write("        <ALPArr elem=\"1\">\n");
+        // writer.write("          <Nam>TAXEXEMPT</Nam>\n");
+        // writer.write("          <Val>0</Val>\n");
+        // writer.write("        </ALPArr>\n");
+        // writer.write("      </PrmActLvlExtn>\n");
+        // writer.write("    </ActProm>\n");
     }
 
     // Ensures a timestamp ends with 'Z' (UTC). Accepts either full ISO-8601 or
